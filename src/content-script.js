@@ -45,6 +45,11 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     var urls = links.map((link) => {
         return link.href;
     });
+
+    if(16 <= urls.length && !confirm(chrome.i18n.getMessage("confirm_open", [urls.length]))) {
+        return;
+    }
+    
     sendResponse(urls);
 });
 

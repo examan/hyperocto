@@ -10,12 +10,6 @@ chrome.contextMenus.create({
 chrome.contextMenus.onClicked.addListener((info, tab) => {
     switch (info.menuItemId) {
     case "open":
-        var urls = message || [];
-
-        if(!confirm(chrome.i18n.getMessage("confirm_open", urls.length))) {
-            return;
-        }
-
         chrome.tabs.sendMessage(
             tab.id,
             {
@@ -25,6 +19,9 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
                 frameId: info.frameId
             },
             (message) => {
+                // Firefox doesn't support default parameters in arrow function
+                var urls = message || [];
+
                 urls.forEach((url, index) => {
                     setTimeout((param) => {
                         chrome.tabs.create(param);
@@ -33,8 +30,7 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
                     {
                         "url": url,
                         "index": tab.index + index + 1,
-                        "active": false,
-                        "openerTabId": tab.id
+                        "active": false
                     });
                 });
             }

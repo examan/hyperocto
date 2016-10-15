@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Hyperocto",
-    "version": "0.3.0",
+    "version": "0.3.1",
 
     "default_locale": "en",
     "description": "__MSG_description__",
@@ -14,11 +14,7 @@
         "128": "icons/128.png"
     },
 
-    "permissions": [
-        "contextMenus",
-        "tabs"
-    ],
-
+    "author": "Megaman",
     "background": {
         "scripts": ["background-script.js"]
     },
@@ -29,5 +25,10 @@
             "all_frames": true,
             "js": ["content-script.js"]
         }
+    ],
+
+    "permissions": [
+        "contextMenus",
+        "tabs"
     ]
 }
