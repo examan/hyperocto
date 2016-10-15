@@ -1,0 +1,16 @@
+{
+    "description": {
+        "message": "A tool for finding all similar links and open all of them at one time."
+    },
+    "open_all": {
+        "message": "Open all similar links in new tabs"
+    },
+    "confirm_open": {
+        "message": "Are you sure that you want to open $TAB_COUNT$ tabs?",
+        "placeholders": {
+            "tab_count": {
+                "content": "$1"
+            }
+        }
+    }
+}

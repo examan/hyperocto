@@ -1,0 +1,16 @@
+{
+    "description": {
+        "message": "找出相似連結並一併開啟的聰明工具"
+    },
+    "open_all": {
+        "message": "開啟所有相似連結"
+    },
+    "confirm_open": {
+        "message": "您確定要開啟 $TAB_COUNT$ 分頁嗎？",
+        "placeholders": {
+            "tab_count": {
+                "content": "$1"
+            }
+        }
+    }
+}
