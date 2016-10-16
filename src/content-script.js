@@ -44,7 +44,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     case MESSAGE.CONTEXTMENU_OPEN_ALL_CLICKED:
 		break;
     default:
-		return sendResponse();
+		return;
     }
 
 	let targetLink = document.activeElement;
