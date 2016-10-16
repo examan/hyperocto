@@ -1,40 +1,51 @@
 "use strict";
 
-chrome.contextMenus.create({
-    id: "open",
-    title: chrome.i18n.getMessage("open_all"),
+const CONTEXTMENU = {};
+const CONTEXTMENUIDLIST = [
+    "OPEN_ALL"
+];
 
-    contexts: ["link"]
-});
+for(let menuItemId of CONTEXTMENUIDLIST) {
+    CONTEXTMENU[menuItemId] = menuItemId;
+
+    chrome.contextMenus.create({
+    	id: menuItemId,
+    	title: chrome.i18n.getMessage("CONTEXTMENU_" + menuItemId),
+    	contexts: ["link"]
+    });
+}
 
 chrome.contextMenus.onClicked.addListener((info, tab) => {
-    switch (info.menuItemId) {
-    case "open":
-        chrome.tabs.sendMessage(
-            tab.id,
-            {
-                "name": "context-menu-open-clicked"
-            },
-            {
-                frameId: info.frameId
-            },
-            (message) => {
-                // Firefox doesn't support default parameters in arrow function
-                var urls = message || [];
+    let tabIndex = tab.index;
 
-                urls.forEach((url, index) => {
-                    setTimeout((param) => {
-                        chrome.tabs.create(param);
-                    },
-                    0,
-                    {
-                        "url": url,
-                        "index": tab.index + index + 1,
-                        "active": false
-                    });
-                });
-            }
-        );
-        break;
-    }
+	switch (info.menuItemId) {
+	case CONTEXTMENU.OPEN_ALL:
+		chrome.tabs.sendMessage(
+			tab.id,
+			{
+				"name": MESSAGE.CONTEXTMENU_OPEN_ALL_CLICKED
+			},
+			{
+				frameId: info.frameId
+			},
+			(urls) => {
+                if(!urls) {
+                    return;
+                }
+
+				urls.forEach((url, index) => {
+					setTimeout((param) => {
+						chrome.tabs.create(param);
+					},
+					0,
+					{
+						"url": url,
+						"index": tabIndex + index + 1,
+						"active": false
+					});
+				});
+			}
+		);
+		break;
+	}
 });
