@@ -16,31 +16,30 @@ for(let menuItemId of CONTEXTMENUIDLIST) {
 }
 
 chrome.contextMenus.onClicked.addListener((info, tab) => {
-    let tabIndex = tab.index;
-
 	switch (info.menuItemId) {
 	case CONTEXTMENU.OPEN_ALL:
 		chrome.tabs.sendMessage(
 			tab.id,
 			{
-				"name": MESSAGE.CONTEXTMENU_OPEN_ALL_CLICKED
+				"name": MESSAGE.CONTEXTMENU_OPEN_ALL_CLICKED,
+				"fromTabIndex": tab.index
 			},
 			{
 				frameId: info.frameId
 			},
-			(urls) => {
-                if(!urls) {
+			(message) => {
+                if(!message) {
                     return;
                 }
 
-				urls.forEach((url, index) => {
+				message.urls.forEach((url, index) => {
 					setTimeout((param) => {
 						chrome.tabs.create(param);
 					},
 					0,
 					{
 						"url": url,
-						"index": tabIndex + index + 1,
+						"index": message.fromTabIndex + index + 1,
 						"active": false
 					});
 				});

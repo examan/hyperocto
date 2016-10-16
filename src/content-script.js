@@ -37,15 +37,8 @@ function getSimilarLinks(targetLink) {
 	return similarStyleLinks;
 }
 
-chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+function contextMenuMessageListener(message, sender, sendResponse) {
 	const THRESHOLD_TAB_CREATE_CONFIRM = 16;
-
-	switch(message.name) {
-    case MESSAGE.CONTEXTMENU_OPEN_ALL_CLICKED:
-		break;
-    default:
-		return;
-    }
 
 	let targetLink = document.activeElement;
 	let links = getSimilarLinks(targetLink);
@@ -59,11 +52,26 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
 	// Confirm dialog is not avaiable in background script in Firefox.
     let linkCount = filteredLink.length;
 	if (THRESHOLD_TAB_CREATE_CONFIRM <= linkCount && !confirm(chrome.i18n.getMessage("CONFIRM_OPEN", [linkCount]))) {
-		return sendResponse();
+		return;
 	}
 
     let urls = filteredLink.map((link) => {
 		return link.href;
 	});
-	sendResponse(urls);
+	sendResponse({
+		"fromTabIndex": message.fromTabIndex,
+		"urls": urls
+	});
+}
+
+chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+	const THRESHOLD_TAB_CREATE_CONFIRM = 16;
+
+	switch(message.name) {
+    case MESSAGE.CONTEXTMENU_OPEN_ALL_CLICKED:
+		contextMenuMessageListener.call(this, message, sender, sendResponse);
+		break;
+    default:
+		return;
+    }
 });
