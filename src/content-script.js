@@ -65,11 +65,9 @@ function contextMenuMessageListener(message, sender, sendResponse) {
 }
 
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-	const THRESHOLD_TAB_CREATE_CONFIRM = 16;
-
 	switch(message.name) {
     case MESSAGE.CONTEXTMENU_OPEN_ALL_CLICKED:
-		contextMenuMessageListener.call(this, message, sender, sendResponse);
+		return contextMenuMessageListener.apply(this, arguments);
 		break;
     default:
 		return;
