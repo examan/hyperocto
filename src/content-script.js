@@ -67,7 +67,7 @@ function contextMenuMessageListener(message, sender, sendResponse) {
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
 	switch(message.name) {
     case MESSAGE.CONTEXTMENU_OPEN_ALL_CLICKED:
-		return contextMenuMessageListener.apply(this, arguments);
+		return contextMenuMessageListener.call(this, message, sender, sendResponse);
 		break;
     default:
 		return;

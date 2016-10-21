@@ -33,15 +33,17 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
                 }
 
 				message.urls.forEach((url, index) => {
-					setTimeout((param) => {
-						chrome.tabs.create(param);
-					},
-					0,
-					{
-						"url": url,
-						"index": message.fromTabIndex + index + 1,
-						"active": false
-					});
+					setTimeout(
+                        (param) => {
+						    chrome.tabs.create(param);
+					    },
+					    0,
+					    {
+						    "url": url,
+						    "index": message.fromTabIndex + index + 1,
+						    "active": false
+					    }
+                    );
 				});
 			}
 		);
