@@ -10,7 +10,7 @@ for(let menuItemId of CONTEXTMENUIDLIST) {
 
     chrome.contextMenus.create({
     	id: menuItemId,
-    	title: chrome.i18n.getMessage("CONTEXTMENU_" + menuItemId),
+    	title: chrome.i18n.getMessage(`CONTEXTMENU_${menuItemId}`),
     	contexts: ["link"]
     });
 }
