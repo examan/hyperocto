@@ -26,10 +26,12 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
                     return OPENMODE.ALL;
             }
         })(info.menuItemId);
+
 		chrome.tabs.sendMessage(
 			tab.id,
 			{
 				"type": MESSAGETYPE.OPEN,
+				"mode": mode,
 				"fromTabIndex": tab.index
 			},
 			{
