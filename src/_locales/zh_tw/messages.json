@@ -5,6 +5,9 @@
     "CONTEXTMENU_OPEN_ALL": {
         "message": "開啟所有相似連結"
     },
+    "CONTEXTMENU_OPEN_FOLLOWING": {
+        "message": "開啟以下的相似連結"
+    },
     "CONFIRM_OPEN": {
         "message": "您確定要開啟 $TAB_COUNT$ 分頁嗎？",
         "placeholders": {

@@ -58,10 +58,14 @@ function getSimilarPathElements(targetElement) {
 	return Array.prototype.slice.call(elementList);
 }
 
-function getSimilarLinks(targetLink) {
+function getSimilarLinks(targetLink, mode) {
 	const similarStyleNames = "display font lineHeight position verticalAlign".split(" ");
 
 	let links = getSimilarPathElements(targetLink);
+
+	if(mode === OPENMODE.FOLLOWING) {
+		links.splice(0, links.indexOf(targetLink));
+	}
 
 	let targetLinkStyle = getComputedStyle(targetLink);
 
@@ -105,29 +109,21 @@ function getSimilarLinks(targetLink) {
 	return links;
 }
 
-function contextMenuMessageListener(message, sender, sendResponse) {
+function contextMenuOpenMessageListener(message, sender, sendResponse) {
 	const THRESHOLD_TAB_CREATE_CONFIRM = 16;
 
 	let targetLink = document.activeElement;
-	let links = getSimilarLinks(targetLink);
+	let links = getSimilarLinks(targetLink, message.mode);
 
 	let filteredLink = links;
 
-	/*
-    switch(message.name) {
-    case MESSAGE.CONTEXTMENU_OPEN_ALL_CLICKED:
-        filteredLink = links;
-        break;
-    }
-	*/
-
 	// Confirm dialog is not avaiable in background script in Firefox.
-    let linkCount = filteredLink.length;
+    let linkCount = links.length;
 	if (THRESHOLD_TAB_CREATE_CONFIRM <= linkCount && !confirm(chrome.i18n.getMessage("CONFIRM_OPEN", [linkCount]))) {
 		return;
 	}
 
-    let urls = filteredLink.map((link) => {
+    let urls = links.map((link) => {
 		return link.href;
 	});
 	sendResponse({
@@ -137,9 +133,9 @@ function contextMenuMessageListener(message, sender, sendResponse) {
 }
 
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-	switch(message.name) {
-    case MESSAGE.CONTEXTMENU_OPEN_ALL_CLICKED:
-		return contextMenuMessageListener.call(this, message, sender, sendResponse);
+	switch(message.type) {
+    case MESSAGETYPE.OPEN:
+		return contextMenuOpenMessageListener.call(this, message, sender, sendResponse);
 		break;
     default:
 		return;

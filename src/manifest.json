@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Hyperocto",
-    "version": "0.3.3",
+    "version": "0.4",
 
     "default_locale": "en",
     "description": "__MSG_MANIFEST_DESCRIPTION__",
@@ -19,7 +19,7 @@
     "author": "Megaman",
     "background": {
         "scripts": [
-            "message-id.js",
+            "common-script.js",
             "background-script.js"
         ]
     },
@@ -29,7 +29,7 @@
             "matches": ["<all_urls>"],
             "all_frames": true,
             "js": [
-                "message-id.js",
+                "common-script.js",
                 "content-script.js"
             ]
         }

@@ -3,7 +3,10 @@
         "message": "A tool for finding all similar links and open all of them at one time."
     },
     "CONTEXTMENU_OPEN_ALL": {
-        "message": "Open all similar links in new tabs"
+        "message": "Open all similar links"
+    },
+    "CONTEXTMENU_OPEN_FOLLOWING": {
+        "message": "Open following similar links"
     },
     "CONFIRM_OPEN": {
         "message": "Are you sure that you want to open $TAB_COUNT$ tabs?",
