@@ -1,3 +1,5 @@
+"use strict";
+
 Array.prototype.enumerationBuilder = function() {
     let enumeration = {};
     for(let entry of this) {
