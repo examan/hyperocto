@@ -1,42 +1,42 @@
 {
-    "manifest_version": 2,
-    "name": "Hyperocto",
-    "version": "0.4",
+	"manifest_version": 2,
+	"name": "Hyperocto",
+	"version": "0.4",
 
-    "default_locale": "en",
-    "description": "__MSG_MANIFEST_DESCRIPTION__",
-    "icons": {
-        "16": "icons/16.png",
-        "19": "icons/19.png",
-        "32": "icons/32.png",
-        "38": "icons/38.png",
-        "48": "icons/48.png",
-        "64": "icons/64.png",
-        "96": "icons/96.png",
-        "128": "icons/128.png"
-    },
+	"default_locale": "en",
+	"description": "__MSG_MANIFEST_DESCRIPTION__",
+	"icons": {
+		"16": "icons/16.png",
+		"19": "icons/19.png",
+		"32": "icons/32.png",
+		"38": "icons/38.png",
+		"48": "icons/48.png",
+		"64": "icons/64.png",
+		"96": "icons/96.png",
+		"128": "icons/128.png"
+	},
 
-    "author": "Megaman",
-    "background": {
-        "scripts": [
-            "common-script.js",
-            "background-script.js"
-        ]
-    },
+	"author": "Megaman",
+	"background": {
+		"scripts": [
+			"common-script.js",
+			"background-script.js"
+		]
+	},
 
-    "content_scripts": [
-        {
-            "matches": ["<all_urls>"],
-            "all_frames": true,
-            "js": [
-                "common-script.js",
-                "content-script.js"
-            ]
-        }
-    ],
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"all_frames": true,
+			"js": [
+				"common-script.js",
+				"content-script.js"
+			]
+		}
+	],
 
-    "permissions": [
-        "contextMenus",
-        "tabs"
-    ]
+	"permissions": [
+		"contextMenus",
+		"tabs"
+	]
 }

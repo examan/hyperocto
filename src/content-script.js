@@ -118,12 +118,12 @@ function contextMenuOpenMessageListener(message, sender, sendResponse) {
 	let filteredLink = links;
 
 	// Confirm dialog is not avaiable in background script in Firefox.
-    let linkCount = links.length;
+	let linkCount = links.length;
 	if (THRESHOLD_TAB_CREATE_CONFIRM <= linkCount && !confirm(chrome.i18n.getMessage("CONFIRM_OPEN", [linkCount]))) {
 		return;
 	}
 
-    let urls = links.map((link) => {
+	let urls = links.map((link) => {
 		return link.href;
 	});
 	sendResponse({
@@ -134,10 +134,10 @@ function contextMenuOpenMessageListener(message, sender, sendResponse) {
 
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
 	switch(message.type) {
-    case MESSAGETYPE.OPEN:
+	case MESSAGETYPE.OPEN:
 		return contextMenuOpenMessageListener.call(this, message, sender, sendResponse);
 		break;
-    default:
+	default:
 		return;
-    }
+	}
 });
