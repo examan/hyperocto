@@ -1,19 +1,27 @@
-"use strict";
+'use strict';
 
-Array.prototype.enumerationBuilder = function() {
-	let enumeration = {};
-	for(let entry of this) {
-		enumeration[entry] = entry;
-	}
-	return enumeration;
-};
+(global => {
+  function enumerationBuilder (list) {
+    let enumeration = {}
+    for (let entry of list) {
+      enumeration[entry] = entry
+    }
+    return enumeration
+  }
 
-const OPENMODELIST = [
-	"ALL",
-	"FOLLOWING"
-];
-const OPENMODE = OPENMODELIST.enumerationBuilder();
+  let MESSAGETYPE = enumerationBuilder([
+    'OPEN'
+  ])
 
-const MESSAGETYPE = [
-	"OPEN"
-].enumerationBuilder();
+  let OPENMODELIST = [
+    'ALL',
+    'FOLLOWING'
+  ]
+  let OPENMODE = enumerationBuilder(OPENMODELIST)
+
+  /* explicit export variables */
+  global.enumerationBuilder = enumerationBuilder
+  global.MESSAGETYPE = MESSAGETYPE
+  global.OPENMODELIST = OPENMODELIST
+  global.OPENMODE = OPENMODE
+})(this)
