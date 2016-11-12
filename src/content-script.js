@@ -76,11 +76,10 @@ function getSimilarLinks (targetLink, mode) {
   return links
 }
 
-function GetMessageHandler (message, sender, sendResponse) {
+function openSimilarLinks (targetLink, mode) {
   const THRESHOLD_TAB_CREATE_CONFIRM = 16
 
-  let targetLink = document.activeElement
-  let links = getSimilarLinks(targetLink, message.mode)
+  let links = getSimilarLinks(targetLink, mode)
 
   // Confirm dialog is not avaiable in background script in Firefox.
   let linkCount = links.length
@@ -89,11 +88,20 @@ function GetMessageHandler (message, sender, sendResponse) {
   }
 
   let urls = links.map(link => link.href)
+
   chrome.runtime.sendMessage({
-    'type': MESSAGETYPE.OPENLINKS,
-    'fromTabIndex': message.fromTabIndex,
-    'urls': urls
+    'type': MESSAGETYPE.QUERYTABINDEX
+  }, currentTabIndex => {
+    chrome.runtime.sendMessage({
+      'type': MESSAGETYPE.OPENLINKS,
+      'fromTabIndex': currentTabIndex,
+      'urls': urls
+    })
   })
+}
+
+function GetMessageHandler (message, sender, sendResponse) {
+  openSimilarLinks(document.activeElement, message.mode)
 }
 
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
@@ -101,6 +109,14 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     case MESSAGETYPE.GETLINKS:
       GetMessageHandler.call(this, message, sender, sendResponse)
   }
+})
 
-  return true
+document.addEventListener('click', event => {
+  if (!event.target || event.target.nodeName !== 'A' || !event.ctrlKey || !event.altKey || event.shiftKey) {
+    return
+  }
+
+  event.preventDefault()
+
+  openSimilarLinks(event.target, GETMODE.ALL)
 })

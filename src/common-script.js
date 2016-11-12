@@ -11,7 +11,8 @@
 
   let MESSAGETYPE = enumerationBuilder([
     'GETLINKS',
-    'OPENLINKS'
+    'OPENLINKS',
+    'QUERYTABINDEX'
   ])
 
   let GETMODELIST = [

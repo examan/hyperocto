@@ -33,8 +33,7 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
         tab.id,
         {
           'type': MESSAGETYPE.GETLINKS,
-          'mode': mode,
-          'fromTabIndex': tab.index
+          'mode': mode
         },
         {
           frameId: info.frameId
@@ -60,9 +59,11 @@ function openMessageHandler (message, sender, sendResponse) {
 
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   switch (message.type) {
+    case MESSAGETYPE.QUERYTABINDEX:
+      sendResponse(sender.tab.index)
+      break
     case MESSAGETYPE.OPENLINKS:
       openMessageHandler.call(this, message, sender, sendResponse)
+      break
   }
-
-  return true
 })
