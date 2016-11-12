@@ -90,13 +90,8 @@ function openSimilarLinks (targetLink, mode) {
   let urls = links.map(link => link.href)
 
   chrome.runtime.sendMessage({
-    'type': MESSAGETYPE.QUERYTABINDEX
-  }, currentTabIndex => {
-    chrome.runtime.sendMessage({
-      'type': MESSAGETYPE.OPENLINKS,
-      'fromTabIndex': currentTabIndex,
-      'urls': urls
-    })
+    'type': MESSAGETYPE.OPENLINKS,
+    'urls': urls
   })
 }
 
@@ -112,7 +107,9 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
 })
 
 document.addEventListener('click', event => {
-  if (!event.target || event.target.nodeName !== 'A' || !event.ctrlKey || !event.altKey || event.shiftKey) {
+  if (!event.target || event.target.nodeName !== 'A' ||
+    !event.altKey || event.ctrlKey || event.shiftKey ||
+    event.button !== 1) {
     return
   }
 

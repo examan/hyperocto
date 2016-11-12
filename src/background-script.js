@@ -50,7 +50,7 @@ function openMessageHandler (message, sender, sendResponse) {
       0,
       {
         'url': url,
-        'index': message.fromTabIndex + index + 1,
+        'index': sender.tab.index + index + 1,
         'active': false
       }
     )
@@ -59,9 +59,6 @@ function openMessageHandler (message, sender, sendResponse) {
 
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   switch (message.type) {
-    case MESSAGETYPE.QUERYTABINDEX:
-      sendResponse(sender.tab.index)
-      break
     case MESSAGETYPE.OPENLINKS:
       openMessageHandler.call(this, message, sender, sendResponse)
       break
