@@ -1,4 +1,4 @@
-/* global MESSAGETYPE, OPENMODE */
+/* global MESSAGETYPE, GETMODE */
 
 'use strict'
 
@@ -32,7 +32,7 @@ function getSimilarLinks (targetLink, mode) {
 
   let links = getSimilarPathElements(targetLink)
 
-  if (mode === OPENMODE.FOLLOWING) {
+  if (mode === GETMODE.FOLLOWING) {
     links.splice(0, links.indexOf(targetLink))
   }
 
@@ -76,7 +76,7 @@ function getSimilarLinks (targetLink, mode) {
   return links
 }
 
-function contextMenuOpenMessageListener (message, sender, sendResponse) {
+function GetMessageHandler (message, sender, sendResponse) {
   const THRESHOLD_TAB_CREATE_CONFIRM = 16
 
   let targetLink = document.activeElement
@@ -89,7 +89,8 @@ function contextMenuOpenMessageListener (message, sender, sendResponse) {
   }
 
   let urls = links.map(link => link.href)
-  sendResponse({
+  chrome.runtime.sendMessage({
+    'type': MESSAGETYPE.OPENLINKS,
     'fromTabIndex': message.fromTabIndex,
     'urls': urls
   })
@@ -97,9 +98,9 @@ function contextMenuOpenMessageListener (message, sender, sendResponse) {
 
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   switch (message.type) {
-    case MESSAGETYPE.OPEN:
-      return contextMenuOpenMessageListener.call(this, message, sender, sendResponse)
-    default:
-      return
+    case MESSAGETYPE.GETLINKS:
+      GetMessageHandler.call(this, message, sender, sendResponse)
   }
+
+  return true
 })

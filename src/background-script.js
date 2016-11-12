@@ -1,10 +1,10 @@
-/* global MESSAGETYPE, OPENMODELIST, OPENMODE, enumerationBuilder */
+/* global MESSAGETYPE, GETMODELIST, GETMODE, enumerationBuilder */
 
 'use strict'
 
 const CONTEXTMENUIDLIST = []
-for (let openmode of OPENMODELIST) {
-  CONTEXTMENUIDLIST.push(`OPEN_${openmode}`)
+for (let GETMODE of GETMODELIST) {
+  CONTEXTMENUIDLIST.push(`OPEN_${GETMODE}`)
 }
 const CONTEXTMENU = enumerationBuilder(CONTEXTMENUIDLIST)
 
@@ -23,40 +23,46 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
       let mode = (menuItemId => {
         switch (menuItemId) {
           case CONTEXTMENU.OPEN_FOLLOWING:
-            return OPENMODE.FOLLOWING
+            return GETMODE.FOLLOWING
           case CONTEXTMENU.OPEN_ALL:
-            return OPENMODE.ALL
+            return GETMODE.ALL
         }
       })(info.menuItemId)
 
       chrome.tabs.sendMessage(
         tab.id,
         {
-          'type': MESSAGETYPE.OPEN,
+          'type': MESSAGETYPE.GETLINKS,
           'mode': mode,
           'fromTabIndex': tab.index
         },
         {
           frameId: info.frameId
-        },
-        message => {
-          if (!message) {
-            return
-          }
-
-          message.urls.forEach((url, index) => {
-            setTimeout(
-              param => chrome.tabs.create(param),
-              0,
-              {
-                'url': url,
-                'index': message.fromTabIndex + index + 1,
-                'active': false
-              }
-            )
-          })
         }
       )
       break
   }
+})
+
+function openMessageHandler (message, sender, sendResponse) {
+  message.urls.forEach((url, index) => {
+    setTimeout(
+      param => chrome.tabs.create(param),
+      0,
+      {
+        'url': url,
+        'index': message.fromTabIndex + index + 1,
+        'active': false
+      }
+    )
+  })
+}
+
+chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+  switch (message.type) {
+    case MESSAGETYPE.OPENLINKS:
+      openMessageHandler.call(this, message, sender, sendResponse)
+  }
+
+  return true
 })

@@ -10,18 +10,19 @@
   }
 
   let MESSAGETYPE = enumerationBuilder([
-    'OPEN'
+    'GETLINKS',
+    'OPENLINKS'
   ])
 
-  let OPENMODELIST = [
+  let GETMODELIST = [
     'ALL',
     'FOLLOWING'
   ]
-  let OPENMODE = enumerationBuilder(OPENMODELIST)
+  let GETMODE = enumerationBuilder(GETMODELIST)
 
   /* explicit export variables */
   global.enumerationBuilder = enumerationBuilder
   global.MESSAGETYPE = MESSAGETYPE
-  global.OPENMODELIST = OPENMODELIST
-  global.OPENMODE = OPENMODE
+  global.GETMODELIST = GETMODELIST
+  global.GETMODE = GETMODE
 })(this)
