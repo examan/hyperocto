@@ -1,5 +1,5 @@
 # Hyperocto
-A browser extension for finding Similar link and open them concurrently.
+A browser extension for finding similar link and open them concurrently.
 
 ---
 
