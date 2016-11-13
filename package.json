@@ -16,7 +16,8 @@
       "promise"
     ],
     "env": {
-      "webextensions": true
+      "webextensions": true,
+      "browser": true
     }
   }
 }

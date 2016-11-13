@@ -50,8 +50,19 @@ function getSimilarLinks (targetLink, mode) {
     let element = link
 
     while (element) {
-      if (element.offsetWidth !== 0 && element.offsetHeight !== 0 && element.getClientRects().length !== 0) {
-        return true
+      switch (element.nodeType) {
+        case Node.ELEMENT_NODE:
+          if (element.offsetWidth !== 0 && element.offsetHeight !== 0 && element.getClientRects().length !== 0) {
+            return true
+          }
+          break
+        case Node.TEXT_NODE:
+          let range = document.createRange()
+          range.selectNodeContents(element)
+          if (range.getClientRects().length !== 0) {
+            return true
+          }
+          break
       }
 
       if (element.firstChild) {

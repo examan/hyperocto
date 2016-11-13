@@ -1,6 +1,6 @@
 {
   "MANIFEST_DESCRIPTION": {
-    "message": "A tool for finding all similar links and open all of them at one time."
+    "message": "Find Similar links and open them concurrently"
   },
   "CONTEXTMENU_OPEN_ALL": {
     "message": "Open all similar links"
