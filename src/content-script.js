@@ -53,7 +53,7 @@ function getSimilarLinks (targetLink, mode) {
 
     let descendents = link.querySelectorAll('*')
 
-    return descendents.some(element => {
+    return Array.prototype.some.call(descendents, element => {
       if (element.offsetWidth !== 0 && element.offsetHeight !== 0 && element.getClientRects().length !== 0) {
         return true
       }
