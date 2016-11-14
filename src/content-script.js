@@ -47,41 +47,17 @@ function getSimilarLinks (targetLink, mode) {
 
   // filter zero-dimensioned element
   links = links.filter(link => {
-    let element = link
-
-    while (element) {
-      switch (element.nodeType) {
-        case Node.ELEMENT_NODE:
-          if (element.offsetWidth !== 0 && element.offsetHeight !== 0 && element.getClientRects().length !== 0) {
-            return true
-          }
-          break
-        case Node.TEXT_NODE:
-          let range = document.createRange()
-          range.selectNodeContents(element)
-          if (range.getClientRects().length !== 0) {
-            return true
-          }
-          break
-      }
-
-      if (element.firstChild) {
-        element = element.firstChild
-      } else if (element === link) {
-        // no child
-        return false
-      } else if (element.nextSibling) {
-        element = element.nextSibling
-      } else if (element.parentNode !== link) {
-        element = element.parentNode
-      } else {
-        // no dimensioned child
-        return false
-      }
+    if (link.offsetWidth !== 0 && link.offsetHeight !== 0 && link.getClientRects().length !== 0) {
+      return true
     }
 
-    // edge case ?
-    return false
+    let descendents = link.querySelectorAll('*')
+
+    return descendents.some(element => {
+      if (element.offsetWidth !== 0 && element.offsetHeight !== 0 && element.getClientRects().length !== 0) {
+        return true
+      }
+    })
   })
 
   return links
@@ -118,13 +94,25 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
 })
 
 document.addEventListener('click', event => {
-  if (!event.target || event.target.nodeName !== 'A' ||
+  if (!event.target ||
     !event.altKey || event.ctrlKey || event.shiftKey ||
     event.button !== 1) {
     return
   }
 
+  let link = (() => {
+    for (let element = event.target; element; element = element.parentElement) {
+      if (element.nodeName === 'A') {
+        return element
+      }
+    }
+  })()
+
+  if (!link) {
+    return
+  }
+
   event.preventDefault()
 
-  openSimilarLinks(event.target, GETMODE.ALL)
-})
+  openSimilarLinks(link, GETMODE.ALL)
+}, true)
