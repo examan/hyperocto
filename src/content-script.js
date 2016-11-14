@@ -47,14 +47,14 @@ function getSimilarLinks (targetLink, mode) {
 
   // filter zero-dimensioned element
   links = links.filter(link => {
-    if (link.offsetWidth !== 0 && link.offsetHeight !== 0 && link.getClientRects().length !== 0) {
+    if (link.offsetWidth || link.offsetHeight || link.getClientRects().length) {
       return true
     }
 
     let descendents = link.querySelectorAll('*')
 
     return Array.prototype.some.call(descendents, element => {
-      if (element.offsetWidth !== 0 && element.offsetHeight !== 0 && element.getClientRects().length !== 0) {
+      if (element.offsetWidth || element.offsetHeight || element.getClientRects().length) {
         return true
       }
     })
