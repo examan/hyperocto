@@ -45,7 +45,7 @@ function getSimilarLinks (targetLink, mode) {
     return similarStyleNames.every(styleName => linkStyle[styleName] === targetLinkStyle[styleName])
   })
 
-  // filter zero-dimensioned element
+  // filter out zero-dimensioned element
   links = links.filter(link => {
     if (link.offsetWidth || link.offsetHeight || link.getClientRects().length) {
       return true
@@ -53,11 +53,7 @@ function getSimilarLinks (targetLink, mode) {
 
     let descendents = link.getElementsByTagName('*')
 
-    return Array.prototype.some.call(descendents, element => {
-      if (element.offsetWidth || element.offsetHeight || element.getClientRects().length) {
-        return true
-      }
-    })
+    return Array.prototype.some.call(descendents, element => element.offsetWidth || element.offsetHeight || element.getClientRects().length)
   })
 
   return links
@@ -70,7 +66,8 @@ function openSimilarLinks (targetLink, mode) {
 
   // Confirm dialog is not avaiable in background script in Firefox.
   let linkCount = links.length
-  if (THRESHOLD_TAB_CREATE_CONFIRM <= linkCount && !window.confirm(chrome.i18n.getMessage('CONFIRM_OPEN', [linkCount]))) {
+  if (THRESHOLD_TAB_CREATE_CONFIRM <= linkCount &&
+    !window.confirm(chrome.i18n.getMessage('CONFIRM_OPEN', [linkCount]))) {
     return
   }
 
