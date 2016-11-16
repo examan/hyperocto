@@ -1,4 +1,7 @@
 {
+  "MANIFEST_NAME": {
+    "message": "Hyperocto - Smart helper for opening links"
+  },
   "MANIFEST_DESCRIPTION": {
     "message": "Find Similar links and open them concurrently"
   },

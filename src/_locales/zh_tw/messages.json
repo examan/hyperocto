@@ -1,4 +1,7 @@
 {
+  "MANIFEST_NAME": {
+    "message": "Hyperocto - 連結開啟小幫手"
+  },
   "MANIFEST_DESCRIPTION": {
     "message": "找出相似連結並一併開啟的聰明工具"
   },
