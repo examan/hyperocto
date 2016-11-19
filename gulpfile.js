@@ -15,7 +15,7 @@ gulp.task('default', function () {
       .pipe(eslint.formatEach())
       .pipe(eslint.failAfterError()),
 
-    gulp.src(['src/**/*', '!src/manifest.json', '!src/**/*.js'])
+    gulp.src(['src/**/*', '!src/**/*.js'])
 
   ).pipe(zip('hyperocto.zip'))
   .pipe(gulp.dest('dest'))
