@@ -1,5 +1,5 @@
 # Hyperocto
-A browser extension for finding similar link and open them concurrently.
+找出相似連結並一併開啟的聰明瀏覽器外掛.
 
 ---
 
