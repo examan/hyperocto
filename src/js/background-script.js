@@ -1,33 +1,22 @@
-/* global MESSAGETYPE, GETMODELIST, GETMODE, enumerationBuilder */
+/* global enumerationBuilder, MESSAGETYPE, GETMODE */
 
 'use strict'
 
-const CONTEXTMENUIDLIST = []
-for (let GETMODE of GETMODELIST) {
-  CONTEXTMENUIDLIST.push(`OPEN_${GETMODE}`)
-}
+const CONTEXTMENUIDLIST = ['OPEN_ALL', 'OPEN_FOLLOWING']
 const CONTEXTMENU = enumerationBuilder(CONTEXTMENUIDLIST)
-
-for (let menuItemId of CONTEXTMENUIDLIST) {
+CONTEXTMENUIDLIST.forEach(menuItemId => {
   browser.contextMenus.create({
     id: menuItemId,
     title: browser.i18n.getMessage(`CONTEXTMENU_${menuItemId}`),
     contexts: ['link']
   })
-}
+})
 
 browser.contextMenus.onClicked.addListener((info, tab) => {
   switch (info.menuItemId) {
     case CONTEXTMENU.OPEN_FOLLOWING:
     case CONTEXTMENU.OPEN_ALL:
-      let mode = (menuItemId => {
-        switch (menuItemId) {
-          case CONTEXTMENU.OPEN_FOLLOWING:
-            return GETMODE.FOLLOWING
-          case CONTEXTMENU.OPEN_ALL:
-            return GETMODE.ALL
-        }
-      })(info.menuItemId)
+      let mode = (info.menuItemId === CONTEXTMENU.OPEN_FOLLOWING ? GETMODE.FOLLOWING : GETMODE.NONE)
 
       browser.tabs.sendMessage(
         tab.id,
@@ -63,4 +52,6 @@ browser.runtime.onMessage.addListener((message, sender, sendResponse) => {
       messageOpenHandler.call(this, message, sender, sendResponse)
       break
   }
+
+  return true
 })

@@ -32,7 +32,7 @@ function getSimilarLinks (targetLink, mode) {
 
   let links = getSimilarPathElements(targetLink)
 
-  if (mode === GETMODE.FOLLOWING) {
+  if ((mode & GETMODE.FOLLOWING)) {
     links.splice(0, links.indexOf(targetLink))
   }
 
@@ -88,6 +88,8 @@ browser.runtime.onMessage.addListener((message, sender, sendResponse) => {
     case MESSAGETYPE.GETLINKS:
       messageGetHandler.call(this, message, sender, sendResponse)
   }
+
+  return true
 })
 
 document.addEventListener('click', event => {
@@ -109,5 +111,5 @@ document.addEventListener('click', event => {
 
   event.preventDefault()
 
-  openSimilarLinks(link, GETMODE.ALL)
+  openSimilarLinks(link, GETMODE.NONE)
 }, true)

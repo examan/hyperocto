@@ -14,15 +14,13 @@
     'OPENLINKS'
   ])
 
-  let GETMODELIST = [
-    'ALL',
-    'FOLLOWING'
-  ]
-  let GETMODE = enumerationBuilder(GETMODELIST)
+  let GETMODE = {
+    'NONE': 0,
+    'FOLLOWING': 1 << 0
+  }
 
   /* explicit export variables */
   global.enumerationBuilder = enumerationBuilder
   global.MESSAGETYPE = MESSAGETYPE
-  global.GETMODELIST = GETMODELIST
   global.GETMODE = GETMODE
 })(this)
