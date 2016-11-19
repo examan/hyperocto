@@ -91,9 +91,7 @@ browser.runtime.onMessage.addListener((message, sender, sendResponse) => {
 })
 
 document.addEventListener('click', event => {
-  if (!event.target ||
-    !event.altKey || event.ctrlKey || event.shiftKey ||
-    event.button !== 1) {
+  if (event.button !== 1 || !event.altKey || event.ctrlKey || event.shiftKey) {
     return
   }
 

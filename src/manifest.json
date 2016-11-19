@@ -23,7 +23,8 @@
       "lib/browser-polyfill.js",
       "js/common-script.js",
       "js/background-script.js"
-    ]
+    ],
+    "persistent": false
   },
 
   "content_scripts": [
