@@ -4,11 +4,19 @@
 
 const CONTEXTMENUIDLIST = ['OPEN_ALL', 'OPEN_FOLLOWING']
 const CONTEXTMENU = enumerationBuilder(CONTEXTMENUIDLIST)
-CONTEXTMENUIDLIST.forEach(menuItemId => {
-  browser.contextMenus.create({
-    id: menuItemId,
-    title: browser.i18n.getMessage(`CONTEXTMENU_${menuItemId}`),
-    contexts: ['link']
+/*
+  Prevent Error in non-persistent mode: Cannot create item with duplicate id.
+  browser.runtime.onInstalled.addListener is the better solution in non-persistent mode.
+  Currently Firefox doesn't support non-persistent mode.
+  https://developer.mozilla.org/zh-TW/Add-ons/WebExtensions/Chrome_incompatibilities#background
+*/
+browser.contextMenus.removeAll().then(() => {
+  CONTEXTMENUIDLIST.forEach(menuItemId => {
+    browser.contextMenus.create({
+      id: menuItemId,
+      title: browser.i18n.getMessage(`CONTEXTMENU_${menuItemId}`),
+      contexts: ['link']
+    })
   })
 })
 

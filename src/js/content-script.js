@@ -64,7 +64,10 @@ function openSimilarLinks (targetLink, mode) {
 
   let links = getSimilarLinks(targetLink, mode)
 
-  // Confirm dialog is not avaiable in background script in Firefox.
+  /*
+    Currently confirm dialog is not avaiable in background script in Firefox.
+    https://developer.mozilla.org/zh-TW/Add-ons/WebExtensions/Chrome_incompatibilities#Additional_incompatibilities
+  */
   let linkCount = links.length
   if (THRESHOLD_TAB_CREATE_CONFIRM <= linkCount &&
     !window.confirm(browser.i18n.getMessage('CONFIRM_OPEN', [linkCount]))) {
