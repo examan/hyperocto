@@ -20,7 +20,7 @@ gulp.task('default', function () {
         'presets': ['babili']
       })),
 
-    gulp.src(['src/**/*', '!src/**/*.js'])
+    gulp.src(['src/**/*', '!src/**/*.js', 'src/lib/browser-polyfill.js'])
 
   ).pipe(zip('hyperocto.zip'))
   .pipe(gulp.dest('dest'))
