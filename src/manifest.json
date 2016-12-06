@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Hyperocto",
   "short_name": "Hyperocto",
-  "version": "1.0.13",
+  "version": "1.0.14",
 
   "default_locale": "en",
   "description": "__MSG_MANIFEST_DESCRIPTION__",

@@ -94,7 +94,12 @@ browser.runtime.onMessage.addListener((message, sender, sendResponse) => {
   return true
 })
 
-function middleClickHandler (event) {
+let middleClickEventName = Document.prototype.hasOwnProperty('onauxclick') ? 'auxclick' : 'click'
+document.addEventListener(middleClickEventName, (event) => {
+  if (event.button !== 1 || !event.altKey || event.ctrlKey || event.shiftKey) {
+    return
+  }
+
   let link = (() => {
     for (let element = event.target; element; element = element.parentElement) {
       if (element.nodeName === 'A') {
@@ -110,16 +115,4 @@ function middleClickHandler (event) {
   event.preventDefault()
 
   openSimilarLinks(link, GETMODE.NONE)
-}
-
-if (Document.prototype.hasOwnProperty('onauxclick')) {
-  document.addEventListener('auxclick', middleClickHandler, true)
-} else {
-  document.addEventListener('click', function (event) {
-    if (event.button !== 1 || !event.altKey || event.ctrlKey || event.shiftKey) {
-      return
-    }
-
-    middleClickHandler.apply(this, arguments)
-  }, true)
-}
+}, true)
