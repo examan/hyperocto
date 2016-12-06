@@ -20,7 +20,6 @@
   "author": "Megaman",
   "background": {
     "scripts": [
-      "lib/browser-polyfill.min.js",
       "js/common-script.js",
       "js/background-script.js"
     ],
@@ -32,7 +31,6 @@
       "matches": ["<all_urls>"],
       "all_frames": true,
       "js": [
-        "lib/browser-polyfill.min.js",
         "js/common-script.js",
         "js/content-script.js"
       ]

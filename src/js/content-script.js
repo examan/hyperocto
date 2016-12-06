@@ -12,8 +12,7 @@ function getPathElements (targetElement) {
 }
 
 function getSimilarPathElements (targetElement) {
-  const uriSchemeFilterSelector = 'about chrome opera javascript'
-    .split(' ')
+  const uriSchemeFilterSelector = ['about', 'chrome', 'opera', 'javascript']
     .map(uriScheme => `:not([href^='${uriScheme}:'])`)
     .join('')
 
@@ -28,7 +27,7 @@ function getSimilarPathElements (targetElement) {
 }
 
 function getSimilarLinks (targetLink, mode) {
-  const similarStyleNames = 'display font lineHeight position verticalAlign'.split(' ')
+  const similarStyleNames = ['display', 'font', 'lineHeight', 'position', 'verticalAlign']
 
   let links = getSimilarPathElements(targetLink)
 
@@ -95,11 +94,7 @@ browser.runtime.onMessage.addListener((message, sender, sendResponse) => {
   return true
 })
 
-document.addEventListener('click', event => {
-  if (event.button !== 1 || !event.altKey || event.ctrlKey || event.shiftKey) {
-    return
-  }
-
+function middleClickHandler (event) {
   let link = (() => {
     for (let element = event.target; element; element = element.parentElement) {
       if (element.nodeName === 'A') {
@@ -115,4 +110,16 @@ document.addEventListener('click', event => {
   event.preventDefault()
 
   openSimilarLinks(link, GETMODE.NONE)
-}, true)
+}
+
+if (Document.prototype.hasOwnProperty('onauxclick')) {
+  document.addEventListener('auxclick', middleClickHandler, true)
+} else {
+  document.addEventListener('click', function (event) {
+    if (event.button !== 1 || !event.altKey || event.ctrlKey || event.shiftKey) {
+      return
+    }
+
+    middleClickHandler.apply(this, arguments)
+  }, true)
+}

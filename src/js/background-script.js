@@ -10,7 +10,7 @@ const CONTEXTMENU = enumerationBuilder(CONTEXTMENUIDLIST)
   Currently Firefox doesn't support non-persistent mode.
   https://developer.mozilla.org/zh-TW/Add-ons/WebExtensions/Chrome_incompatibilities#background
 */
-browser.contextMenus.removeAll().then(() => {
+browser.contextMenus.removeAll(() => {
   CONTEXTMENUIDLIST.forEach(menuItemId => {
     browser.contextMenus.create({
       id: menuItemId,

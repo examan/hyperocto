@@ -1,6 +1,13 @@
 'use strict';
 
 (global => {
+  /*
+    simple chrome polyfill
+    Because polyfill by mozilla is not perfectly currently
+    https://github.com/mozilla/webextension-polyfill
+  */
+  global.browser = global.browser || global.chrome
+
   function enumerationBuilder (list) {
     let enumeration = {}
     for (let entry of list) {

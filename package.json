@@ -23,5 +23,6 @@
       "webextensions": true,
       "browser": true
     }
-  }
+  },
+  "dependencies": {}
 }
