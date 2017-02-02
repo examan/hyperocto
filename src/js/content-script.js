@@ -23,7 +23,7 @@ function getSimilarPathElements (targetElement) {
   let elementSelector = `${pathSelector}${uriSchemeFilterSelector}`
   let elementList = document.querySelectorAll(elementSelector)
 
-  return Array.prototype.slice.call(elementList)
+  return [...elementList]
 }
 
 function getSimilarLinks (targetLink, mode) {
@@ -95,7 +95,7 @@ browser.runtime.onMessage.addListener((message, sender, sendResponse) => {
 })
 
 let middleClickEventName = Document.prototype.hasOwnProperty('onauxclick') ? 'auxclick' : 'click'
-document.addEventListener(middleClickEventName, (event) => {
+document.addEventListener(middleClickEventName, event => {
   if (event.button !== 1 || !event.altKey || event.ctrlKey || event.shiftKey) {
     return
   }

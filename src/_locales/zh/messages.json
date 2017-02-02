@@ -1,0 +1,19 @@
+{
+  "MANIFEST_DESCRIPTION": {
+    "message": "找出同類連結並一併開啟的聰明工具"
+  },
+  "CONTEXTMENU_OPEN_ALL": {
+    "message": "開啟所有同類連結"
+  },
+  "CONTEXTMENU_OPEN_FOLLOWING": {
+    "message": "開啟以下的同類連結"
+  },
+  "CONFIRM_OPEN": {
+    "message": "您確定要開啟 $TAB_COUNT$ 分頁嗎？",
+    "placeholders": {
+      "tab_count": {
+        "content": "$1"
+      }
+    }
+  }
+}

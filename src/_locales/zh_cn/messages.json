@@ -1,0 +1,19 @@
+{
+  "MANIFEST_DESCRIPTION": {
+    "message": "找出同类链接并一并打开的聪明工具"
+  },
+  "CONTEXTMENU_OPEN_ALL": {
+    "message": "打开所有同类链接"
+  },
+  "CONTEXTMENU_OPEN_FOLLOWING": {
+    "message": "打开以下的同类链接"
+  },
+  "CONFIRM_OPEN": {
+    "message": "是否确实要打开 $TAB_COUNT$ 标签页吗？",
+    "placeholders": {
+      "tab_count": {
+        "content": "$1"
+      }
+    }
+  }
+}
