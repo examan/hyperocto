@@ -1,114 +1,46 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="33.866665mm"
-   height="33.866665mm"
-   viewBox="0 0 119.99999 119.99999"
-   id="svg2"
-   version="1.1"
-   inkscape:version="0.91 r13725"
-   sodipodi:docname="icon_inkscape_small.svg"
-   inkscape:export-filename="D:\Documents\GitHub\Hyperocto\src\icons\19.png"
-   inkscape:export-xdpi="14.25"
-   inkscape:export-ydpi="14.25">
-  <defs
-     id="defs4">
-    <linearGradient
-       inkscape:collect="always"
-       id="g">
-      <stop
-         style="stop-color:#444444;stop-opacity:1"
-         offset="0"
-         id="stop4139" />
-      <stop
-         style="stop-color:#000000;stop-opacity:1"
-         offset="1"
-         id="stop4141" />
-    </linearGradient>
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#g"
-       id="linearGradient4143"
-       x1="19.999975"
-       y1="0.00087317469"
-       x2="99.931541"
-       y2="80.15255"
-       gradientUnits="userSpaceOnUse" />
-  </defs>
-  <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="5.6568542"
-     inkscape:cx="10.50084"
-     inkscape:cy="61.117288"
-     inkscape:document-units="px"
-     inkscape:current-layer="g4344"
-     showgrid="true"
-     inkscape:window-width="1680"
-     inkscape:window-height="987"
-     inkscape:window-x="1358"
-     inkscape:window-y="32"
-     inkscape:window-maximized="1"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0">
-    <inkscape:grid
-       type="xygrid"
-       id="grid3336"
-       originx="-290.00002"
-       originy="-480.00087" />
-  </sodipodi:namedview>
-  <metadata
-     id="metadata7">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <g
-     inkscape:groupmode="layer"
-     id="layer2"
-     inkscape:label="Layer 2"
-     style="display:inline"
-     transform="translate(-290,-452.36133)">
-    <path
-       style="fill:#0000ee;fill-opacity:1;stroke:none"
-       d="m 20,100 0,10 120,0 0,-10 -120,0 z"
-       transform="translate(270,452.36133)"
-       id="rect4476"
-       inkscape:connector-curvature="0"
-       inkscape:export-filename="D:\Documents\GitHub\Hyperocto\src\icons\19.png"
-       inkscape:export-xdpi="14.249999"
-       inkscape:export-ydpi="14.249999" />
-    <g
-       id="g4344">
-      <path
-         style="fill:url(#linearGradient4143);fill-opacity:1;stroke:none"
-         d="M 60 0 A 40 40 0 0 0 20.037109 38.9375 A 15 15 0 0 0 20 40 L 20 60 A 15 15 0 0 0 35 75 A 5 5 0 0 1 40 80 A 5 5 0 0 1 35.353516 84.988281 A 5 5 0 0 1 35 85 L 25 85 A 15 15 0 0 0 10 100 L 10 105 L 10 110 L 10 115 A 5 5 0 0 0 15 120 A 5 5 0 0 0 20 115 L 20 105 L 20 100 A 5 5 0 0 1 20.025391 99.5 A 5 5 0 0 1 25 95 L 35 95 A 5 5 0 0 1 40 100 L 40 110 L 40 115 A 5 5 0 0 0 44.646484 119.98828 A 5 5 0 0 0 45 120 A 5 5 0 0 0 49.207031 117.70117 A 5 5 0 0 0 49.660156 116.8125 A 5 5 0 0 0 50 115 L 50 105 L 50 100 A 5 5 0 0 1 50.025391 99.5 A 5 5 0 0 1 55 95 L 65 95 A 5 5 0 0 1 70 100 L 70 110 L 70 115 A 5 5 0 0 0 74.646484 119.98828 A 5 5 0 0 0 75 120 A 5 5 0 0 0 79.207031 117.70117 A 5 5 0 0 0 79.660156 116.8125 A 5 5 0 0 0 80 115 L 80 105 L 80 100 A 5 5 0 0 1 80.025391 99.5 A 5 5 0 0 1 85 95 L 95 95 A 5 5 0 0 1 95.007812 95 A 5 5 0 0 1 97.404297 95.611328 A 5 5 0 0 1 97.830078 95.873047 A 5 5 0 0 1 98.228516 96.175781 A 5 5 0 0 1 98.59375 96.515625 A 5 5 0 0 1 98.923828 96.892578 A 5 5 0 0 1 99.214844 97.298828 A 5 5 0 0 1 99.667969 98.1875 A 5 5 0 0 1 99.996094 99.646484 A 5 5 0 0 1 100.00781 100 L 100 100 L 100 110 L 100 115 A 5 5 0 0 0 104.64648 119.98828 A 5 5 0 0 0 105 120 A 5 5 0 0 0 110 115 L 110 105 L 110 100 L 110.00781 100 A 15 15 0 0 0 110 99.841797 A 15 15 0 0 0 110 99.839844 A 15 15 0 0 0 109.91016 98.347656 A 15 15 0 0 0 109.91016 98.345703 A 15 15 0 0 0 109.90625 98.324219 A 15 15 0 0 0 109.66992 96.869141 A 15 15 0 0 0 109.66992 96.865234 A 15 15 0 0 0 109.66211 96.835938 A 15 15 0 0 0 109.2832 95.417969 A 15 15 0 0 0 109.2832 95.416016 A 15 15 0 0 0 109.27734 95.402344 A 15 15 0 0 0 108.75391 94.013672 A 15 15 0 0 0 108.0918 92.679688 A 15 15 0 0 0 108.08789 92.669922 A 15 15 0 0 0 108.04297 92.597656 A 15 15 0 0 0 107.29883 91.414062 A 15 15 0 0 0 107.21289 91.298828 A 15 15 0 0 0 106.37891 90.228516 A 15 15 0 0 0 106.37109 90.216797 A 15 15 0 0 0 106.28711 90.128906 A 15 15 0 0 0 105.35547 89.148438 A 15 15 0 0 0 105.17188 88.988281 A 15 15 0 0 0 104.22852 88.175781 A 15 15 0 0 0 103.92969 87.962891 A 15 15 0 0 0 103.01367 87.322266 A 15 15 0 0 0 102.5918 87.080078 A 15 15 0 0 0 101.71484 86.589844 A 15 15 0 0 0 101.22852 86.371094 A 15 15 0 0 0 100.3418 85.986328 A 15 15 0 0 0 99.832031 85.816406 A 15 15 0 0 0 98.919922 85.523438 A 15 15 0 0 0 98.302734 85.386719 A 15 15 0 0 0 97.476562 85.208984 A 15 15 0 0 0 96.761719 85.121094 A 15 15 0 0 0 95.957031 85.033203 A 15 15 0 0 0 95.007812 85 L 94.970703 85 L 85 85 A 5 5 0 0 1 84.5 84.974609 A 5 5 0 0 1 84.005859 84.900391 A 5 5 0 0 1 82.177734 84.126953 A 5 5 0 0 1 81.779297 83.824219 A 5 5 0 0 1 81.083984 83.107422 A 5 5 0 0 1 80.339844 81.810547 A 5 5 0 0 1 80.181641 81.337891 A 5 5 0 0 1 80 80 A 5 5 0 0 1 80.025391 79.5 A 5 5 0 0 1 80.611328 77.601562 A 5 5 0 0 1 80.873047 77.177734 A 5 5 0 0 1 80.873047 77.175781 A 5 5 0 0 1 81.175781 76.779297 A 5 5 0 0 1 85 75 A 15 15 0 0 0 97.623047 68.103516 A 15 15 0 0 0 98.132812 67.212891 A 15 15 0 0 0 98.367188 66.804688 A 15 15 0 0 0 98.367188 66.802734 A 15 15 0 0 0 98.980469 65.435547 A 15 15 0 0 0 100 60 L 100 40 A 40 40 0 0 0 99.925781 38.501953 A 15 15 0 0 0 99.925781 38.496094 A 40 40 0 0 0 99.576172 34.511719 A 40 40 0 0 0 98.830078 30.583984 A 40 40 0 0 0 94.310547 19.515625 A 40 40 0 0 0 92.095703 16.189453 A 40 40 0 0 0 86.722656 10.277344 A 40 40 0 0 0 83.623047 7.7539062 A 40 40 0 0 0 73.035156 2.1992188 A 40 40 0 0 0 69.197266 1.0820312 A 40 40 0 0 0 60 0 z M 45 42.5 A 12.5 12.5 0 0 1 57.5 55 A 12.5 12.5 0 0 1 45 67.5 A 12.5 12.5 0 0 1 32.5 55 A 12.5 12.5 0 0 1 45 42.5 z M 75 42.5 A 12.5 12.5 0 0 1 87.5 55 A 12.5 12.5 0 0 1 75 67.5 A 12.5 12.5 0 0 1 62.5 55 A 12.5 12.5 0 0 1 75 42.5 z M 45 50 A 5 5 0 0 0 40 55 A 5 5 0 0 0 45 60 A 5 5 0 0 0 50 55 A 5 5 0 0 0 45 50 z M 75 50 A 5 5 0 0 0 70.011719 54.646484 A 5 5 0 0 0 70 55 A 5 5 0 0 0 75 60 A 5 5 0 0 0 80 55 A 5 5 0 0 0 75 50 z "
-         id="path4229"
-         transform="translate(290,452.36133)"
-         inkscape:export-filename="D:\Documents\GitHub\Hyperocto\src\icons\19.png"
-         inkscape:export-xdpi="14.249999"
-         inkscape:export-ydpi="14.249999" />
-    </g>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1"
+	 id="svg2" inkscape:export-filename="D:\Documents\GitHub\Hyperocto\src\icons\19.png" inkscape:export-xdpi="14.25" inkscape:export-ydpi="14.25" inkscape:version="0.91 r13725" sodipodi:docname="icon_inkscape_small.svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 96 96"
+	 style="enable-background:new 0 0 96 96;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#4080FF;}
+	.st1{fill:url(#path4229_1_);}
+</style>
+<sodipodi:namedview  bordercolor="#666666" borderopacity="1.0" fit-margin-bottom="0" fit-margin-left="0" fit-margin-right="0" fit-margin-top="0" id="base" inkscape:current-layer="g4344" inkscape:cx="10.50084" inkscape:cy="61.117288" inkscape:document-units="px" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:window-height="987" inkscape:window-maximized="1" inkscape:window-width="1680" inkscape:window-x="1358" inkscape:window-y="32" inkscape:zoom="5.6568542" pagecolor="#ffffff" showgrid="true">
+	<inkscape:grid  id="grid3336" originx="-290.00002" originy="-480.00087" type="xygrid"></inkscape:grid>
+</sodipodi:namedview>
+<path id="rect4476" inkscape:connector-curvature="0" inkscape:export-filename="D:\Documents\GitHub\Hyperocto\src\icons\19.png" inkscape:export-xdpi="14.249999" inkscape:export-ydpi="14.249999" class="st0" d="
+	M0,76v12h96V76H0z"/>
+<g id="g4344">
+	
+		<linearGradient id="path4229_1_" gradientUnits="userSpaceOnUse" x1="420.8702" y1="432.6726" x2="500.8018" y2="512.8243" gradientTransform="matrix(0.8 0 0 0.8 -334.8 -332.1109)">
+		<stop  offset="0" style="stop-color:#444444"/>
+		<stop  offset="1" style="stop-color:#000000"/>
+	</linearGradient>
+	
+		<path id="path4229" inkscape:export-filename="D:\Documents\GitHub\Hyperocto\src\icons\19.png" inkscape:export-xdpi="14.249999" inkscape:export-ydpi="14.249999" class="st1" d="
+		M48,0C30.7,0,16.5,13.8,16,31.1c0,0.3,0,0.6,0,0.9v16c0,6.6,5.4,12,12,12l0,0c2.2,0,4,1.8,4,4c0,2.1-1.6,3.8-3.7,4
+		c-0.1,0-0.2,0-0.3,0h-8c-6.6,0-12,5.4-12,12l0,0v4v4v4c0,2.2,1.8,4,4,4s4-1.8,4-4v-8v-4c0-0.1,0-0.3,0-0.4c0.2-2,1.9-3.6,4-3.6h8
+		c2.2,0,4,1.8,4,4v8v4c0,2.1,1.6,3.8,3.7,4c0.1,0,0.2,0,0.3,0c1.4,0,2.6-0.7,3.4-1.8c0.1-0.2,0.3-0.5,0.4-0.7c0.2-0.5,0.3-1,0.3-1.5
+		v-8v-4c0-0.1,0-0.3,0-0.4c0.2-2,1.9-3.6,4-3.6h8c2.2,0,4,1.8,4,4v8v4c0,2.1,1.6,3.8,3.7,4c0.1,0,0.2,0,0.3,0c1.4,0,2.6-0.7,3.4-1.8
+		c0.1-0.2,0.3-0.5,0.4-0.7c0.2-0.5,0.3-1,0.3-1.5v-8v-4c0-0.1,0-0.3,0-0.4c0.2-2,1.9-3.6,4-3.6h8l0,0c0.7,0,1.3,0.2,1.9,0.5
+		c0.1,0.1,0.2,0.1,0.3,0.2c0.1,0.1,0.2,0.2,0.3,0.2c0.1,0.1,0.2,0.2,0.3,0.3c0.1,0.1,0.2,0.2,0.3,0.3c0.1,0.1,0.2,0.2,0.2,0.3
+		c0.1,0.2,0.3,0.5,0.4,0.7c0.1,0.4,0.2,0.8,0.3,1.2c0,0.1,0,0.2,0,0.3l0,0v8v4c0,2.1,1.6,3.8,3.7,4c0.1,0,0.2,0,0.3,0
+		c2.2,0,4-1.8,4-4v-8v-4l0,0v-0.1l0,0c0-0.4,0-0.8-0.1-1.2l0,0l0,0c0-0.4-0.1-0.8-0.2-1.2l0,0l0,0c-0.1-0.4-0.2-0.8-0.3-1.1l0,0l0,0
+		c-0.1-0.4-0.3-0.7-0.4-1.1c-0.2-0.4-0.3-0.7-0.5-1.1l0,0c0,0,0,0,0-0.1c-0.2-0.3-0.4-0.6-0.6-0.9c0,0,0-0.1-0.1-0.1
+		c-0.2-0.3-0.4-0.6-0.7-0.9l0,0c0,0,0,0-0.1-0.1c-0.2-0.3-0.5-0.5-0.7-0.8l-0.1-0.1c-0.2-0.2-0.5-0.4-0.8-0.6
+		c-0.1-0.1-0.2-0.1-0.2-0.2c-0.2-0.2-0.5-0.4-0.7-0.5c-0.1-0.1-0.2-0.1-0.3-0.2c-0.2-0.1-0.5-0.3-0.7-0.4c-0.1-0.1-0.3-0.1-0.4-0.2
+		c-0.2-0.1-0.5-0.2-0.7-0.3c-0.1,0-0.3-0.1-0.4-0.1c-0.2-0.1-0.5-0.2-0.7-0.2s-0.3-0.1-0.5-0.1c-0.2-0.1-0.4-0.1-0.7-0.1
+		c-0.2,0-0.4-0.1-0.6-0.1s-0.4-0.1-0.6-0.1c-0.3,0-0.5,0-0.8,0l0,0h-8c-0.1,0-0.3,0-0.4,0s-0.3,0-0.4-0.1c-0.5-0.1-1-0.3-1.5-0.6
+		c-0.1-0.1-0.2-0.2-0.3-0.2c-0.2-0.2-0.4-0.4-0.6-0.6c-0.2-0.3-0.5-0.7-0.6-1c0-0.1-0.1-0.3-0.1-0.4c-0.1-0.3-0.1-0.7-0.1-1.1
+		c0-0.1,0-0.3,0-0.4c0.1-0.5,0.2-1,0.5-1.5c0.1-0.1,0.1-0.2,0.2-0.3l0,0c0.1-0.1,0.2-0.2,0.2-0.3c0.8-0.9,1.9-1.4,3.1-1.4
+		c4.1,0,7.9-2.1,10.1-5.5c0.1-0.2,0.3-0.5,0.4-0.7c0.1-0.1,0.1-0.2,0.2-0.3l0,0c0.2-0.4,0.3-0.7,0.5-1.1c0.5-1.4,0.8-2.9,0.8-4.3
+		v-16c0-0.4,0-0.8-0.1-1.2l0,0c0-1.1-0.1-2.1-0.3-3.2c-0.1-1.1-0.3-2.1-0.6-3.1c-0.8-3.1-2-6.1-3.6-8.9c-0.5-0.9-1.1-1.8-1.8-2.7
+		c-1.3-1.7-2.7-3.3-4.3-4.7c-0.8-0.7-1.6-1.4-2.5-2c-2.6-1.9-5.4-3.4-8.5-4.4c-1-0.3-2-0.6-3.1-0.9C52.9,0.3,50.5,0,48,0z M36,34
+		c5.5,0,10,4.5,10,10s-4.5,10-10,10s-10-4.5-10-10S30.5,34,36,34z M60,34c5.5,0,10,4.5,10,10s-4.5,10-10,10s-10-4.5-10-10
+		S54.5,34,60,34z M36,40c-2.2,0-4,1.8-4,4s1.8,4,4,4s4-1.8,4-4S38.2,40,36,40z M60,40c-2.1,0-3.8,1.6-4,3.7c0,0.1,0,0.2,0,0.3
+		c0,2.2,1.8,4,4,4s4-1.8,4-4S62.2,40,60,40z"/>
+</g>
 </svg>

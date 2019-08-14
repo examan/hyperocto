@@ -1,3 +1,6 @@
-node_modules
+dist
 .yarnclean
+.cache
 yarn-error.log
+node_modules
+*.zip

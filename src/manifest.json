@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Hyperocto",
   "short_name": "Hyperocto",
-  "version": "1.1.0",
+  "version": "2.0.2",
 
   "default_locale": "en",
   "description": "__MSG_MANIFEST_DESCRIPTION__",
@@ -18,11 +18,9 @@
   },
 
   "author": "Megaman",
+
   "background": {
-    "scripts": [
-      "js/common-script.js",
-      "js/background-script.js"
-    ],
+    "scripts": ["js/background-script.ts"],
     "persistent": false
   },
 
@@ -30,15 +28,15 @@
     {
       "matches": ["<all_urls>"],
       "all_frames": true,
-      "js": [
-        "js/common-script.js",
-        "js/content-script.js"
-      ]
+      "js": ["js/content-script.ts"]
     }
   ],
 
-  "permissions": [
-    "contextMenus",
-    "tabs"
-  ]
+  "browser_action": {
+    "default_icon": "icons/16.png",
+    "default_title": "Hyperocto",
+    "default_popup": "page/manual.html#popup"
+  },
+
+  "permissions": ["contextMenus", "tabs"]
 }

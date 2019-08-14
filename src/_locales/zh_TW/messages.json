@@ -1,0 +1,58 @@
+{
+  "FONT_FAMILY": {
+    "message": "\"Microsoft Jhenghei\", \"PingFang TC\", \"Source Han Sans TC\", \"Source Han Sans\", \"Source Han Sans TW\""
+  },
+  "MANIFEST_DESCRIPTION": {
+    "message": "找出相似連結並一併開啟的智慧工具"
+  },
+  "MANUAL_TITLE": {
+    "message": "幫助 - Hyperocto"
+  },
+  "MANUAL_ACTION": {
+    "message": "動作"
+  },
+  "MANUAL_SIMILARITY": {
+    "message": "連結相似度"
+  },
+  "MANUAL_HOTKEY": {
+    "message": "快速鍵"
+  },
+  "HINT": {
+    "message": "在連結上才能進行操作"
+  },
+  "HELP": {
+    "message": "需要幫助嗎？"
+  },
+  "ACTION_OPEN_NORMAL": {
+    "message": "開啟相似連結"
+  },
+  "ACTION_OPEN_STRICT": {
+    "message": "開啟相似連結（嚴謹模式）"
+  },
+  "ACTION_OPEN_SLOPPY": {
+    "message": "開啟相似連結（寬鬆模式）"
+  },
+  "MANUAL_SIMILARITY_LOW": {
+    "message": "低"
+  },
+  "MANUAL_SIMILARITY_HIGH": {
+    "message": "高"
+  },
+  "HOTKEY_OPEN_NORMAL": {
+    "message": "Alt + 滑鼠中鍵"
+  },
+  "HOTKEY_OPEN_STRICT": {
+    "message": "Ctrl + Alt + 滑鼠中鍵"
+  },
+  "HOTKEY_OPEN_SLOPPY": {
+    "message": "Shift + Alt + 滑鼠中鍵"
+  },
+  "CONFIRM_OPEN": {
+    "message": "您確定要開啟 $TAB_COUNT$ 分頁嗎？",
+    "placeholders": {
+      "tab_count": {
+        "content": "$1"
+      }
+    }
+  }
+}

@@ -1,12 +1,51 @@
 {
+  "FONT_FAMILY": {
+    "message": ""
+  },
   "MANIFEST_DESCRIPTION": {
-    "message": "Find Similar links and open them concurrently"
+    "message": "Find similar links and open them concurrently"
   },
-  "CONTEXTMENU_OPEN_ALL": {
-    "message": "Open all similar links"
+  "MANUAL_TITLE": {
+    "message": "Help - Hyperocto"
   },
-  "CONTEXTMENU_OPEN_FOLLOWING": {
-    "message": "Open following similar links"
+  "MANUAL_ACTION": {
+    "message": "Action"
+  },
+  "MANUAL_SIMILARITY": {
+    "message": "Similarity of links"
+  },
+  "MANUAL_HOTKEY": {
+    "message": "Shortcut"
+  },
+  "HINT": {
+    "message": "Only available for links"
+  },
+  "HELP": {
+    "message": "Need help?"
+  },
+  "ACTION_OPEN_NORMAL": {
+    "message": "Open similar links"
+  },
+  "ACTION_OPEN_STRICT": {
+    "message": "Open similar links (Strict Mode)"
+  },
+  "ACTION_OPEN_SLOPPY": {
+    "message": "Open similar links (Sloppy Mode)"
+  },
+  "MANUAL_SIMILARITY_LOW": {
+    "message": "Low"
+  },
+  "MANUAL_SIMILARITY_HIGH": {
+    "message": "High"
+  },
+  "HOTKEY_OPEN_NORMAL": {
+    "message": "Alt + middle-click"
+  },
+  "HOTKEY_OPEN_STRICT": {
+    "message": "Ctrl + Alt + middle-click"
+  },
+  "HOTKEY_OPEN_SLOPPY": {
+    "message": "Shift + Alt + middle-click"
   },
   "CONFIRM_OPEN": {
     "message": "Are you sure that you want to open $TAB_COUNT$ tabs?",

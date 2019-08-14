@@ -1,0 +1,132 @@
+:root {
+  cursor: default;
+  user-select: none;
+  display: flex;
+  height: 100%;
+}
+
+body {
+  margin: auto;
+  font-size: 0.8rem;
+  font-family: "Segoe WPC", "Segoe UI", "SFUIText-Light", "HelveticaNeue-Light",
+    "Noto Sans", __MSG_FONT_FAMILY__, sans-serif;
+  background-color: #f0f0f0;
+  overflow: hidden;
+  outline: 3px double #bbb;
+  outline-offset: 16px;
+}
+
+table {
+  border-collapse: collapse;
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+th {
+  color: #ddd;
+  background-color: #222;
+}
+
+td {
+  color: #222;
+  background-color: #ddd;
+}
+
+th,
+td {
+  padding: 8px 16px;
+}
+
+tr:nth-child(odd) td {
+  background-color: #eee;
+}
+
+.level {
+  width: 120px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  border-radius: 3px;
+  overflow: hidden;
+  display: flex;
+  border: 1px solid #000;
+}
+
+.level::before,
+.level::after {
+  z-index: 1;
+  position: relative;
+  margin: 2px 4px;
+  font-weight: normal;
+  color: #fff;
+}
+
+.level::before {
+  content: "__MSG_MANUAL_SIMILARITY_HIGH__";
+}
+
+.level::after {
+  margin-left: auto;
+  content: "__MSG_MANUAL_SIMILARITY_LOW__";
+}
+
+.level-color::before,
+.level-color::after {
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  display: block;
+}
+
+.level-color::before {
+  --high-color: #ff8040;
+  --medium-color: #d071c8;
+  --low-color: #4080ff;
+  left: 0;
+  background: linear-gradient(
+    to right,
+    var(--high-color) 0%,
+    var(--high-color) 20%,
+    var(--medium-color) 50%,
+    var(--low-color) 80%,
+    var(--low-color) 100%
+  );
+}
+
+.level-color::after {
+  right: 0;
+  background-color: #ccc;
+}
+
+.level.high .level-color::after {
+  width: 66%;
+}
+
+.level.medium .level-color::after {
+  width: 33%;
+}
+
+.level.low .level-color::after {
+  display: none;
+}
+
+#footer {
+  padding: 32px 0 8px 8px;
+  margin-right: -1px;
+  position: relative;
+}
+
+img {
+  display: block;
+  width: 100%;
+  image-rendering: pixelated;
+}
+
+#version {
+  position: absolute;
+  bottom: 23px;
+  right: 8px;
+  opacity: 0.3;
+}
