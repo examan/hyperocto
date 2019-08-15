@@ -17,7 +17,7 @@ function hasClientRects(element: HTMLElement): boolean {
   return Boolean(element.getClientRects().length);
 }
 
-function getSelector(targetLink: HTMLAnchorElement): string {
+function getFullSelector(targetLink: HTMLAnchorElement): string {
   const elements = getPathElements(targetLink);
   const pathSelector = elements
     .map((element): string => element.tagName)
@@ -107,21 +107,29 @@ function filterElements(
     });
 }
 
-function quertElements(
-  targetLink: HTMLAnchorElement,
-  elementSelector: string
+function queryElements(
+  parent: Element | Document,
+  selector: string,
+  targetLink: HTMLAnchorElement
 ): HTMLAnchorElement[] {
   const elements = Array.from(
-    document.querySelectorAll(elementSelector)
+    parent.querySelectorAll(selector)
   ) as HTMLAnchorElement[];
   return filterElements(elements, targetLink);
 }
 
-function isDisplay(element: HTMLElement, tableRowDisplay: string): boolean {
+function queryElementsFromDocument(
+  targetLink: HTMLAnchorElement,
+  selector: string
+): HTMLAnchorElement[] {
+  return queryElements(document, selector, targetLink);
+}
+
+function isDisplay(element: HTMLElement, displayName: string): boolean {
   return window
     .getComputedStyle(element)
     .display.split(" ")
-    .includes(tableRowDisplay);
+    .includes(displayName);
 }
 
 function isTableRow(element: HTMLElement): boolean {
@@ -134,12 +142,14 @@ function isTable(element: HTMLElement): boolean {
 
 function strictQuertElements(
   targetLink: HTMLAnchorElement,
-  elementSelector: string
+  selector: string
 ): HTMLAnchorElement[] {
   let element: HTMLElement = targetLink;
   let findTable = false;
+
   while ((element = element.parentElement)) {
-    const elements = quertElements(targetLink, elementSelector);
+    const elements = queryElements(element, selector, targetLink);
+
     if (!element.parentElement) {
       return elements;
     } else if (findTable) {
@@ -158,34 +168,36 @@ function strictQuertElements(
   }
 }
 
-function getSelectorOfMode(mode: MODE, targetLink: HTMLAnchorElement): string {
-  switch (mode) {
-    case MODE.NORMAL:
-    case MODE.STRICT:
-      return getSelector(targetLink);
-    case MODE.SLOPPY:
-      return getSimpleSelector();
-  }
-}
-
-function queryElementsOfMode(
-  mode: MODE,
-  targetLink: HTMLAnchorElement,
-  elementSelector: string
-): HTMLAnchorElement[] {
-  switch (mode) {
-    case MODE.NORMAL:
-    case MODE.SLOPPY:
-      return quertElements(targetLink, elementSelector);
-    case MODE.STRICT:
-      return strictQuertElements(targetLink, elementSelector);
-  }
+function getHandler(
+  mode: MODE
+): {
+  getSelector: (targetLink: HTMLAnchorElement) => string;
+  query: (
+    targetLink: HTMLAnchorElement,
+    selector: string
+  ) => HTMLAnchorElement[];
+} {
+  return {
+    [MODE.NORMAL]: {
+      getSelector: getFullSelector,
+      query: queryElementsFromDocument
+    },
+    [MODE.STRICT]: {
+      getSelector: getFullSelector,
+      query: strictQuertElements
+    },
+    [MODE.SLOPPY]: {
+      getSelector: getSimpleSelector,
+      query: queryElementsFromDocument
+    }
+  }[mode];
 }
 
 export function getSimilarLinks(
   targetLink: HTMLAnchorElement,
   mode: MODE
 ): HTMLAnchorElement[] {
-  const elementSelector = getSelectorOfMode(mode, targetLink);
-  return queryElementsOfMode(mode, targetLink, elementSelector);
+  const handler = getHandler(mode);
+  const selector = handler.getSelector(targetLink);
+  return handler.query(targetLink, selector);
 }
