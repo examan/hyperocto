@@ -2,7 +2,7 @@
   "license": "MIT",
   "dependencies": {},
   "scripts": {
-    "build": "parcel build -t browser --no-cache --no-source-maps --experimental-scope-hoisting src/manifest.json && cd dist && zip -r -9 -ll -v hyperocto.zip . --exclude hyperocto.zip && cd ..",
+    "build": "rm -rf dist && parcel build -t browser --no-cache --no-source-maps --experimental-scope-hoisting src/manifest.json && cd dist && zip -r -9 -ll -v hyperocto.zip . --exclude hyperocto.zip && cd ..",
     "lint": "eslint --fix 'src/**/*.ts' && tsc --noEmit"
   },
   "devDependencies": {
@@ -13,7 +13,6 @@
     "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-prettier": "^3.1.0",
     "parcel": "^1.12.3",
-    "parcel-plugin-clean-dist": "^0.0.6",
     "parcel-plugin-web-extension": "^1.5.2",
     "prettier": "^1.18.2",
     "tslint": "^5.18.0",
