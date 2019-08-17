@@ -1,37 +1,36 @@
 import { SIMILAR_NUMBER_STYLE } from "../../../lib/constant";
 import { filterAndPassItself } from "./filter-and-pass-itself";
 
-type MATH_METHOD_TYPE = "min" | "max";
+const SIMILAR_NUMBER_STYLE_ENTRIES = Array.from(SIMILAR_NUMBER_STYLE.entries());
 
 function getNumberStyleIdentity(targetLink: HTMLAnchorElement): string {
   const elements = [
     targetLink,
     ...Array.from(targetLink.getElementsByTagName("*"))
   ];
-  const stylesMap = elements.reduce(
-    (map: Map<string, number>, element: Element): Map<string, number> => {
-      const elementStyles = window.getComputedStyle(element);
-      for (const styleName of SIMILAR_NUMBER_STYLE) {
-        const elementStyle = elementStyles[styleName];
-        for (const mathMethodName of ["min", "max"] as MATH_METHOD_TYPE[]) {
-          const mathMethod = Math[mathMethodName];
-          const initialValue = mathMethodName === "max" ? 0 : Infinity;
-          const mapKey = mathMethodName + styleName;
-          const previousValue = map.has(mapKey)
-            ? map.get(mapKey)! // eslint-disable-line @typescript-eslint/no-non-null-assertion
-            : initialValue;
-          const newValue = mathMethod(
-            parseInt(elementStyle, 10),
-            previousValue
-          );
-          map.set(mapKey, newValue);
-        }
+
+  const styleNumberMetrix = elements.reduce(
+    (numberMetrix: number[][], element: Element): number[][] => {
+      const styles = window.getComputedStyle(element);
+      for (const [styleIndex, styleName] of SIMILAR_NUMBER_STYLE_ENTRIES) {
+        const styleValue = styles[styleName];
+        const styleNumber = parseInt(styleValue, 10);
+        numberMetrix[styleIndex].push(styleNumber);
       }
-      return map;
+      return numberMetrix;
     },
-    new Map<string, number>()
+    new Array(SIMILAR_NUMBER_STYLE.length).fill(null).map((): number[] => [])
   );
-  return Array.from(stylesMap.values()).join(",");
+
+  const styleNumbers = styleNumberMetrix.flatMap(
+    (styleNumberArray: number[]): number[] =>
+      [Math.max, Math.min].map(
+        (mathMethod: (...values: number[]) => number): number =>
+          mathMethod(...styleNumberArray)
+      )
+  );
+
+  return styleNumbers.join(",");
 }
 
 export function filterByNumberStyle(

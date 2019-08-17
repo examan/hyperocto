@@ -1,15 +1,13 @@
 import { BROWSER } from "../lib/browser";
 import { MODE, MESSAGETYPE } from "../lib/enums";
 
-type CONTEXT_MENU_BUILD_EVENT_NAME = "onStartup" | "onInstalled";
-
 const MODE_ENTRIES = Object.entries(MODE).filter(
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   ([key]: [string, any]): boolean => isNaN(Number(key))
 );
 
-function build(eventName: CONTEXT_MENU_BUILD_EVENT_NAME): void {
-  BROWSER.runtime[eventName].addListener((): void => {
+function build(event: chrome.runtime.RuntimeEvent): void {
+  event.addListener((): void => {
     for (const [modeName, modeValue] of MODE_ENTRIES) {
       BROWSER.contextMenus.create({
         id: `OPEN_${modeName}`,
@@ -86,11 +84,11 @@ function handler(
 }
 
 export function init(): void {
-  for (const eventName of [
-    "onStartup",
-    "onInstalled"
-  ] as CONTEXT_MENU_BUILD_EVENT_NAME[]) {
-    build(eventName);
+  for (const event of [
+    BROWSER.runtime.onStartup,
+    BROWSER.runtime.onInstalled
+  ]) {
+    build(event);
   }
 
   BROWSER.contextMenus.onClicked.addListener(handler);

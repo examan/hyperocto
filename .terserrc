@@ -1,0 +1,9 @@
+{
+  "ecma": 8,
+  "compress": {
+    "passes": 9,
+    "hoist_funs": true,
+    "hoist_vars": true,
+    "pure_getters": true
+  }
+}
