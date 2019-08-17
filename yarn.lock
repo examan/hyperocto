@@ -2086,9 +2086,9 @@ ee-first@1.1.1:
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
 electron-to-chromium@^1.3.191:
-  version "1.3.225"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.225.tgz#c6786475b5eb5f491ade01a78b82ba2c5bfdf72b"
-  integrity sha512-7W/L3jw7HYE+tUPbcVOGBmnSrlUmyZ/Uyg24QS7Vx0a9KodtNrN0r0Q/LyGHrcYMtw2rv7E49F/vTXwlV/fuaA==
+  version "1.3.232"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.232.tgz#3d812f5082b26b852bd4e98818cd86f10b6ff128"
+  integrity sha512-11F8S49B+8AJy5V540BofxvJ1tWP4wZZ0sOre6KF32evS1YSHXiUB7+TQ/mjrfzg1lirnlA8XDdU8CDcJrBCbA==
 
 elliptic@^6.0.0:
   version "6.5.0"
@@ -3995,6 +3995,11 @@ parcel-bundler@^1.9.0:
     v8-compile-cache "^2.0.0"
     ws "^5.1.1"
 
+parcel-plugin-clean-dist@^0.0.6:
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/parcel-plugin-clean-dist/-/parcel-plugin-clean-dist-0.0.6.tgz#e3da68aaadc19b258c111fc114fe68e7866bf4fb"
+  integrity sha512-zzPY/ORCzkV+V7nfyYlONLrBithrx6orJjepdBoqqb9myeV9zQZUoBY41i3QkSSnQX7ilGmWDALX2XlxC6z7Fw==
+
 parcel-plugin-web-extension@^1.5.2:
   version "1.5.2"
   resolved "https://registry.yarnpkg.com/parcel-plugin-web-extension/-/parcel-plugin-web-extension-1.5.2.tgz#f2d694464aba2e4581b419af1a62ede3cd524068"
@@ -5395,9 +5400,9 @@ symbol-tree@^3.2.2:
   integrity sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==
 
 table@^5.2.3:
-  version "5.4.5"
-  resolved "https://registry.yarnpkg.com/table/-/table-5.4.5.tgz#c8f4ea2d8fee08c0027fac27b0ec0a4fe01dfa42"
-  integrity sha512-oGa2Hl7CQjfoaogtrOHEJroOcYILTx7BZWLGsJIlzoWmB2zmguhNfPJZsWPKYek/MgCxfco54gEi31d1uN2hFA==
+  version "5.4.6"
+  resolved "https://registry.yarnpkg.com/table/-/table-5.4.6.tgz#1292d19500ce3f86053b05f0e8e7e4a3bb21079e"
+  integrity sha512-wmEc8m4fjnob4gt5riFRtTu/6+4rSe12TpAELNSqHMfF3IqnA+CH37USM6/YR3qRZv7e56kAEAtd6nKZaxe0Ug==
   dependencies:
     ajv "^6.10.2"
     lodash "^4.17.14"
