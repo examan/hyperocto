@@ -32,6 +32,15 @@
   "ACTION_OPEN_SLOPPY": {
     "message": "Open similar links (Sloppy Mode)"
   },
+  "ACTION_MARK_NORMAL": {
+    "message": "Mark similar links"
+  },
+  "ACTION_MARK_STRICT": {
+    "message": "Mark similar links (Strict Mode)"
+  },
+  "ACTION_MARK_SLOPPY": {
+    "message": "Mark similar links (Sloppy Mode)"
+  },
   "MANUAL_SIMILARITY_LOW": {
     "message": "Low"
   },

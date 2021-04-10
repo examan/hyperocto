@@ -9,25 +9,21 @@ function getNumberStyleIdentity(targetLink: HTMLAnchorElement): string {
     ...Array.from(targetLink.getElementsByTagName("*"))
   ];
 
-  const styleNumberMetrix = elements.reduce(
-    (numberMetrix: number[][], element: Element): number[][] => {
+  const styleNumbers = elements.reduce(
+    (numbers: number[], element: Element): number[] => {
+      const cloneNumbers = [...numbers];
       const styles = window.getComputedStyle(element);
       for (const [styleIndex, styleName] of SIMILAR_NUMBER_STYLE_ENTRIES) {
         const styleValue = styles[styleName];
         const styleNumber = parseInt(styleValue, 10);
-        numberMetrix[styleIndex].push(styleNumber);
+        cloneNumbers[styleIndex] = Math.max(
+          styleNumber,
+          cloneNumbers[styleIndex]
+        );
       }
-      return numberMetrix;
+      return cloneNumbers;
     },
-    new Array(SIMILAR_NUMBER_STYLE.length).fill(null).map((): number[] => [])
-  );
-
-  const styleNumbers = styleNumberMetrix.flatMap(
-    (styleNumberArray: number[]): number[] =>
-      [Math.max, Math.min].map(
-        (mathMethod: (...values: number[]) => number): number =>
-          mathMethod(...styleNumberArray)
-      )
+    [...Array(SIMILAR_NUMBER_STYLE.length)].fill(0)
   );
 
   return styleNumbers.join(",");

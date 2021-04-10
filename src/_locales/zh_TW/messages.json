@@ -32,6 +32,15 @@
   "ACTION_OPEN_SLOPPY": {
     "message": "開啟相似連結（寬鬆模式）"
   },
+  "MARK_OPEN_NORMAL": {
+    "message": "標示相似連結"
+  },
+  "MARK_OPEN_STRICT": {
+    "message": "標示相似連結（嚴謹模式）"
+  },
+  "MARK_OPEN_SLOPPY": {
+    "message": "標示相似連結（寬鬆模式）"
+  },
   "MANUAL_SIMILARITY_LOW": {
     "message": "低"
   },

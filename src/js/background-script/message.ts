@@ -12,7 +12,8 @@ function openHandler(
       0,
       {
         url,
-        index: sender.tab!.index + index + 1, // eslint-disable-line @typescript-eslint/no-non-null-assertion
+        // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+        index: sender.tab!.index + index + 1,
         active: false
       }
     );

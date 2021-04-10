@@ -4,44 +4,52 @@ import { MODE, MESSAGETYPE } from "../lib/enums";
 const MODE_ENTRIES = Object.entries(MODE).filter(
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   ([key]: [string, any]): boolean => isNaN(Number(key))
-);
+) as [string, MODE][];
+const createContextMenu = BROWSER.contextMenus.create;
 
-function build(event: chrome.runtime.RuntimeEvent): void {
-  event.addListener((): void => {
-    for (const [modeName, modeValue] of MODE_ENTRIES) {
-      BROWSER.contextMenus.create({
-        id: `OPEN_${modeName}`,
-        title: BROWSER.i18n.getMessage(`ACTION_OPEN_${modeName}`),
+function ActionMenuBuilder(
+  actionType: string,
+  separatorAfterModes: MODE[]
+): void {
+  for (const [modeName, modeValue] of MODE_ENTRIES) {
+    createContextMenu({
+      id: `${actionType}_${modeName}`,
+      title: BROWSER.i18n.getMessage(`ACTION_${actionType}_${modeName}`),
+      contexts: ["link"]
+    });
+
+    if (separatorAfterModes.includes(modeValue)) {
+      createContextMenu({
+        id: `SEPARATOR_${actionType}`,
+        type: "separator",
         contexts: ["link"]
       });
-      if (modeValue === MODE.NORMAL) {
-        BROWSER.contextMenus.create({
-          id: "SEPARATOR1",
-          type: "separator",
-          contexts: ["link"]
-        });
-      }
     }
-    BROWSER.contextMenus.create({
-      id: "HINT",
-      title: BROWSER.i18n.getMessage("HINT"),
-      enabled: false,
-      contexts: ["audio", "editable", "frame", "image", "page", "video"]
-    });
-    BROWSER.contextMenus.create({
-      id: "SEPARATOR2",
-      type: "separator",
-      contexts: ["all"]
-    });
-    BROWSER.contextMenus.create({
-      id: "HELP",
-      title: BROWSER.i18n.getMessage("HELP"),
-      contexts: ["all"]
-    });
+  }
+}
+
+function builder(): void {
+  ActionMenuBuilder("OPEN", [MODE.NORMAL, MODE.SLOPPY]);
+  ActionMenuBuilder("MARK", [MODE.SLOPPY]);
+  createContextMenu({
+    id: "HINT",
+    title: BROWSER.i18n.getMessage("HINT"),
+    enabled: false,
+    contexts: ["audio", "editable", "frame", "image", "page", "video"]
+  });
+  createContextMenu({
+    id: "SEPARATOR2",
+    type: "separator",
+    contexts: ["all"]
+  });
+  createContextMenu({
+    id: "HELP",
+    title: BROWSER.i18n.getMessage("HELP"),
+    contexts: ["all"]
   });
 }
 
-function openLinks(tabId: number, mode: MODE, frameId: number): void {
+function openLinks(tabId: number, frameId: number, mode: MODE): void {
   BROWSER.tabs.sendMessage(
     tabId,
     {
@@ -69,13 +77,13 @@ function handler(
   { menuItemId, frameId }: chrome.contextMenus.OnClickData,
   tab: chrome.tabs.Tab | undefined
 ): void {
-  const [action, modeString] = (menuItemId as string).split("_");
-  switch (action) {
+  const [actionType, modeString] = (menuItemId as string).split("_");
+  switch (actionType) {
     case "OPEN": {
       const modeName = modeString as keyof typeof MODE;
       const mode = MODE[modeName];
       // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-      openLinks(tab!.id!, mode, frameId!);
+      openLinks(tab!.id!, frameId!, mode);
       break;
     }
     case "HELP":
@@ -88,7 +96,7 @@ export function init(): void {
     BROWSER.runtime.onStartup,
     BROWSER.runtime.onInstalled
   ]) {
-    build(event);
+    event.addListener(builder);
   }
 
   BROWSER.contextMenus.onClicked.addListener(handler);
