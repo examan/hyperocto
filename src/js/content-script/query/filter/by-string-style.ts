@@ -3,7 +3,7 @@ import { filterAndPassItself } from "./filter-and-pass-itself";
 
 export function filterByStringStyle(
   targetLink: HTMLAnchorElement,
-  links: HTMLAnchorElement[]
+  links: HTMLAnchorElement[],
 ): HTMLAnchorElement[] {
   const targetLinkStyle = window.getComputedStyle(targetLink);
   return filterAndPassItself(
@@ -13,8 +13,8 @@ export function filterByStringStyle(
       const linkStyle = window.getComputedStyle(link);
       return SIMILAR_STRING_STYLE.every(
         (styleName: keyof CSSStyleDeclaration): boolean =>
-          linkStyle[styleName] === targetLinkStyle[styleName]
+          linkStyle[styleName] === targetLinkStyle[styleName],
       );
-    }
+    },
   );
 }

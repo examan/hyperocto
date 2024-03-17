@@ -1,4 +1,4 @@
-import { MESSAGETYPE, MODE } from "./enums";
+import type { MESSAGETYPE, MODE } from "./enums";
 
 export interface MessageOpenlinks {
   type: MESSAGETYPE.OPENLINKS;
@@ -10,4 +10,4 @@ export interface MessageGetlinks {
   mode: MODE;
 }
 
-export type MESSAGE = MessageOpenlinks | MessageGetlinks;
+export type MESSAGE = MessageGetlinks | MessageOpenlinks;

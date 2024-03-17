@@ -1,0 +1,24 @@
+{
+  "recommendations": [
+    "anteprimorac.html-end-tag-labels",
+    "chakrounanas.turbo-console-log",
+    "christian-kohler.npm-intellisense",
+    "dbaeumer.vscode-eslint",
+    "dzhavat.css-flexbox-cheatsheet",
+    "dzhavat.css-initial-value",
+    "editorconfig.editorconfig",
+    "esbenp.prettier-vscode",
+    "ms-ceintl.vscode-language-pack-zh-hant",
+    "nicoespeon.abracadabra",
+    "oderwat.indent-rainbow",
+    "pranaygp.vscode-css-peek",
+    "sburg.vscode-javascript-booster",
+    "vincaslt.highlight-matching-tag",
+    "visualstudioexptteam.vscodeintellicode",
+    "vscode-icons-team.vscode-icons",
+    "vue.volar",
+    "wayou.vscode-todo-highlight",
+    "yatki.vscode-surround",
+    "eamodio.gitlens"
+  ]
+}

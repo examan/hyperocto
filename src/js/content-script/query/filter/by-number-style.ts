@@ -6,7 +6,7 @@ const SIMILAR_NUMBER_STYLE_ENTRIES = Array.from(SIMILAR_NUMBER_STYLE.entries());
 function getNumberStyleIdentity(targetLink: HTMLAnchorElement): string {
   const elements = [
     targetLink,
-    ...Array.from(targetLink.getElementsByTagName("*"))
+    ...Array.from(targetLink.getElementsByTagName("*")),
   ];
 
   const styleNumberMetrix = elements.reduce(
@@ -15,19 +15,19 @@ function getNumberStyleIdentity(targetLink: HTMLAnchorElement): string {
       for (const [styleIndex, styleName] of SIMILAR_NUMBER_STYLE_ENTRIES) {
         const styleValue = styles[styleName];
         const styleNumber = parseInt(styleValue, 10);
-        numberMetrix[styleIndex].push(styleNumber);
+        numberMetrix[styleIndex]!.push(styleNumber); // eslint-disable-line @typescript-eslint/no-non-null-assertion
       }
       return numberMetrix;
     },
-    new Array(SIMILAR_NUMBER_STYLE.length).fill(null).map((): number[] => [])
+    new Array(SIMILAR_NUMBER_STYLE.length).fill(null).map((): number[] => []),
   );
 
   const styleNumbers = styleNumberMetrix.flatMap(
     (styleNumberArray: number[]): number[] =>
       [Math.max, Math.min].map(
         (mathMethod: (...values: number[]) => number): number =>
-          mathMethod(...styleNumberArray)
-      )
+          mathMethod(...styleNumberArray),
+      ),
   );
 
   return styleNumbers.join(",");
@@ -35,14 +35,13 @@ function getNumberStyleIdentity(targetLink: HTMLAnchorElement): string {
 
 export function filterByNumberStyle(
   targetLink: HTMLAnchorElement,
-  links: HTMLAnchorElement[]
+  links: HTMLAnchorElement[],
 ): HTMLAnchorElement[] {
   const targetLinkNumStyleId = getNumberStyleIdentity(targetLink);
   return filterAndPassItself(
     targetLink,
     links,
     (link: HTMLAnchorElement): boolean =>
-      getNumberStyleIdentity(link) === targetLinkNumStyleId
+      getNumberStyleIdentity(link) === targetLinkNumStyleId,
   );
-  window;
 }

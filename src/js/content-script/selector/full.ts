@@ -1,9 +1,9 @@
 import { URI_SCHEME_FILTER_SELECTOR } from "./uri-scheme-filter";
 
 function getPathElements(targetElement: HTMLAnchorElement): HTMLElement[] {
-  let element: HTMLElement = targetElement;
+  let element: HTMLElement | null = targetElement;
   const elements = [element];
-  while ((element = element.parentElement as HTMLElement)) {
+  while ((element = element.parentElement) !== null) {
     elements.unshift(element);
   }
   return elements;

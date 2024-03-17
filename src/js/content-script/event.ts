@@ -1,10 +1,7 @@
 import { MODE } from "../lib/enums";
 import { openSimilarLinks } from "./open-similar-links";
 
-const SUPPORT_AUXCLICK_EVENT = Object.prototype.hasOwnProperty.call(
-  Document.prototype,
-  "onauxclick"
-);
+const SUPPORT_AUXCLICK_EVENT = Object.hasOwn(Document.prototype, "onauxclick");
 
 const MIDDLE_CLICK_EVENT_NAME = SUPPORT_AUXCLICK_EVENT ? "auxclick" : "click";
 
@@ -13,9 +10,8 @@ function getMode({ ctrlKey, shiftKey }: MouseEvent): MODE {
     return MODE.STRICT;
   } else if (shiftKey) {
     return MODE.SLOPPY;
-  } else {
-    return MODE.NORMAL;
   }
+  return MODE.NORMAL;
 }
 
 export function init(): void {
@@ -30,13 +26,13 @@ export function init(): void {
         return;
       }
       const link = (event.target as Element).closest("a");
-      if (!link) {
+      if (link === null) {
         return;
       }
       const mode = getMode(event);
       event.preventDefault();
       openSimilarLinks(link, mode);
     },
-    true
+    true,
   );
 }

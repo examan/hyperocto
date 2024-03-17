@@ -1,10 +1,10 @@
 export enum MESSAGETYPE {
   GETLINKS,
-  OPENLINKS
+  OPENLINKS,
 }
 
 export enum MODE {
   NORMAL,
   STRICT,
-  SLOPPY
+  SLOPPY,
 }

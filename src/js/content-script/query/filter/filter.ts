@@ -1,10 +1,10 @@
 import { filterByDimension } from "./by-dimension";
-import { filterByStringStyle } from "./by-string-style";
 import { filterByNumberStyle } from "./by-number-style";
+import { filterByStringStyle } from "./by-string-style";
 
 export function filterElements(
   links: HTMLAnchorElement[],
-  targetLink: HTMLAnchorElement
+  targetLink: HTMLAnchorElement,
 ): HTMLAnchorElement[] {
   if (links.length <= 1) {
     return links;

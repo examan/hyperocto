@@ -1,6 +1,5 @@
-import { BROWSER } from "../lib/browser";
+import type { MESSAGE, MessageGetlinks } from "../lib/type";
 import { MESSAGETYPE } from "../lib/enums";
-import { MessageGetlinks, MESSAGE } from "../lib/type";
 import { openSimilarLinks } from "./open-similar-links";
 
 function getHandler({ mode }: MessageGetlinks): void {
@@ -8,11 +7,9 @@ function getHandler({ mode }: MessageGetlinks): void {
 }
 
 export function init(): void {
-  BROWSER.runtime.onMessage.addListener((message: MESSAGE): boolean => {
-    switch (message.type) {
-      case MESSAGETYPE.GETLINKS:
-        getHandler(message);
+  chrome.runtime.onMessage.addListener((message: MESSAGE) => {
+    if (message.type === MESSAGETYPE.GETLINKS) {
+      getHandler(message);
     }
-    return true;
   });
 }

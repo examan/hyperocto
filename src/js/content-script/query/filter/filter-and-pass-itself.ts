@@ -1,7 +1,7 @@
 export function filterAndPassItself(
   targetLink: HTMLAnchorElement,
   links: HTMLAnchorElement[],
-  callbackfn: (value: HTMLAnchorElement) => boolean
+  callbackfn: (value: HTMLAnchorElement) => boolean,
 ): HTMLAnchorElement[] {
   return links.filter((link: HTMLAnchorElement): boolean => {
     if (link === targetLink) {

@@ -1,33 +1,31 @@
-import { BROWSER } from "../lib/browser";
+import type { MESSAGE, MessageOpenlinks } from "../lib/type";
 import { MESSAGETYPE } from "../lib/enums";
-import { MessageOpenlinks, MESSAGE } from "../lib/type";
 
 function openHandler(
   message: MessageOpenlinks,
-  sender: chrome.runtime.MessageSender
+  sender: chrome.runtime.MessageSender,
 ): void {
   message.urls.forEach((url: string, index: number): void => {
     setTimeout(
-      (param: chrome.tabs.CreateProperties): void => BROWSER.tabs.create(param),
+      (param: chrome.tabs.CreateProperties): void => {
+        void chrome.tabs.create(param);
+      },
       0,
       {
-        url,
+        active: false,
         index: sender.tab!.index + index + 1, // eslint-disable-line @typescript-eslint/no-non-null-assertion
-        active: false
-      }
+        url,
+      },
     );
   });
 }
 
 export function init(): void {
-  BROWSER.runtime.onMessage.addListener(
-    (message: MESSAGE, sender: chrome.runtime.MessageSender): boolean => {
-      switch (message.type) {
-        case MESSAGETYPE.OPENLINKS:
-          openHandler(message, sender);
-          break;
+  chrome.runtime.onMessage.addListener(
+    (message: MESSAGE, sender: chrome.runtime.MessageSender) => {
+      if (message.type === MESSAGETYPE.OPENLINKS) {
+        openHandler(message, sender);
       }
-      return true;
-    }
+    },
   );
 }
