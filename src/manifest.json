@@ -36,7 +36,6 @@
     "default_popup": "src/page/manual.html#popup"
   },
   "permissions": [
-    "contextMenus",
-    "tabs"
+    "contextMenus"
   ]
 }
