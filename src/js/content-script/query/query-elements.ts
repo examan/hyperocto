@@ -1,13 +1,13 @@
-import { filterElements } from "./filter/filter";
+import { filterLinks } from "./filter/filter";
 
 export function queryElements(
   parent: Document | Element,
   selector: string,
   targetLink: HTMLAnchorElement,
 ): HTMLAnchorElement[] {
-  const elements = Array.from<HTMLAnchorElement>(
+  console.debug("Querying elements from:", parent);
+  const links = Array.from<HTMLAnchorElement>(
     parent.querySelectorAll(selector),
   );
-
-  return filterElements(elements, targetLink);
+  return filterLinks(links, targetLink);
 }

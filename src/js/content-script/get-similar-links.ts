@@ -31,7 +31,11 @@ export function getSimilarLinks(
   targetLink: HTMLAnchorElement,
   mode: MODE,
 ): HTMLAnchorElement[] {
+  console.debug(`Executing in mode`, MODE[mode]);
   const handler = getHandler(mode);
   const selector = handler.getSelector(targetLink);
-  return handler.query(targetLink, selector);
+  console.debug(`Generated selector:`, selector);
+  const links = handler.query(targetLink, selector);
+  console.debug(`Found similar links:`, links);
+  return links;
 }

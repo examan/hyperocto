@@ -55,7 +55,6 @@ function openLinks(tabId: number, mode: MODE, frameId: number): void {
 
 function showHelp(): void {
   try {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     void chrome.action.openPopup();
   } catch {
     void chrome.tabs.create({

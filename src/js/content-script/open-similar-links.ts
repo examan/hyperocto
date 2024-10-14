@@ -1,7 +1,6 @@
 import { MESSAGETYPE, type MODE } from "../lib/enums";
 import { THRESHOLD_TAB_CREATE_CONFIRM } from "../lib/constant";
 import { getSimilarLinks } from "./get-similar-links";
-import { getUniqLinks } from "./get-uniq-links";
 
 export function openSimilarLinks(
   targetLink: HTMLAnchorElement,
@@ -9,7 +8,7 @@ export function openSimilarLinks(
 ): void {
   const links = getSimilarLinks(targetLink, mode);
 
-  const urls = getUniqLinks(links);
+  const urls = links.map((link) => link.href);
 
   const linkCount = urls.length;
   if (
