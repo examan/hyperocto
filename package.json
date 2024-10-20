@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "vite",
     "lint": "eslint --cache --ext .ts --fix src",
-    "build": "tsc && vite build && cd dist/ && bestzip ../dist.zip *"
+    "build": "tsc && vite build && cd dist/ && sed -i 's/\"use_dynamic_url\": true/\"use_dynamic_url\": false/' manifest.json && bestzip ../dist.zip *"
   },
   "devDependencies": {
     "@crxjs/vite-plugin": "^2.0.0-beta.19",
