@@ -1,58 +1,58 @@
 {
-    "FONT_FAMILY": {
-        "message": "\"Roboto\", \"Helvetica Neue\", \"Arial\""
-    },
-    "MANIFEST_DESCRIPTION": {
-        "message": "Encuentra enlaces similares y ábrelos simultáneamente"
-    },
-    "MANUAL_TITLE": {
-        "message": "Ayuda - Hyperocto"
-    },
-    "MANUAL_ACTION": {
-        "message": "Acción"
-    },
-    "MANUAL_SIMILARITY": {
-        "message": "Similitud de enlaces"
-    },
-    "MANUAL_HOTKEY": {
-        "message": "Atajo"
-    },
-    "HINT": {
-        "message": "Solo disponible para enlaces"
-    },
-    "HELP": {
-        "message": "¿Necesitas ayuda?"
-    },
-    "ACTION_OPEN_NORMAL": {
-        "message": "Abrir enlaces similares"
-    },
-    "ACTION_OPEN_STRICT": {
-        "message": "Abrir enlaces similares (Modo Estricto)"
-    },
-    "ACTION_OPEN_FLEXIBLE": {
-        "message": "Abrir enlaces similares (Modo Flexible)"
-    },
-    "MANUAL_SIMILARITY_LOW": {
-        "message": "Baja"
-    },
-    "MANUAL_SIMILARITY_HIGH": {
-        "message": "Alta"
-    },
-    "HOTKEY_OPEN_NORMAL": {
-        "message": "Alt + clic central"
-    },
-    "HOTKEY_OPEN_STRICT": {
-        "message": "Ctrl + Alt + clic central"
-    },
-    "HOTKEY_OPEN_FLEXIBLE": {
-        "message": "Mayús + Alt + clic central"
-    },
-    "CONFIRM_OPEN": {
-        "message": "¿Estás seguro de que quieres abrir $TAB_COUNT$ pestañas?",
-        "placeholders": {
-            "tab_count": {
-                "content": "$1"
-            }
-        }
+  "FONT_FAMILY": {
+    "message": "\"Roboto\", \"Helvetica Neue\", \"Arial\""
+  },
+  "MANIFEST_DESCRIPTION": {
+    "message": "Encuentra enlaces similares y ábrelos simultáneamente"
+  },
+  "MANUAL_TITLE": {
+    "message": "Ayuda - Hyperocto"
+  },
+  "MANUAL_ACTION": {
+    "message": "Acción"
+  },
+  "MANUAL_SIMILARITY": {
+    "message": "Similitud de enlaces"
+  },
+  "MANUAL_HOTKEY": {
+    "message": "Atajo"
+  },
+  "HINT": {
+    "message": "Solo disponible para enlaces"
+  },
+  "HELP": {
+    "message": "¿Necesitas ayuda?"
+  },
+  "ACTION_OPEN_NORMAL": {
+    "message": "Abrir enlaces similares"
+  },
+  "ACTION_OPEN_STRICT": {
+    "message": "Abrir enlaces similares (Modo Estricto)"
+  },
+  "ACTION_OPEN_FLEXIBLE": {
+    "message": "Abrir enlaces similares (Modo Flexible)"
+  },
+  "MANUAL_SIMILARITY_LOW": {
+    "message": "Baja"
+  },
+  "MANUAL_SIMILARITY_HIGH": {
+    "message": "Alta"
+  },
+  "HOTKEY_OPEN_NORMAL": {
+    "message": "Alt + clic central"
+  },
+  "HOTKEY_OPEN_STRICT": {
+    "message": "Ctrl + Alt + clic central"
+  },
+  "HOTKEY_OPEN_FLEXIBLE": {
+    "message": "Shift + Alt + clic central"
+  },
+  "CONFIRM_OPEN": {
+    "message": "¿Estás seguro de que quieres abrir $TAB_COUNT$ pestañas?",
+    "placeholders": {
+      "tab_count": {
+        "content": "$1"
+      }
     }
+  }
 }

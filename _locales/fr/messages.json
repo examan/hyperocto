@@ -1,58 +1,58 @@
 {
-    "FONT_FAMILY": {
-        "message": "\"Roboto\", \"Helvetica Neue\", \"Arial\""
-    },
-    "MANIFEST_DESCRIPTION": {
-        "message": "Trouvez des liens similaires et ouvrez-les simultanément"
-    },
-    "MANUAL_TITLE": {
-        "message": "Aide - Hyperocto"
-    },
-    "MANUAL_ACTION": {
-        "message": "Action"
-    },
-    "MANUAL_SIMILARITY": {
-        "message": "Similitude des liens"
-    },
-    "MANUAL_HOTKEY": {
-        "message": "Raccourci"
-    },
-    "HINT": {
-        "message": "Disponible uniquement pour les liens"
-    },
-    "HELP": {
-        "message": "Besoin d'aide ?"
-    },
-    "ACTION_OPEN_NORMAL": {
-        "message": "Ouvrir les liens similaires"
-    },
-    "ACTION_OPEN_STRICT": {
-        "message": "Ouvrir les liens similaires (Mode Strict)"
-    },
-    "ACTION_OPEN_FLEXIBLE": {
-        "message": "Ouvrir les liens similaires (Mode Flexible)"
-    },
-    "MANUAL_SIMILARITY_LOW": {
-        "message": "Faible"
-    },
-    "MANUAL_SIMILARITY_HIGH": {
-        "message": "Élevée"
-    },
-    "HOTKEY_OPEN_NORMAL": {
-        "message": "Alt + clic milieu"
-    },
-    "HOTKEY_OPEN_STRICT": {
-        "message": "Ctrl + Alt + clic milieu"
-    },
-    "HOTKEY_OPEN_FLEXIBLE": {
-        "message": "Maj + Alt + clic milieu"
-    },
-    "CONFIRM_OPEN": {
-        "message": "Êtes-vous sûr de vouloir ouvrir $TAB_COUNT$ onglets ?",
-        "placeholders": {
-            "tab_count": {
-                "content": "$1"
-            }
-        }
+  "FONT_FAMILY": {
+    "message": "\"Roboto\", \"Helvetica Neue\", \"Arial\""
+  },
+  "MANIFEST_DESCRIPTION": {
+    "message": "Trouvez des liens similaires et ouvrez-les simultanément"
+  },
+  "MANUAL_TITLE": {
+    "message": "Aide - Hyperocto"
+  },
+  "MANUAL_ACTION": {
+    "message": "Action"
+  },
+  "MANUAL_SIMILARITY": {
+    "message": "Similitude des liens"
+  },
+  "MANUAL_HOTKEY": {
+    "message": "Raccourci"
+  },
+  "HINT": {
+    "message": "Disponible uniquement pour les liens"
+  },
+  "HELP": {
+    "message": "Besoin d'aide ?"
+  },
+  "ACTION_OPEN_NORMAL": {
+    "message": "Ouvrir les liens similaires"
+  },
+  "ACTION_OPEN_STRICT": {
+    "message": "Ouvrir les liens similaires (Mode Strict)"
+  },
+  "ACTION_OPEN_FLEXIBLE": {
+    "message": "Ouvrir les liens similaires (Mode Flexible)"
+  },
+  "MANUAL_SIMILARITY_LOW": {
+    "message": "Faible"
+  },
+  "MANUAL_SIMILARITY_HIGH": {
+    "message": "Élevée"
+  },
+  "HOTKEY_OPEN_NORMAL": {
+    "message": "Alt + clic milieu"
+  },
+  "HOTKEY_OPEN_STRICT": {
+    "message": "Ctrl + Alt + clic milieu"
+  },
+  "HOTKEY_OPEN_FLEXIBLE": {
+    "message": "Shift + Alt + clic milieu"
+  },
+  "CONFIRM_OPEN": {
+    "message": "Êtes-vous sûr de vouloir ouvrir $TAB_COUNT$ onglets ?",
+    "placeholders": {
+      "tab_count": {
+        "content": "$1"
+      }
     }
+  }
 }
