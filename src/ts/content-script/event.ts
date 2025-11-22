@@ -1,6 +1,5 @@
 import type { MODE } from "../lib/type";
 import { openSimilarLinks } from "./open-similar-links";
-import * as R from "remeda";
 
 const SUPPORT_AUXCLICK_EVENT = Object.hasOwn(Document.prototype, "onauxclick");
 
@@ -23,20 +22,22 @@ export function init(): void {
     MIDDLE_CLICK_EVENT_NAME,
     (event: MouseEvent): void => {
       if (
-        R.anyPass(event, [
-          R.isNot(R.hasSubObject({ button: 1 })),
-          R.hasSubObject({ altKey: false }),
-          R.hasSubObject({ shiftKey: true, ctrlKey: true }),
-        ])
+        event.button !== 1 ||
+        !event.altKey ||
+        (event.shiftKey && event.ctrlKey)
       ) {
         return;
       }
+
       const link = (event.target as Element).closest("a");
+
       if (link === null) {
         return;
       }
-      const mode = getMode(event);
+
       event.preventDefault();
+
+      const mode = getMode(event);
       openSimilarLinks(link, mode);
     },
     true,
