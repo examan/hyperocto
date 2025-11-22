@@ -1,0 +1,58 @@
+{
+    "FONT_FAMILY": {
+        "message": ""
+    },
+    "MANIFEST_DESCRIPTION": {
+        "message": "Maghanap ng magkakatulad na mga link at buksan nang sabay-sabay"
+    },
+    "MANUAL_TITLE": {
+        "message": "Tulong - Hyperocto"
+    },
+    "MANUAL_ACTION": {
+        "message": "Aksyon"
+    },
+    "MANUAL_SIMILARITY": {
+        "message": "Pagkakatulad ng mga link"
+    },
+    "MANUAL_HOTKEY": {
+        "message": "Mabilis na key"
+    },
+    "HINT": {
+        "message": "Magagamit lamang para sa mga link"
+    },
+    "HELP": {
+        "message": "Kailangan ng tulong?"
+    },
+    "ACTION_OPEN_NORMAL": {
+        "message": "Buksan ang magkakatulad na mga link"
+    },
+    "ACTION_OPEN_STRICT": {
+        "message": "Buksan ang magkakatulad na mga link (Mahigpit na Mode)"
+    },
+    "ACTION_OPEN_FLEXIBLE": {
+        "message": "Buksan ang magkakatulad na mga link (Maaliwalas na Mode)"
+    },
+    "MANUAL_SIMILARITY_LOW": {
+        "message": "Mababa"
+    },
+    "MANUAL_SIMILARITY_HIGH": {
+        "message": "Mataas"
+    },
+    "HOTKEY_OPEN_NORMAL": {
+        "message": "Alt + gitnang-click"
+    },
+    "HOTKEY_OPEN_STRICT": {
+        "message": "Ctrl + Alt + gitnang-click"
+    },
+    "HOTKEY_OPEN_FLEXIBLE": {
+        "message": "Shift + Alt + gitnang-click"
+    },
+    "CONFIRM_OPEN": {
+        "message": "Sigurado ka bang gusto mong buksan ang $TAB_COUNT$ tabs?",
+        "placeholders": {
+            "tab_count": {
+                "content": "$1"
+            }
+        }
+    }
+}

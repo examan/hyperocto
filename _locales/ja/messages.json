@@ -1,0 +1,58 @@
+{
+    "FONT_FAMILY": {
+        "message": ""
+    },
+    "MANIFEST_DESCRIPTION": {
+        "message": "È°û‰ºº?ó„??™„É≥?Ø„?Ë¶ã„Å§?ë„Å¶‰∏Ä?¨„Åß?ã„??π„??º„??Ñ„Éº??
+    },
+    "MANUAL_TITLE": {
+        "message": "?ò„É´??- Hyperocto"
+    },
+    "MANUAL_ACTION": {
+        "message": "?ç‰?"
+    },
+    "MANUAL_SIMILARITY": {
+        "message": "?™„É≥?Ø„ÅÆÈ°û‰ººÂ∫?
+    },
+    "MANUAL_HOTKEY": {
+        "message": "?∑„Éß?º„??´„??à„Ç≠??
+    },
+    "HINT": {
+        "message": "?™„É≥?Ø‰??ß„ÅÆ?øÊ?‰Ωú„Åß?ç„Åæ??
+    },
+    "HELP": {
+        "message": "?ò„É´?ó„?ÂøÖË??ß„??ãÔ?"
+    },
+    "ACTION_OPEN_NORMAL": {
+        "message": "È°û‰ºº?™„É≥?Ø„??ã„?"
+    },
+    "ACTION_OPEN_STRICT": {
+        "message": "È°û‰ºº?™„É≥?Ø„??ã„?ÔºàÂé≥?º„É¢?º„?Ôº?
+    },
+    "ACTION_OPEN_FLEXIBLE": {
+        "message": "È°û‰ºº?™„É≥?Ø„??ã„?ÔºàÁ∑©?å„É¢?º„?Ôº?
+    },
+    "MANUAL_SIMILARITY_LOW": {
+        "message": "‰Ω?
+    },
+    "MANUAL_SIMILARITY_HIGH": {
+        "message": "È´?
+    },
+    "HOTKEY_OPEN_NORMAL": {
+        "message": "Alt + ‰∏≠„ÇØ?™„???
+    },
+    "HOTKEY_OPEN_STRICT": {
+        "message": "Ctrl + Alt + ‰∏≠„ÇØ?™„???
+    },
+    "HOTKEY_OPEN_FLEXIBLE": {
+        "message": "Shift + Alt + ‰∏≠„ÇØ?™„???
+    },
+    "CONFIRM_OPEN": {
+        "message": "$TAB_COUNT$ ?ã„ÅÆ?ø„??íÈ??ç„Åæ?ô„?Ôº?,
+        "placeholders": {
+            "tab_count": {
+                "content": "$1"
+            }
+        }
+    }
+}

@@ -1,0 +1,58 @@
+{
+    "FONT_FAMILY": {
+        "message": ""
+    },
+    "MANIFEST_DESCRIPTION": {
+        "message": "Trova link simili e aprili contemporaneamente"
+    },
+    "MANUAL_TITLE": {
+        "message": "Aiuto - Hyperocto"
+    },
+    "MANUAL_ACTION": {
+        "message": "Azione"
+    },
+    "MANUAL_SIMILARITY": {
+        "message": "Somiglianza dei link"
+    },
+    "MANUAL_HOTKEY": {
+        "message": "Scorciatoia"
+    },
+    "HINT": {
+        "message": "Disponibile solo per i link"
+    },
+    "HELP": {
+        "message": "Hai bisogno di aiuto?"
+    },
+    "ACTION_OPEN_NORMAL": {
+        "message": "Apri link simili"
+    },
+    "ACTION_OPEN_STRICT": {
+        "message": "Apri link simili (Modalit? rigorosa)"
+    },
+    "ACTION_OPEN_FLEXIBLE": {
+        "message": "Apri link simili (Modalit? flessibile)"
+    },
+    "MANUAL_SIMILARITY_LOW": {
+        "message": "Bassa"
+    },
+    "MANUAL_SIMILARITY_HIGH": {
+        "message": "Alta"
+    },
+    "HOTKEY_OPEN_NORMAL": {
+        "message": "Alt + clic centrale"
+    },
+    "HOTKEY_OPEN_STRICT": {
+        "message": "Ctrl + Alt + clic centrale"
+    },
+    "HOTKEY_OPEN_FLEXIBLE": {
+        "message": "Maiusc + Alt + clic centrale"
+    },
+    "CONFIRM_OPEN": {
+        "message": "Sei sicuro di voler aprire $TAB_COUNT$ schede?",
+        "placeholders": {
+            "tab_count": {
+                "content": "$1"
+            }
+        }
+    }
+}

@@ -29,8 +29,8 @@
   "ACTION_OPEN_STRICT": {
     "message": "Open similar links (Strict Mode)"
   },
-  "ACTION_OPEN_SLOPPY": {
-    "message": "Open similar links (Sloppy Mode)"
+  "ACTION_OPEN_FLEXIBLE": {
+    "message": "Open similar links (Flexible Mode)"
   },
   "MANUAL_SIMILARITY_LOW": {
     "message": "Low"
@@ -44,7 +44,7 @@
   "HOTKEY_OPEN_STRICT": {
     "message": "Ctrl + Alt + middle-click"
   },
-  "HOTKEY_OPEN_SLOPPY": {
+  "HOTKEY_OPEN_FLEXIBLE": {
     "message": "Shift + Alt + middle-click"
   },
   "CONFIRM_OPEN": {

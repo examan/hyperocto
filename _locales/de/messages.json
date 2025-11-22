@@ -1,0 +1,58 @@
+{
+    "FONT_FAMILY": {
+        "message": ""
+    },
+    "MANIFEST_DESCRIPTION": {
+        "message": "?hnliche Links finden und gleichzeitig öffnen"
+    },
+    "MANUAL_TITLE": {
+        "message": "Hilfe - Hyperocto"
+    },
+    "MANUAL_ACTION": {
+        "message": "Aktion"
+    },
+    "MANUAL_SIMILARITY": {
+        "message": "Link-?hnlichkeit"
+    },
+    "MANUAL_HOTKEY": {
+        "message": "Tastenkürzel"
+    },
+    "HINT": {
+        "message": "Nur auf Links verfügbar"
+    },
+    "HELP": {
+        "message": "Benötigen Sie Hilfe?"
+    },
+    "ACTION_OPEN_NORMAL": {
+        "message": "?hnliche Links öffnen"
+    },
+    "ACTION_OPEN_STRICT": {
+        "message": "?hnliche Links öffnen (Strenger Modus)"
+    },
+    "ACTION_OPEN_FLEXIBLE": {
+        "message": "?hnliche Links öffnen (Lockerer Modus)"
+    },
+    "MANUAL_SIMILARITY_LOW": {
+        "message": "Niedrig"
+    },
+    "MANUAL_SIMILARITY_HIGH": {
+        "message": "Hoch"
+    },
+    "HOTKEY_OPEN_NORMAL": {
+        "message": "Alt + Mittelklick"
+    },
+    "HOTKEY_OPEN_STRICT": {
+        "message": "Strg + Alt + Mittelklick"
+    },
+    "HOTKEY_OPEN_FLEXIBLE": {
+        "message": "Umschalt + Alt + Mittelklick"
+    },
+    "CONFIRM_OPEN": {
+        "message": "Möchten Sie wirklich $TAB_COUNT$ Tabs öffnen?",
+        "placeholders": {
+            "tab_count": {
+                "content": "$1"
+            }
+        }
+    }
+}

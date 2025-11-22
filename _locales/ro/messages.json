@@ -1,0 +1,58 @@
+{
+    "FONT_FAMILY": {
+        "message": ""
+    },
+    "MANIFEST_DESCRIPTION": {
+        "message": "G?si?i linkuri similare ?i deschide?i-le simultan"
+    },
+    "MANUAL_TITLE": {
+        "message": "Ajutor - Hyperocto"
+    },
+    "MANUAL_ACTION": {
+        "message": "Ac?iune"
+    },
+    "MANUAL_SIMILARITY": {
+        "message": "Similaritatea linkurilor"
+    },
+    "MANUAL_HOTKEY": {
+        "message": "Comand? rapid?"
+    },
+    "HINT": {
+        "message": "Disponibil doar pentru linkuri"
+    },
+    "HELP": {
+        "message": "Ave?i nevoie de ajutor?"
+    },
+    "ACTION_OPEN_NORMAL": {
+        "message": "Deschide linkuri similare"
+    },
+    "ACTION_OPEN_STRICT": {
+        "message": "Deschide linkuri similare (Mod strict)"
+    },
+    "ACTION_OPEN_FLEXIBLE": {
+        "message": "Deschide linkuri similare (Mod flexibil)"
+    },
+    "MANUAL_SIMILARITY_LOW": {
+        "message": "Sc?zut"
+    },
+    "MANUAL_SIMILARITY_HIGH": {
+        "message": "Ridicat"
+    },
+    "HOTKEY_OPEN_NORMAL": {
+        "message": "Alt + clic mijloc"
+    },
+    "HOTKEY_OPEN_STRICT": {
+        "message": "Ctrl + Alt + clic mijloc"
+    },
+    "HOTKEY_OPEN_FLEXIBLE": {
+        "message": "Shift + Alt + clic mijloc"
+    },
+    "CONFIRM_OPEN": {
+        "message": "Sigur dori?i s? deschide?i $TAB_COUNT$ file?",
+        "placeholders": {
+            "tab_count": {
+                "content": "$1"
+            }
+        }
+    }
+}

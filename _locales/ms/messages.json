@@ -1,0 +1,58 @@
+{
+    "FONT_FAMILY": {
+        "message": ""
+    },
+    "MANIFEST_DESCRIPTION": {
+        "message": "Cari pautan serupa dan buka serentak"
+    },
+    "MANUAL_TITLE": {
+        "message": "Bantuan - Hyperocto"
+    },
+    "MANUAL_ACTION": {
+        "message": "Tindakan"
+    },
+    "MANUAL_SIMILARITY": {
+        "message": "Persamaan pautan"
+    },
+    "MANUAL_HOTKEY": {
+        "message": "Pintasan papan kekunci"
+    },
+    "HINT": {
+        "message": "Hanya tersedia untuk pautan"
+    },
+    "HELP": {
+        "message": "Perlukan bantuan?"
+    },
+    "ACTION_OPEN_NORMAL": {
+        "message": "Buka pautan serupa"
+    },
+    "ACTION_OPEN_STRICT": {
+        "message": "Buka pautan serupa (Mod ketat)"
+    },
+    "ACTION_OPEN_FLEXIBLE": {
+        "message": "Buka pautan serupa (Mod longgar)"
+    },
+    "MANUAL_SIMILARITY_LOW": {
+        "message": "Rendah"
+    },
+    "MANUAL_SIMILARITY_HIGH": {
+        "message": "Tinggi"
+    },
+    "HOTKEY_OPEN_NORMAL": {
+        "message": "Alt + klik tengah"
+    },
+    "HOTKEY_OPEN_STRICT": {
+        "message": "Ctrl + Alt + klik tengah"
+    },
+    "HOTKEY_OPEN_FLEXIBLE": {
+        "message": "Shift + Alt + klik tengah"
+    },
+    "CONFIRM_OPEN": {
+        "message": "Adakah anda pasti untuk membuka $TAB_COUNT$ tab?",
+        "placeholders": {
+            "tab_count": {
+                "content": "$1"
+            }
+        }
+    }
+}

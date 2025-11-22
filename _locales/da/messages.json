@@ -1,0 +1,58 @@
+{
+    "FONT_FAMILY": {
+        "message": ""
+    },
+    "MANIFEST_DESCRIPTION": {
+        "message": "Find lignende links og åbn dem samtidig"
+    },
+    "MANUAL_TITLE": {
+        "message": "Hjælp - Hyperocto"
+    },
+    "MANUAL_ACTION": {
+        "message": "Handling"
+    },
+    "MANUAL_SIMILARITY": {
+        "message": "Linklighed"
+    },
+    "MANUAL_HOTKEY": {
+        "message": "Genvej"
+    },
+    "HINT": {
+        "message": "Kun tilgængelig for links"
+    },
+    "HELP": {
+        "message": "Brug for hjælp?"
+    },
+    "ACTION_OPEN_NORMAL": {
+        "message": "?bn lignende links"
+    },
+    "ACTION_OPEN_STRICT": {
+        "message": "?bn lignende links (Streng tilstand)"
+    },
+    "ACTION_OPEN_FLEXIBLE": {
+        "message": "?bn lignende links (Fleksibel tilstand)"
+    },
+    "MANUAL_SIMILARITY_LOW": {
+        "message": "Lav"
+    },
+    "MANUAL_SIMILARITY_HIGH": {
+        "message": "Høj"
+    },
+    "HOTKEY_OPEN_NORMAL": {
+        "message": "Alt + midterklik"
+    },
+    "HOTKEY_OPEN_STRICT": {
+        "message": "Ctrl + Alt + midterklik"
+    },
+    "HOTKEY_OPEN_FLEXIBLE": {
+        "message": "Shift + Alt + midterklik"
+    },
+    "CONFIRM_OPEN": {
+        "message": "Er du sikker på, at du vil åbne $TAB_COUNT$ faner?",
+        "placeholders": {
+            "tab_count": {
+                "content": "$1"
+            }
+        }
+    }
+}

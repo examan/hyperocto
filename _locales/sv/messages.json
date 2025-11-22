@@ -1,0 +1,58 @@
+{
+    "FONT_FAMILY": {
+        "message": ""
+    },
+    "MANIFEST_DESCRIPTION": {
+        "message": "Hitta liknande länkar och öppna dem samtidigt"
+    },
+    "MANUAL_TITLE": {
+        "message": "Hjälp - Hyperocto"
+    },
+    "MANUAL_ACTION": {
+        "message": "?tgärd"
+    },
+    "MANUAL_SIMILARITY": {
+        "message": "Länklikhet"
+    },
+    "MANUAL_HOTKEY": {
+        "message": "Kortkommando"
+    },
+    "HINT": {
+        "message": "Endast tillgänglig för länkar"
+    },
+    "HELP": {
+        "message": "Behöver du hjälp?"
+    },
+    "ACTION_OPEN_NORMAL": {
+        "message": "?ppna liknande länkar"
+    },
+    "ACTION_OPEN_STRICT": {
+        "message": "?ppna liknande länkar (Strikt läge)"
+    },
+    "ACTION_OPEN_FLEXIBLE": {
+        "message": "?ppna liknande länkar (Flexibelt läge)"
+    },
+    "MANUAL_SIMILARITY_LOW": {
+        "message": "Låg"
+    },
+    "MANUAL_SIMILARITY_HIGH": {
+        "message": "Hög"
+    },
+    "HOTKEY_OPEN_NORMAL": {
+        "message": "Alt + mittenklick"
+    },
+    "HOTKEY_OPEN_STRICT": {
+        "message": "Ctrl + Alt + mittenklick"
+    },
+    "HOTKEY_OPEN_FLEXIBLE": {
+        "message": "Shift + Alt + mittenklick"
+    },
+    "CONFIRM_OPEN": {
+        "message": "?r du säker på att du vill öppna $TAB_COUNT$ flikar?",
+        "placeholders": {
+            "tab_count": {
+                "content": "$1"
+            }
+        }
+    }
+}

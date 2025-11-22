@@ -1,0 +1,58 @@
+{
+    "FONT_FAMILY": {
+        "message": ""
+    },
+    "MANIFEST_DESCRIPTION": {
+        "message": "समान लिं�? ख�?ज�?�?और उन्हे�? ए�? सा�?ख�?ल�?�?
+    },
+    "MANUAL_TITLE": {
+        "message": "सहायता - Hyperocto"
+    },
+    "MANUAL_ACTION": {
+        "message": "क�?रिया"
+    },
+    "MANUAL_SIMILARITY": {
+        "message": "लिं�? क�? समानता"
+    },
+    "MANUAL_HOTKEY": {
+        "message": "श�?र�?ट�?�?क�?ं�?ी"
+    },
+    "HINT": {
+        "message": "क�?वल लिं�? क�? लि�?उपलब्ध"
+    },
+    "HELP": {
+        "message": "क�?या आपक�? मद�?चाहि�?"
+    },
+    "ACTION_OPEN_NORMAL": {
+        "message": "समान लिं�? ख�?ल�?�?
+    },
+    "ACTION_OPEN_STRICT": {
+        "message": "समान लिं�? ख�?ल�?�?(स�?्त म�?�?"
+    },
+    "ACTION_OPEN_FLEXIBLE": {
+        "message": "समान लिं�? ख�?ल�?�?(ल�?ीला म�?�?"
+    },
+    "MANUAL_SIMILARITY_LOW": {
+        "message": "कम"
+    },
+    "MANUAL_SIMILARITY_HIGH": {
+        "message": "उ�?्�?"
+    },
+    "HOTKEY_OPEN_NORMAL": {
+        "message": "Alt + मध्य क�?लि�?
+    },
+    "HOTKEY_OPEN_STRICT": {
+        "message": "Ctrl + Alt + मध्य क�?लि�?
+    },
+    "HOTKEY_OPEN_FLEXIBLE": {
+        "message": "Shift + Alt + मध्य क�?लि�?
+    },
+    "CONFIRM_OPEN": {
+        "message": "क�?या आप वाक�? $TAB_COUNT$ ट�?�?ख�?लन�?चाहत�?ह�?�?",
+        "placeholders": {
+            "tab_count": {
+                "content": "$1"
+            }
+        }
+    }
+}

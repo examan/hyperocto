@@ -1,0 +1,58 @@
+{
+    "FONT_FAMILY": {
+        "message": ""
+    },
+    "MANIFEST_DESCRIPTION": {
+        "message": "Tafuta viungo vinavyofanana na uvifungue kwa pamoja"
+    },
+    "MANUAL_TITLE": {
+        "message": "Msaada - Hyperocto"
+    },
+    "MANUAL_ACTION": {
+        "message": "Kitendo"
+    },
+    "MANUAL_SIMILARITY": {
+        "message": "Kufanana kwa viungo"
+    },
+    "MANUAL_HOTKEY": {
+        "message": "Ufunguo wa mkato"
+    },
+    "HINT": {
+        "message": "Inapatikana kwa viungo tu"
+    },
+    "HELP": {
+        "message": "Je, unahitaji msaada?"
+    },
+    "ACTION_OPEN_NORMAL": {
+        "message": "Fungua viungo vinavyofanana"
+    },
+    "ACTION_OPEN_STRICT": {
+        "message": "Fungua viungo vinavyofanana (Hali kali)"
+    },
+    "ACTION_OPEN_FLEXIBLE": {
+        "message": "Fungua viungo vinavyofanana (Hali laini)"
+    },
+    "MANUAL_SIMILARITY_LOW": {
+        "message": "Chini"
+    },
+    "MANUAL_SIMILARITY_HIGH": {
+        "message": "Juu"
+    },
+    "HOTKEY_OPEN_NORMAL": {
+        "message": "Alt + bonyeza katikati"
+    },
+    "HOTKEY_OPEN_STRICT": {
+        "message": "Ctrl + Alt + bonyeza katikati"
+    },
+    "HOTKEY_OPEN_FLEXIBLE": {
+        "message": "Shift + Alt + bonyeza katikati"
+    },
+    "CONFIRM_OPEN": {
+        "message": "Je, una uhakika unataka kufungua vichupo $TAB_COUNT$?",
+        "placeholders": {
+            "tab_count": {
+                "content": "$1"
+            }
+        }
+    }
+}

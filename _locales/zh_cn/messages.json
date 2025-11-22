@@ -3,52 +3,52 @@
     "message": "\"Microsoft YaHei\", \"PingFang SC\", \"Hiragino Sans GB\", \"Source Han Sans SC\", \"Source Han Sans CN\", \"Source Han Sans\""
   },
   "MANIFEST_DESCRIPTION": {
-    "message": "找出相似链接并一并打开的智能工具"
+    "message": "?�出?�似?�接并�?并�?开?�智?�工??
   },
   "MANUAL_TITLE": {
     "message": "帮助 - Hyperocto"
   },
   "MANUAL_ACTION": {
-    "message": "操作"
+    "message": "?��?"
   },
   "MANUAL_SIMILARITY": {
-    "message": "链接相似度"
+    "message": "?�接?�似�?
   },
   "MANUAL_HOTKEY": {
-    "message": "快捷键"
+    "message": "快捷??
   },
   "HINT": {
-    "message": "在链接上才能进行操作"
+    "message": "?�链?��??�能进�??��?"
   },
   "HELP": {
-    "message": "需要帮助吗？"
+    "message": "?�要帮?��?�?
   },
   "ACTION_OPEN_NORMAL": {
-    "message": "打开相似链接"
+    "message": "?��??�似?�接"
   },
   "ACTION_OPEN_STRICT": {
-    "message": "打开相似链接（严谨模式）"
+    "message": "?��??�似?�接（严谨模式�?"
   },
-  "ACTION_OPEN_SLOPPY": {
-    "message": "打开相似链接（宽松模式）"
+  "ACTION_OPEN_FLEXIBLE": {
+    "message": "?��??�似?�接（宽?�模式�?"
   },
   "MANUAL_SIMILARITY_LOW": {
-    "message": "低"
+    "message": "�?
   },
   "MANUAL_SIMILARITY_HIGH": {
-    "message": "高"
+    "message": "�?
   },
   "HOTKEY_OPEN_NORMAL": {
-    "message": "Alt + 鼠标中键"
+    "message": "Alt + 鼠�?中键"
   },
   "HOTKEY_OPEN_STRICT": {
-    "message": "Ctrl + Alt + 鼠标中键"
+    "message": "Ctrl + Alt + 鼠�?中键"
   },
-  "HOTKEY_OPEN_SLOPPY": {
-    "message": "Shift + Alt + 鼠标中键"
+  "HOTKEY_OPEN_FLEXIBLE": {
+    "message": "Shift + Alt + 鼠�?中键"
   },
   "CONFIRM_OPEN": {
-    "message": "是否确实要打开 $TAB_COUNT$ 标签页吗？",
+    "message": "?�否确�?要�?开 $TAB_COUNT$ ?�签页�?�?,
     "placeholders": {
       "tab_count": {
         "content": "$1"

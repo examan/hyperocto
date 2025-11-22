@@ -1,0 +1,58 @@
+{
+    "FONT_FAMILY": {
+        "message": ""
+    },
+    "MANIFEST_DESCRIPTION": {
+        "message": "Benzer ba?lantıları bulun ve aynı anda açın"
+    },
+    "MANUAL_TITLE": {
+        "message": "Yardım - Hyperocto"
+    },
+    "MANUAL_ACTION": {
+        "message": "İ?lem"
+    },
+    "MANUAL_SIMILARITY": {
+        "message": "Ba?lantı benzerli?i"
+    },
+    "MANUAL_HOTKEY": {
+        "message": "Kısayol tu?u"
+    },
+    "HINT": {
+        "message": "Sadece ba?lantılar için kullanılabilir"
+    },
+    "HELP": {
+        "message": "Yardıma mı ihtiyacınız var?"
+    },
+    "ACTION_OPEN_NORMAL": {
+        "message": "Benzer ba?lantıları aç"
+    },
+    "ACTION_OPEN_STRICT": {
+        "message": "Benzer ba?lantıları aç (Katı mod)"
+    },
+    "ACTION_OPEN_FLEXIBLE": {
+        "message": "Benzer ba?lantıları aç (Esnek mod)"
+    },
+    "MANUAL_SIMILARITY_LOW": {
+        "message": "Dü?ük"
+    },
+    "MANUAL_SIMILARITY_HIGH": {
+        "message": "Yüksek"
+    },
+    "HOTKEY_OPEN_NORMAL": {
+        "message": "Alt + orta tıklama"
+    },
+    "HOTKEY_OPEN_STRICT": {
+        "message": "Ctrl + Alt + orta tıklama"
+    },
+    "HOTKEY_OPEN_FLEXIBLE": {
+        "message": "Shift + Alt + orta tıklama"
+    },
+    "CONFIRM_OPEN": {
+        "message": "$TAB_COUNT$ sekme açmak istedi?inizden emin misiniz?",
+        "placeholders": {
+            "tab_count": {
+                "content": "$1"
+            }
+        }
+    }
+}

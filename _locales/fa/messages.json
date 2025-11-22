@@ -1,0 +1,58 @@
+{
+    "FONT_FAMILY": {
+        "message": ""
+    },
+    "MANIFEST_DESCRIPTION": {
+        "message": "پ?دا کرد? ???ک?�ها�??شاب? ? باز کرد? آ??�ه�?ب? ط?ر ??ز?ا?"
+    },
+    "MANUAL_TITLE": {
+        "message": "را???ا - Hyperocto"
+    },
+    "MANUAL_ACTION": {
+        "message": "ع???ات"
+    },
+    "MANUAL_SIMILARITY": {
+        "message": "شبا?ت ???ک?�ه�?
+    },
+    "MANUAL_HOTKEY": {
+        "message": "ک??د ??ا?بر"
+    },
+    "HINT": {
+        "message": "??ط برا? ???ک?�ه�?در دسترس است"
+    },
+    "HELP": {
+        "message": "??از ب? ک?ک دار?د?"
+    },
+    "ACTION_OPEN_NORMAL": {
+        "message": "باز کرد? ???ک?�ها�??شاب?"
+    },
+    "ACTION_OPEN_STRICT": {
+        "message": "باز کرد? ???ک?�ها�??شاب? (حا?ت د???)"
+    },
+    "ACTION_OPEN_FLEXIBLE": {
+        "message": "باز کرد? ???ک?�ها�??شاب? (حا?ت ا?عطا??�پذی�?"
+    },
+    "MANUAL_SIMILARITY_LOW": {
+        "message": "پا???"
+    },
+    "MANUAL_SIMILARITY_HIGH": {
+        "message": "با?ا"
+    },
+    "HOTKEY_OPEN_NORMAL": {
+        "message": "Alt + ک??ک ?سط"
+    },
+    "HOTKEY_OPEN_STRICT": {
+        "message": "Ctrl + Alt + ک??ک ?سط"
+    },
+    "HOTKEY_OPEN_FLEXIBLE": {
+        "message": "Shift + Alt + ک??ک ?سط"
+    },
+    "CONFIRM_OPEN": {
+        "message": "آ?ا ?ط?ئ? ?ست?د ک? ???�خواهی�?$TAB_COUNT$ تب باز ک??د?",
+        "placeholders": {
+            "tab_count": {
+                "content": "$1"
+            }
+        }
+    }
+}

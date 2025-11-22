@@ -1,0 +1,58 @@
+{
+    "FONT_FAMILY": {
+        "message": ""
+    },
+    "MANIFEST_DESCRIPTION": {
+        "message": "Vind vergelijkbare links en open ze tegelijkertijd"
+    },
+    "MANUAL_TITLE": {
+        "message": "Help - Hyperocto"
+    },
+    "MANUAL_ACTION": {
+        "message": "Actie"
+    },
+    "MANUAL_SIMILARITY": {
+        "message": "Gelijkenis van links"
+    },
+    "MANUAL_HOTKEY": {
+        "message": "Sneltoets"
+    },
+    "HINT": {
+        "message": "Alleen beschikbaar voor links"
+    },
+    "HELP": {
+        "message": "Hulp nodig?"
+    },
+    "ACTION_OPEN_NORMAL": {
+        "message": "Vergelijkbare links openen"
+    },
+    "ACTION_OPEN_STRICT": {
+        "message": "Vergelijkbare links openen (Strikte modus)"
+    },
+    "ACTION_OPEN_FLEXIBLE": {
+        "message": "Vergelijkbare links openen (Soepele modus)"
+    },
+    "MANUAL_SIMILARITY_LOW": {
+        "message": "Laag"
+    },
+    "MANUAL_SIMILARITY_HIGH": {
+        "message": "Hoog"
+    },
+    "HOTKEY_OPEN_NORMAL": {
+        "message": "Alt + middelklik"
+    },
+    "HOTKEY_OPEN_STRICT": {
+        "message": "Ctrl + Alt + middelklik"
+    },
+    "HOTKEY_OPEN_FLEXIBLE": {
+        "message": "Shift + Alt + middelklik"
+    },
+    "CONFIRM_OPEN": {
+        "message": "Weet je zeker dat je $TAB_COUNT$ tabbladen wilt openen?",
+        "placeholders": {
+            "tab_count": {
+                "content": "$1"
+            }
+        }
+    }
+}

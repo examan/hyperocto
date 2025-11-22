@@ -1,0 +1,58 @@
+{
+    "FONT_FAMILY": {
+        "message": ""
+    },
+    "MANIFEST_DESCRIPTION": {
+        "message": "Trouver des liens similaires et les ouvrir simultanément"
+    },
+    "MANUAL_TITLE": {
+        "message": "Aide - Hyperocto"
+    },
+    "MANUAL_ACTION": {
+        "message": "Action"
+    },
+    "MANUAL_SIMILARITY": {
+        "message": "Similarité des liens"
+    },
+    "MANUAL_HOTKEY": {
+        "message": "Raccourci"
+    },
+    "HINT": {
+        "message": "Disponible uniquement pour les liens"
+    },
+    "HELP": {
+        "message": "Besoin d'aide ?"
+    },
+    "ACTION_OPEN_NORMAL": {
+        "message": "Ouvrir les liens similaires"
+    },
+    "ACTION_OPEN_STRICT": {
+        "message": "Ouvrir les liens similaires (Mode strict)"
+    },
+    "ACTION_OPEN_FLEXIBLE": {
+        "message": "Ouvrir les liens similaires (Mode souple)"
+    },
+    "MANUAL_SIMILARITY_LOW": {
+        "message": "Faible"
+    },
+    "MANUAL_SIMILARITY_HIGH": {
+        "message": "?levée"
+    },
+    "HOTKEY_OPEN_NORMAL": {
+        "message": "Alt + clic central"
+    },
+    "HOTKEY_OPEN_STRICT": {
+        "message": "Ctrl + Alt + clic central"
+    },
+    "HOTKEY_OPEN_FLEXIBLE": {
+        "message": "Maj + Alt + clic central"
+    },
+    "CONFIRM_OPEN": {
+        "message": "Voulez-vous vraiment ouvrir $TAB_COUNT$ onglets ?",
+        "placeholders": {
+            "tab_count": {
+                "content": "$1"
+            }
+        }
+    }
+}

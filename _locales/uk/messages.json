@@ -1,0 +1,58 @@
+{
+    "FONT_FAMILY": {
+        "message": ""
+    },
+    "MANIFEST_DESCRIPTION": {
+        "message": "?найд??? под?бн? по?иланн? ?а в?дк?ий?е ?? одно?а?но"
+    },
+    "MANUAL_TITLE": {
+        "message": "?ов?дка - Hyperocto"
+    },
+    "MANUAL_ACTION": {
+        "message": "???"
+    },
+    "MANUAL_SIMILARITY": {
+        "message": "С?ож???? по?илан?"
+    },
+    "MANUAL_HOTKEY": {
+        "message": "?а???а клав??а"
+    },
+    "HINT": {
+        "message": "?о???пно ??л?ки дл? по?илан?"
+    },
+    "HELP": {
+        "message": "?о???бна допомога?"
+    },
+    "ACTION_OPEN_NORMAL": {
+        "message": "??дк?и?и под?бн? по?иланн?"
+    },
+    "ACTION_OPEN_STRICT": {
+        "message": "??дк?и?и под?бн? по?иланн? (С?во?ий ?ежим)"
+    },
+    "ACTION_OPEN_FLEXIBLE": {
+        "message": "??дк?и?и под?бн? по?иланн? (?'?кий ?ежим)"
+    },
+    "MANUAL_SIMILARITY_LOW": {
+        "message": "?из?ка"
+    },
+    "MANUAL_SIMILARITY_HIGH": {
+        "message": "?и?ока"
+    },
+    "HOTKEY_OPEN_NORMAL": {
+        "message": "Alt + ?е?едн?й кл?к"
+    },
+    "HOTKEY_OPEN_STRICT": {
+        "message": "Ctrl + Alt + ?е?едн?й кл?к"
+    },
+    "HOTKEY_OPEN_FLEXIBLE": {
+        "message": "Shift + Alt + ?е?едн?й кл?к"
+    },
+    "CONFIRM_OPEN": {
+        "message": "?и впевнен?, ?о ?о?е?е в?дк?и?и $TAB_COUNT$ вкладок?",
+        "placeholders": {
+            "tab_count": {
+                "content": "$1"
+            }
+        }
+    }
+}

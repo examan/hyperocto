@@ -1,0 +1,58 @@
+{
+    "FONT_FAMILY": {
+        "message": ""
+    },
+    "MANIFEST_DESCRIPTION": {
+        "message": "?†ÏÇ¨??ÎßÅÌÅ¨Î•?Ï∞æÏ? ?úÍ∫ºÎ≤àÏ? ?¨Î? ?§Î????ÑÍµ¨"
+    },
+    "MANUAL_TITLE": {
+        "message": "?ÑÏ?Îß?- Hyperocto"
+    },
+    "MANUAL_ACTION": {
+        "message": "?ëÏ?"
+    },
+    "MANUAL_SIMILARITY": {
+        "message": "ÎßÅÌÅ¨ ?†ÏÇ¨??
+    },
+    "MANUAL_HOTKEY": {
+        "message": "?®Ï???
+    },
+    "HINT": {
+        "message": "ÎßÅÌÅ¨?êÏ?Îß??ëÏ??????àÏäµ?àÎã§"
+    },
+    "HELP": {
+        "message": "?ÑÏ????ÑÏ??òÏ?Í∞Ä??"
+    },
+    "ACTION_OPEN_NORMAL": {
+        "message": "?†ÏÇ¨??ÎßÅÌÅ¨ ?¥Í∏∞"
+    },
+    "ACTION_OPEN_STRICT": {
+        "message": "?†ÏÇ¨??ÎßÅÌÅ¨ ?¥Í∏∞ (?ÑÍ≤© Î™®Î?)"
+    },
+    "ACTION_OPEN_FLEXIBLE": {
+        "message": "?†ÏÇ¨??ÎßÅÌÅ¨ ?¥Í∏∞ (?êÏä®??Î™®Î?)"
+    },
+    "MANUAL_SIMILARITY_LOW": {
+        "message": "?ÆÏ?"
+    },
+    "MANUAL_SIMILARITY_HIGH": {
+        "message": "?íÏ?"
+    },
+    "HOTKEY_OPEN_NORMAL": {
+        "message": "Alt + Í∞Ä?¥Îç∞ ?¥Î¶≠"
+    },
+    "HOTKEY_OPEN_STRICT": {
+        "message": "Ctrl + Alt + Í∞Ä?¥Îç∞ ?¥Î¶≠"
+    },
+    "HOTKEY_OPEN_FLEXIBLE": {
+        "message": "Shift + Alt + Í∞Ä?¥Îç∞ ?¥Î¶≠"
+    },
+    "CONFIRM_OPEN": {
+        "message": "$TAB_COUNT$Í∞úÏ? ?≠Ï? ?¨Ï?Í≤†Ïäµ?àÍ??",
+        "placeholders": {
+            "tab_count": {
+                "content": "$1"
+            }
+        }
+    }
+}

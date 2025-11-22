@@ -1,0 +1,58 @@
+{
+    "FONT_FAMILY": {
+        "message": ""
+    },
+    "MANIFEST_DESCRIPTION": {
+        "message": "ا?عث?ر ع?? ر?ابط ?شاب?ة ??تح?ا ?? ??ت ?احد"
+    },
+    "MANUAL_TITLE": {
+        "message": "ا??ساعدة - Hyperocto"
+    },
+    "MANUAL_ACTION": {
+        "message": "ا?إجراء"
+    },
+    "MANUAL_SIMILARITY": {
+        "message": "تشاب? ا?ر?ابط"
+    },
+    "MANUAL_HOTKEY": {
+        "message": "اختصار ??حة ا???ات?ح"
+    },
+    "HINT": {
+        "message": "?تاح ??ط ??ر?ابط"
+    },
+    "HELP": {
+        "message": "?? تحتاج إ?? ?ساعدة?"
+    },
+    "ACTION_OPEN_NORMAL": {
+        "message": "?تح ر?ابط ?شاب?ة"
+    },
+    "ACTION_OPEN_STRICT": {
+        "message": "?تح ر?ابط ?شاب?ة (ا??ضع ا?صار?)"
+    },
+    "ACTION_OPEN_FLEXIBLE": {
+        "message": "?تح ر?ابط ?شاب?ة (ا??ضع ا??ر?)"
+    },
+    "MANUAL_SIMILARITY_LOW": {
+        "message": "??خ?ض"
+    },
+    "MANUAL_SIMILARITY_HIGH": {
+        "message": "عا??"
+    },
+    "HOTKEY_OPEN_NORMAL": {
+        "message": "Alt + ??رة ?سط?"
+    },
+    "HOTKEY_OPEN_STRICT": {
+        "message": "Ctrl + Alt + ??رة ?سط?"
+    },
+    "HOTKEY_OPEN_FLEXIBLE": {
+        "message": "Shift + Alt + ??رة ?سط?"
+    },
+    "CONFIRM_OPEN": {
+        "message": "?? أ?ت ?تأ?د ?? أ?? تر?د ?تح $TAB_COUNT$ ع?ا?ة تب??ب?",
+        "placeholders": {
+            "tab_count": {
+                "content": "$1"
+            }
+        }
+    }
+}

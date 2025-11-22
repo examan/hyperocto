@@ -1,0 +1,58 @@
+{
+    "FONT_FAMILY": {
+        "message": ""
+    },
+    "MANIFEST_DESCRIPTION": {
+        "message": "Tìm các liên kết tương t�?v? m�?chúng cùng lúc"
+    },
+    "MANUAL_TITLE": {
+        "message": "Tr�?giúp - Hyperocto"
+    },
+    "MANUAL_ACTION": {
+        "message": "H?nh ?ộng"
+    },
+    "MANUAL_SIMILARITY": {
+        "message": "?�?tương t�?của liên kết"
+    },
+    "MANUAL_HOTKEY": {
+        "message": "Phím tắt"
+    },
+    "HINT": {
+        "message": "Ch�?kh�?dụng cho liên kết"
+    },
+    "HELP": {
+        "message": "Cần tr�?giúp?"
+    },
+    "ACTION_OPEN_NORMAL": {
+        "message": "M�?các liên kết tương t�?
+    },
+    "ACTION_OPEN_STRICT": {
+        "message": "M�?các liên kết tương t�?(Ch�??�?nghiêm ngặt)"
+    },
+    "ACTION_OPEN_FLEXIBLE": {
+        "message": "M�?các liên kết tương t�?(Ch�??�?linh hoạt)"
+    },
+    "MANUAL_SIMILARITY_LOW": {
+        "message": "Thấp"
+    },
+    "MANUAL_SIMILARITY_HIGH": {
+        "message": "Cao"
+    },
+    "HOTKEY_OPEN_NORMAL": {
+        "message": "Alt + nhấp chuột giữa"
+    },
+    "HOTKEY_OPEN_STRICT": {
+        "message": "Ctrl + Alt + nhấp chuột giữa"
+    },
+    "HOTKEY_OPEN_FLEXIBLE": {
+        "message": "Shift + Alt + nhấp chuột giữa"
+    },
+    "CONFIRM_OPEN": {
+        "message": "Bạn có chắc chắn muốn m�?$TAB_COUNT$ th�?không?",
+        "placeholders": {
+            "tab_count": {
+                "content": "$1"
+            }
+        }
+    }
+}

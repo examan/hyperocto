@@ -1,0 +1,58 @@
+{
+    "FONT_FAMILY": {
+        "message": ""
+    },
+    "MANIFEST_DESCRIPTION": {
+        "message": "Encontre links similares e abra-os simultaneamente"
+    },
+    "MANUAL_TITLE": {
+        "message": "Ajuda - Hyperocto"
+    },
+    "MANUAL_ACTION": {
+        "message": "Ação"
+    },
+    "MANUAL_SIMILARITY": {
+        "message": "Similaridade de links"
+    },
+    "MANUAL_HOTKEY": {
+        "message": "Atalho"
+    },
+    "HINT": {
+        "message": "Disponível apenas para links"
+    },
+    "HELP": {
+        "message": "Precisa de ajuda?"
+    },
+    "ACTION_OPEN_NORMAL": {
+        "message": "Abrir links similares"
+    },
+    "ACTION_OPEN_STRICT": {
+        "message": "Abrir links similares (Modo rigoroso)"
+    },
+    "ACTION_OPEN_FLEXIBLE": {
+        "message": "Abrir links similares (Modo flexível)"
+    },
+    "MANUAL_SIMILARITY_LOW": {
+        "message": "Baixa"
+    },
+    "MANUAL_SIMILARITY_HIGH": {
+        "message": "Alta"
+    },
+    "HOTKEY_OPEN_NORMAL": {
+        "message": "Alt + clique do meio"
+    },
+    "HOTKEY_OPEN_STRICT": {
+        "message": "Ctrl + Alt + clique do meio"
+    },
+    "HOTKEY_OPEN_FLEXIBLE": {
+        "message": "Shift + Alt + clique do meio"
+    },
+    "CONFIRM_OPEN": {
+        "message": "Tem certeza de que deseja abrir $TAB_COUNT$ abas?",
+        "placeholders": {
+            "tab_count": {
+                "content": "$1"
+            }
+        }
+    }
+}

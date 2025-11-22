@@ -1,8 +1,9 @@
 {
+  "$schema": "https://json.schemastore.org/chrome-manifest",
   "manifest_version": 3,
   "name": "Hyperocto",
   "short_name": "Hyperocto",
-  "version": "4.0.1",
+  "version": "5.0.0",
   "default_locale": "en",
   "description": "__MSG_MANIFEST_DESCRIPTION__",
   "icons": {
@@ -15,27 +16,29 @@
     "96": "96.png",
     "128": "128.png"
   },
-  "author": "Megaman",
   "background": {
-    "service_worker": "src/js/background-script.ts"
+    "service_worker": "src/ts/background-script.ts"
   },
   "content_scripts": [
     {
-      "matches": [
-        "<all_urls>"
-      ],
+      "matches": ["<all_urls>"],
       "all_frames": true,
-      "js": [
-        "src/js/content-script.ts"
-      ]
+      "js": ["src/ts/content-script.ts"]
     }
   ],
   "action": {
-    "default_icon": "16.png",
+    "default_icon": {
+      "16": "16.png",
+      "19": "19.png",
+      "32": "32.png",
+      "38": "38.png",
+      "48": "48.png",
+      "64": "64.png",
+      "96": "96.png",
+      "128": "128.png"
+    },
     "default_title": "Hyperocto",
     "default_popup": "src/page/manual.html#popup"
   },
-  "permissions": [
-    "contextMenus"
-  ]
+  "permissions": ["contextMenus"]
 }

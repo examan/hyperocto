@@ -1,0 +1,58 @@
+{
+    "FONT_FAMILY": {
+        "message": ""
+    },
+    "MANIFEST_DESCRIPTION": {
+        "message": "?ай?и по?ожие ???лки и о?к???? и? однов?еменно"
+    },
+    "MANUAL_TITLE": {
+        "message": "Сп?авка - Hyperocto"
+    },
+    "MANUAL_ACTION": {
+        "message": "?ей??вие"
+    },
+    "MANUAL_SIMILARITY": {
+        "message": "С?од??во ???лок"
+    },
+    "MANUAL_HOTKEY": {
+        "message": "?о???а? клави?а"
+    },
+    "HINT": {
+        "message": "?о???пно ?ол?ко дл? ???лок"
+    },
+    "HELP": {
+        "message": "??жна помо???"
+    },
+    "ACTION_OPEN_NORMAL": {
+        "message": "??к???? по?ожие ???лки"
+    },
+    "ACTION_OPEN_STRICT": {
+        "message": "??к???? по?ожие ???лки (С??огий ?ежим)"
+    },
+    "ACTION_OPEN_FLEXIBLE": {
+        "message": "??к???? по?ожие ???лки (??гкий ?ежим)"
+    },
+    "MANUAL_SIMILARITY_LOW": {
+        "message": "?изкое"
+    },
+    "MANUAL_SIMILARITY_HIGH": {
+        "message": "???окое"
+    },
+    "HOTKEY_OPEN_NORMAL": {
+        "message": "Alt + ??едний клик"
+    },
+    "HOTKEY_OPEN_STRICT": {
+        "message": "Ctrl + Alt + ??едний клик"
+    },
+    "HOTKEY_OPEN_FLEXIBLE": {
+        "message": "Shift + Alt + ??едний клик"
+    },
+    "CONFIRM_OPEN": {
+        "message": "?? ?ве?ен?, ??о ?о?и?е о?к???? $TAB_COUNT$ вкладок?",
+        "placeholders": {
+            "tab_count": {
+                "content": "$1"
+            }
+        }
+    }
+}

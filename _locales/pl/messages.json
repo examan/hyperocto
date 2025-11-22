@@ -1,0 +1,58 @@
+{
+    "FONT_FAMILY": {
+        "message": ""
+    },
+    "MANIFEST_DESCRIPTION": {
+        "message": "Znajdź podobne linki i otwórz je jednocze?nie"
+    },
+    "MANUAL_TITLE": {
+        "message": "Pomoc - Hyperocto"
+    },
+    "MANUAL_ACTION": {
+        "message": "Akcja"
+    },
+    "MANUAL_SIMILARITY": {
+        "message": "Podobie?stwo linków"
+    },
+    "MANUAL_HOTKEY": {
+        "message": "Skrót klawiszowy"
+    },
+    "HINT": {
+        "message": "Dost?pne tylko dla linków"
+    },
+    "HELP": {
+        "message": "Potrzebujesz pomocy?"
+    },
+    "ACTION_OPEN_NORMAL": {
+        "message": "Otwórz podobne linki"
+    },
+    "ACTION_OPEN_STRICT": {
+        "message": "Otwórz podobne linki (Tryb ?cis?y)"
+    },
+    "ACTION_OPEN_FLEXIBLE": {
+        "message": "Otwórz podobne linki (Tryb elastyczny)"
+    },
+    "MANUAL_SIMILARITY_LOW": {
+        "message": "Niskie"
+    },
+    "MANUAL_SIMILARITY_HIGH": {
+        "message": "Wysokie"
+    },
+    "HOTKEY_OPEN_NORMAL": {
+        "message": "Alt + ?rodkowy przycisk myszy"
+    },
+    "HOTKEY_OPEN_STRICT": {
+        "message": "Ctrl + Alt + ?rodkowy przycisk myszy"
+    },
+    "HOTKEY_OPEN_FLEXIBLE": {
+        "message": "Shift + Alt + ?rodkowy przycisk myszy"
+    },
+    "CONFIRM_OPEN": {
+        "message": "Czy na pewno chcesz otworzy? $TAB_COUNT$ kart?",
+        "placeholders": {
+            "tab_count": {
+                "content": "$1"
+            }
+        }
+    }
+}
