@@ -1,54 +1,54 @@
 {
     "FONT_FAMILY": {
-        "message": ""
+        "message": "\"Tahoma\", \"Arial\""
     },
     "MANIFEST_DESCRIPTION": {
-        "message": "پ?دا کرد? ???ک?�ها�??شاب? ? باز کرد? آ??�ه�?ب? ط?ر ??ز?ا?"
+        "message": "لینک‌های مشابه را پیدا کنید و همزمان باز کنید"
     },
     "MANUAL_TITLE": {
-        "message": "را???ا - Hyperocto"
+        "message": "راهنما - Hyperocto"
     },
     "MANUAL_ACTION": {
-        "message": "ع???ات"
+        "message": "عمل"
     },
     "MANUAL_SIMILARITY": {
-        "message": "شبا?ت ???ک?�ه�?
+        "message": "شباهت لینک"
     },
     "MANUAL_HOTKEY": {
-        "message": "ک??د ??ا?بر"
+        "message": "میانبر"
     },
     "HINT": {
-        "message": "??ط برا? ???ک?�ه�?در دسترس است"
+        "message": "فقط برای لینک‌ها موجود است"
     },
     "HELP": {
-        "message": "??از ب? ک?ک دار?د?"
+        "message": "کمک می‌خواهید؟"
     },
     "ACTION_OPEN_NORMAL": {
-        "message": "باز کرد? ???ک?�ها�??شاب?"
+        "message": "باز کردن لینک‌های مشابه"
     },
     "ACTION_OPEN_STRICT": {
-        "message": "باز کرد? ???ک?�ها�??شاب? (حا?ت د???)"
+        "message": "باز کردن لینک‌های مشابه (حالت دقیق)"
     },
     "ACTION_OPEN_FLEXIBLE": {
-        "message": "باز کرد? ???ک?�ها�??شاب? (حا?ت ا?عطا??�پذی�?"
+        "message": "باز کردن لینک‌های مشابه (حالت منعطف)"
     },
     "MANUAL_SIMILARITY_LOW": {
-        "message": "پا???"
+        "message": "کم"
     },
     "MANUAL_SIMILARITY_HIGH": {
-        "message": "با?ا"
+        "message": "زیاد"
     },
     "HOTKEY_OPEN_NORMAL": {
-        "message": "Alt + ک??ک ?سط"
+        "message": "Alt + کلیک وسط"
     },
     "HOTKEY_OPEN_STRICT": {
-        "message": "Ctrl + Alt + ک??ک ?سط"
+        "message": "Ctrl + Alt + کلیک وسط"
     },
     "HOTKEY_OPEN_FLEXIBLE": {
-        "message": "Shift + Alt + ک??ک ?سط"
+        "message": "Shift + Alt + کلیک وسط"
     },
     "CONFIRM_OPEN": {
-        "message": "آ?ا ?ط?ئ? ?ست?د ک? ???�خواهی�?$TAB_COUNT$ تب باز ک??د?",
+        "message": "آیا مطمئن هستید که می‌خواهید $TAB_COUNT$ زبانه را باز کنید؟",
         "placeholders": {
             "tab_count": {
                 "content": "$1"

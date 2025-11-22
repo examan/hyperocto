@@ -1,6 +1,6 @@
 {
     "FONT_FAMILY": {
-        "message": ""
+        "message": "\"Roboto\", \"Helvetica Neue\", \"Arial\""
     },
     "MANIFEST_DESCRIPTION": {
         "message": "Hitta liknande länkar och öppna dem samtidigt"
@@ -9,28 +9,28 @@
         "message": "Hjälp - Hyperocto"
     },
     "MANUAL_ACTION": {
-        "message": "?tgärd"
+        "message": "Åtgärd"
     },
     "MANUAL_SIMILARITY": {
         "message": "Länklikhet"
     },
     "MANUAL_HOTKEY": {
-        "message": "Kortkommando"
+        "message": "Genväg"
     },
     "HINT": {
-        "message": "Endast tillgänglig för länkar"
+        "message": "Endast tillgängligt för länkar"
     },
     "HELP": {
         "message": "Behöver du hjälp?"
     },
     "ACTION_OPEN_NORMAL": {
-        "message": "?ppna liknande länkar"
+        "message": "Öppna liknande länkar"
     },
     "ACTION_OPEN_STRICT": {
-        "message": "?ppna liknande länkar (Strikt läge)"
+        "message": "Öppna liknande länkar (Strikt läge)"
     },
     "ACTION_OPEN_FLEXIBLE": {
-        "message": "?ppna liknande länkar (Flexibelt läge)"
+        "message": "Öppna liknande länkar (Flexibelt läge)"
     },
     "MANUAL_SIMILARITY_LOW": {
         "message": "Låg"
@@ -39,16 +39,16 @@
         "message": "Hög"
     },
     "HOTKEY_OPEN_NORMAL": {
-        "message": "Alt + mittenklick"
+        "message": "Alt + mellanklick"
     },
     "HOTKEY_OPEN_STRICT": {
-        "message": "Ctrl + Alt + mittenklick"
+        "message": "Ctrl + Alt + mellanklick"
     },
     "HOTKEY_OPEN_FLEXIBLE": {
-        "message": "Shift + Alt + mittenklick"
+        "message": "Shift + Alt + mellanklick"
     },
     "CONFIRM_OPEN": {
-        "message": "?r du säker på att du vill öppna $TAB_COUNT$ flikar?",
+        "message": "Är du säker på att du vill öppna $TAB_COUNT$ flikar?",
         "placeholders": {
             "tab_count": {
                 "content": "$1"

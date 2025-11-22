@@ -1,9 +1,9 @@
 {
     "FONT_FAMILY": {
-        "message": ""
+        "message": "\"Roboto\", \"Helvetica Neue\", \"Arial\""
     },
     "MANIFEST_DESCRIPTION": {
-        "message": "Znajdź podobne linki i otwórz je jednocze?nie"
+        "message": "Znajdź podobne linki i otwórz je jednocześnie"
     },
     "MANUAL_TITLE": {
         "message": "Pomoc - Hyperocto"
@@ -12,13 +12,13 @@
         "message": "Akcja"
     },
     "MANUAL_SIMILARITY": {
-        "message": "Podobie?stwo linków"
+        "message": "Podobieństwo linków"
     },
     "MANUAL_HOTKEY": {
-        "message": "Skrót klawiszowy"
+        "message": "Skrót"
     },
     "HINT": {
-        "message": "Dost?pne tylko dla linków"
+        "message": "Dostępne tylko dla linków"
     },
     "HELP": {
         "message": "Potrzebujesz pomocy?"
@@ -27,10 +27,10 @@
         "message": "Otwórz podobne linki"
     },
     "ACTION_OPEN_STRICT": {
-        "message": "Otwórz podobne linki (Tryb ?cis?y)"
+        "message": "Otwórz podobne linki (Tryb Ścisły)"
     },
     "ACTION_OPEN_FLEXIBLE": {
-        "message": "Otwórz podobne linki (Tryb elastyczny)"
+        "message": "Otwórz podobne linki (Tryb Elastyczny)"
     },
     "MANUAL_SIMILARITY_LOW": {
         "message": "Niskie"
@@ -39,16 +39,16 @@
         "message": "Wysokie"
     },
     "HOTKEY_OPEN_NORMAL": {
-        "message": "Alt + ?rodkowy przycisk myszy"
+        "message": "Alt + środkowy przycisk"
     },
     "HOTKEY_OPEN_STRICT": {
-        "message": "Ctrl + Alt + ?rodkowy przycisk myszy"
+        "message": "Ctrl + Alt + środkowy przycisk"
     },
     "HOTKEY_OPEN_FLEXIBLE": {
-        "message": "Shift + Alt + ?rodkowy przycisk myszy"
+        "message": "Shift + Alt + środkowy przycisk"
     },
     "CONFIRM_OPEN": {
-        "message": "Czy na pewno chcesz otworzy? $TAB_COUNT$ kart?",
+        "message": "Czy na pewno chcesz otworzyć $TAB_COUNT$ kart?",
         "placeholders": {
             "tab_count": {
                 "content": "$1"

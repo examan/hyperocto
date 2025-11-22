@@ -1,58 +1,58 @@
 {
-  "FONT_FAMILY": {
-    "message": ""
-  },
-  "MANIFEST_DESCRIPTION": {
-    "message": "Find similar links and open them concurrently"
-  },
-  "MANUAL_TITLE": {
-    "message": "Help - Hyperocto"
-  },
-  "MANUAL_ACTION": {
-    "message": "Action"
-  },
-  "MANUAL_SIMILARITY": {
-    "message": "Similarity of links"
-  },
-  "MANUAL_HOTKEY": {
-    "message": "Shortcut"
-  },
-  "HINT": {
-    "message": "Only available for links"
-  },
-  "HELP": {
-    "message": "Need help?"
-  },
-  "ACTION_OPEN_NORMAL": {
-    "message": "Open similar links"
-  },
-  "ACTION_OPEN_STRICT": {
-    "message": "Open similar links (Strict Mode)"
-  },
-  "ACTION_OPEN_FLEXIBLE": {
-    "message": "Open similar links (Flexible Mode)"
-  },
-  "MANUAL_SIMILARITY_LOW": {
-    "message": "Low"
-  },
-  "MANUAL_SIMILARITY_HIGH": {
-    "message": "High"
-  },
-  "HOTKEY_OPEN_NORMAL": {
-    "message": "Alt + middle-click"
-  },
-  "HOTKEY_OPEN_STRICT": {
-    "message": "Ctrl + Alt + middle-click"
-  },
-  "HOTKEY_OPEN_FLEXIBLE": {
-    "message": "Shift + Alt + middle-click"
-  },
-  "CONFIRM_OPEN": {
-    "message": "Are you sure that you want to open $TAB_COUNT$ tabs?",
-    "placeholders": {
-      "tab_count": {
-        "content": "$1"
-      }
+    "FONT_FAMILY": {
+        "message": "\"Roboto\", \"Helvetica Neue\", \"Arial\""
+    },
+    "MANIFEST_DESCRIPTION": {
+        "message": "Find similar links and open them concurrently"
+    },
+    "MANUAL_TITLE": {
+        "message": "Help - Hyperocto"
+    },
+    "MANUAL_ACTION": {
+        "message": "Action"
+    },
+    "MANUAL_SIMILARITY": {
+        "message": "Similarity of links"
+    },
+    "MANUAL_HOTKEY": {
+        "message": "Shortcut"
+    },
+    "HINT": {
+        "message": "Only available for links"
+    },
+    "HELP": {
+        "message": "Need help?"
+    },
+    "ACTION_OPEN_NORMAL": {
+        "message": "Open similar links"
+    },
+    "ACTION_OPEN_STRICT": {
+        "message": "Open similar links (Strict Mode)"
+    },
+    "ACTION_OPEN_FLEXIBLE": {
+        "message": "Open similar links (Flexible Mode)"
+    },
+    "MANUAL_SIMILARITY_LOW": {
+        "message": "Low"
+    },
+    "MANUAL_SIMILARITY_HIGH": {
+        "message": "High"
+    },
+    "HOTKEY_OPEN_NORMAL": {
+        "message": "Alt + middle-click"
+    },
+    "HOTKEY_OPEN_STRICT": {
+        "message": "Ctrl + Alt + middle-click"
+    },
+    "HOTKEY_OPEN_FLEXIBLE": {
+        "message": "Shift + Alt + middle-click"
+    },
+    "CONFIRM_OPEN": {
+        "message": "Are you sure that you want to open $TAB_COUNT$ tabs?",
+        "placeholders": {
+            "tab_count": {
+                "content": "$1"
+            }
+        }
     }
-  }
 }

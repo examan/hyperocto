@@ -1,9 +1,9 @@
 {
     "FONT_FAMILY": {
-        "message": ""
+        "message": "\"Roboto\", \"Helvetica Neue\", \"Arial\""
     },
     "MANIFEST_DESCRIPTION": {
-        "message": "Encontre links similares e abra-os simultaneamente"
+        "message": "Encontre links semelhantes e abra-os simultaneamente"
     },
     "MANUAL_TITLE": {
         "message": "Ajuda - Hyperocto"
@@ -12,7 +12,7 @@
         "message": "Ação"
     },
     "MANUAL_SIMILARITY": {
-        "message": "Similaridade de links"
+        "message": "Semelhança de links"
     },
     "MANUAL_HOTKEY": {
         "message": "Atalho"
@@ -24,13 +24,13 @@
         "message": "Precisa de ajuda?"
     },
     "ACTION_OPEN_NORMAL": {
-        "message": "Abrir links similares"
+        "message": "Abrir links semelhantes"
     },
     "ACTION_OPEN_STRICT": {
-        "message": "Abrir links similares (Modo rigoroso)"
+        "message": "Abrir links semelhantes (Modo Estrito)"
     },
     "ACTION_OPEN_FLEXIBLE": {
-        "message": "Abrir links similares (Modo flexível)"
+        "message": "Abrir links semelhantes (Modo Flexível)"
     },
     "MANUAL_SIMILARITY_LOW": {
         "message": "Baixa"

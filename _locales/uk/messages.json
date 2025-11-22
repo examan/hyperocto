@@ -1,54 +1,54 @@
 {
     "FONT_FAMILY": {
-        "message": ""
+        "message": "\"Roboto\", \"Helvetica Neue\", \"Arial\""
     },
     "MANIFEST_DESCRIPTION": {
-        "message": "?найд??? под?бн? по?иланн? ?а в?дк?ий?е ?? одно?а?но"
+        "message": "Знаходьте схожі посилання та відкривайте їх одночасно"
     },
     "MANUAL_TITLE": {
-        "message": "?ов?дка - Hyperocto"
+        "message": "Допомога - Hyperocto"
     },
     "MANUAL_ACTION": {
-        "message": "???"
+        "message": "Дія"
     },
     "MANUAL_SIMILARITY": {
-        "message": "С?ож???? по?илан?"
+        "message": "Схожість посилань"
     },
     "MANUAL_HOTKEY": {
-        "message": "?а???а клав??а"
+        "message": "Гаряча клавіша"
     },
     "HINT": {
-        "message": "?о???пно ??л?ки дл? по?илан?"
+        "message": "Доступно лише для посилань"
     },
     "HELP": {
-        "message": "?о???бна допомога?"
+        "message": "Потрібна допомога?"
     },
     "ACTION_OPEN_NORMAL": {
-        "message": "??дк?и?и под?бн? по?иланн?"
+        "message": "Відкрити схожі посилання"
     },
     "ACTION_OPEN_STRICT": {
-        "message": "??дк?и?и под?бн? по?иланн? (С?во?ий ?ежим)"
+        "message": "Відкрити схожі посилання (Суворий режим)"
     },
     "ACTION_OPEN_FLEXIBLE": {
-        "message": "??дк?и?и под?бн? по?иланн? (?'?кий ?ежим)"
+        "message": "Відкрити схожі посилання (Гнучкий режим)"
     },
     "MANUAL_SIMILARITY_LOW": {
-        "message": "?из?ка"
+        "message": "Низька"
     },
     "MANUAL_SIMILARITY_HIGH": {
-        "message": "?и?ока"
+        "message": "Висока"
     },
     "HOTKEY_OPEN_NORMAL": {
-        "message": "Alt + ?е?едн?й кл?к"
+        "message": "Alt + середній клік"
     },
     "HOTKEY_OPEN_STRICT": {
-        "message": "Ctrl + Alt + ?е?едн?й кл?к"
+        "message": "Ctrl + Alt + середній клік"
     },
     "HOTKEY_OPEN_FLEXIBLE": {
-        "message": "Shift + Alt + ?е?едн?й кл?к"
+        "message": "Shift + Alt + середній клік"
     },
     "CONFIRM_OPEN": {
-        "message": "?и впевнен?, ?о ?о?е?е в?дк?и?и $TAB_COUNT$ вкладок?",
+        "message": "Ви впевнені, що хочете відкрити $TAB_COUNT$ вкладок?",
         "placeholders": {
             "tab_count": {
                 "content": "$1"

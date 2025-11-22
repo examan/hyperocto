@@ -1,54 +1,54 @@
 {
     "FONT_FAMILY": {
-        "message": ""
+        "message": "\"Roboto\", \"Helvetica Neue\", \"Arial\""
     },
     "MANIFEST_DESCRIPTION": {
-        "message": "?ай?и по?ожие ???лки и о?к???? и? однов?еменно"
+        "message": "Находите похожие ссылки и открывайте их одновременно"
     },
     "MANUAL_TITLE": {
-        "message": "Сп?авка - Hyperocto"
+        "message": "Помощь - Hyperocto"
     },
     "MANUAL_ACTION": {
-        "message": "?ей??вие"
+        "message": "Действие"
     },
     "MANUAL_SIMILARITY": {
-        "message": "С?од??во ???лок"
+        "message": "Сходство ссылок"
     },
     "MANUAL_HOTKEY": {
-        "message": "?о???а? клави?а"
+        "message": "Горячая клавиша"
     },
     "HINT": {
-        "message": "?о???пно ?ол?ко дл? ???лок"
+        "message": "Доступно только для ссылок"
     },
     "HELP": {
-        "message": "??жна помо???"
+        "message": "Нужна помощь?"
     },
     "ACTION_OPEN_NORMAL": {
-        "message": "??к???? по?ожие ???лки"
+        "message": "Открыть похожие ссылки"
     },
     "ACTION_OPEN_STRICT": {
-        "message": "??к???? по?ожие ???лки (С??огий ?ежим)"
+        "message": "Открыть похожие ссылки (Строгий режим)"
     },
     "ACTION_OPEN_FLEXIBLE": {
-        "message": "??к???? по?ожие ???лки (??гкий ?ежим)"
+        "message": "Открыть похожие ссылки (Гибкий режим)"
     },
     "MANUAL_SIMILARITY_LOW": {
-        "message": "?изкое"
+        "message": "Низкое"
     },
     "MANUAL_SIMILARITY_HIGH": {
-        "message": "???окое"
+        "message": "Высокое"
     },
     "HOTKEY_OPEN_NORMAL": {
-        "message": "Alt + ??едний клик"
+        "message": "Alt + средний клик"
     },
     "HOTKEY_OPEN_STRICT": {
-        "message": "Ctrl + Alt + ??едний клик"
+        "message": "Ctrl + Alt + средний клик"
     },
     "HOTKEY_OPEN_FLEXIBLE": {
-        "message": "Shift + Alt + ??едний клик"
+        "message": "Shift + Alt + средний клик"
     },
     "CONFIRM_OPEN": {
-        "message": "?? ?ве?ен?, ??о ?о?и?е о?к???? $TAB_COUNT$ вкладок?",
+        "message": "Вы уверены, что хотите открыть $TAB_COUNT$ вкладок?",
         "placeholders": {
             "tab_count": {
                 "content": "$1"

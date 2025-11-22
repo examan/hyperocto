@@ -1,6 +1,6 @@
 {
     "FONT_FAMILY": {
-        "message": ""
+        "message": "\"Roboto\", \"Helvetica Neue\", \"Arial\""
     },
     "MANIFEST_DESCRIPTION": {
         "message": "Temukan tautan serupa dan buka secara bersamaan"
@@ -27,10 +27,10 @@
         "message": "Buka tautan serupa"
     },
     "ACTION_OPEN_STRICT": {
-        "message": "Buka tautan serupa (Mode ketat)"
+        "message": "Buka tautan serupa (Mode Ketat)"
     },
     "ACTION_OPEN_FLEXIBLE": {
-        "message": "Buka tautan serupa (Mode longgar)"
+        "message": "Buka tautan serupa (Mode Fleksibel)"
     },
     "MANUAL_SIMILARITY_LOW": {
         "message": "Rendah"

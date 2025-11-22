@@ -1,6 +1,6 @@
 {
     "FONT_FAMILY": {
-        "message": ""
+        "message": "\"Roboto\", \"Helvetica Neue\", \"Arial\""
     },
     "MANIFEST_DESCRIPTION": {
         "message": "Encuentra enlaces similares y ábrelos simultáneamente"
@@ -15,7 +15,7 @@
         "message": "Similitud de enlaces"
     },
     "MANUAL_HOTKEY": {
-        "message": "Atajo de teclado"
+        "message": "Atajo"
     },
     "HINT": {
         "message": "Solo disponible para enlaces"
@@ -27,10 +27,10 @@
         "message": "Abrir enlaces similares"
     },
     "ACTION_OPEN_STRICT": {
-        "message": "Abrir enlaces similares (Modo estricto)"
+        "message": "Abrir enlaces similares (Modo Estricto)"
     },
     "ACTION_OPEN_FLEXIBLE": {
-        "message": "Abrir enlaces similares (Modo flexible)"
+        "message": "Abrir enlaces similares (Modo Flexible)"
     },
     "MANUAL_SIMILARITY_LOW": {
         "message": "Baja"

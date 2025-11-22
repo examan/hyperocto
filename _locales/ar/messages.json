@@ -1,54 +1,54 @@
 {
     "FONT_FAMILY": {
-        "message": ""
+        "message": "\"Tahoma\", \"Arial\""
     },
     "MANIFEST_DESCRIPTION": {
-        "message": "ا?عث?ر ع?? ر?ابط ?شاب?ة ??تح?ا ?? ??ت ?احد"
+        "message": "ابحث عن روابط مماثلة وافتحها في وقت واحد"
     },
     "MANUAL_TITLE": {
-        "message": "ا??ساعدة - Hyperocto"
+        "message": "مساعدة - Hyperocto"
     },
     "MANUAL_ACTION": {
-        "message": "ا?إجراء"
+        "message": "إجراء"
     },
     "MANUAL_SIMILARITY": {
-        "message": "تشاب? ا?ر?ابط"
+        "message": "تشابه الروابط"
     },
     "MANUAL_HOTKEY": {
-        "message": "اختصار ??حة ا???ات?ح"
+        "message": "اختصار"
     },
     "HINT": {
-        "message": "?تاح ??ط ??ر?ابط"
+        "message": "متاح فقط للروابط"
     },
     "HELP": {
-        "message": "?? تحتاج إ?? ?ساعدة?"
+        "message": "هل تحتاج إلى مساعدة؟"
     },
     "ACTION_OPEN_NORMAL": {
-        "message": "?تح ر?ابط ?شاب?ة"
+        "message": "فتح الروابط المماثلة"
     },
     "ACTION_OPEN_STRICT": {
-        "message": "?تح ر?ابط ?شاب?ة (ا??ضع ا?صار?)"
+        "message": "فتح الروابط المماثلة (الوضع الصارم)"
     },
     "ACTION_OPEN_FLEXIBLE": {
-        "message": "?تح ر?ابط ?شاب?ة (ا??ضع ا??ر?)"
+        "message": "فتح الروابط المماثلة (الوضع المرن)"
     },
     "MANUAL_SIMILARITY_LOW": {
-        "message": "??خ?ض"
+        "message": "منخفض"
     },
     "MANUAL_SIMILARITY_HIGH": {
-        "message": "عا??"
+        "message": "مرتفع"
     },
     "HOTKEY_OPEN_NORMAL": {
-        "message": "Alt + ??رة ?سط?"
+        "message": "Alt + النقر الأوسط"
     },
     "HOTKEY_OPEN_STRICT": {
-        "message": "Ctrl + Alt + ??رة ?سط?"
+        "message": "Ctrl + Alt + النقر الأوسط"
     },
     "HOTKEY_OPEN_FLEXIBLE": {
-        "message": "Shift + Alt + ??رة ?سط?"
+        "message": "Shift + Alt + النقر الأوسط"
     },
     "CONFIRM_OPEN": {
-        "message": "?? أ?ت ?تأ?د ?? أ?? تر?د ?تح $TAB_COUNT$ ع?ا?ة تب??ب?",
+        "message": "هل أنت متأكد أنك تريد فتح $TAB_COUNT$ علامة تبويب؟",
         "placeholders": {
             "tab_count": {
                 "content": "$1"

@@ -1,9 +1,9 @@
 {
     "FONT_FAMILY": {
-        "message": ""
+        "message": "\"Roboto\", \"Helvetica Neue\", \"Arial\""
     },
     "MANIFEST_DESCRIPTION": {
-        "message": "Find lignende links og åbn dem samtidig"
+        "message": "Find lignende links og åbn dem samtidigt"
     },
     "MANUAL_TITLE": {
         "message": "Hjælp - Hyperocto"
@@ -12,7 +12,7 @@
         "message": "Handling"
     },
     "MANUAL_SIMILARITY": {
-        "message": "Linklighed"
+        "message": "Link lighed"
     },
     "MANUAL_HOTKEY": {
         "message": "Genvej"
@@ -24,13 +24,13 @@
         "message": "Brug for hjælp?"
     },
     "ACTION_OPEN_NORMAL": {
-        "message": "?bn lignende links"
+        "message": "Åbn lignende links"
     },
     "ACTION_OPEN_STRICT": {
-        "message": "?bn lignende links (Streng tilstand)"
+        "message": "Åbn lignende links (Streng tilstand)"
     },
     "ACTION_OPEN_FLEXIBLE": {
-        "message": "?bn lignende links (Fleksibel tilstand)"
+        "message": "Åbn lignende links (Fleksibel tilstand)"
     },
     "MANUAL_SIMILARITY_LOW": {
         "message": "Lav"

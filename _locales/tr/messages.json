@@ -1,39 +1,39 @@
 {
     "FONT_FAMILY": {
-        "message": ""
+        "message": "\"Roboto\", \"Helvetica Neue\", \"Arial\""
     },
     "MANIFEST_DESCRIPTION": {
-        "message": "Benzer ba?lantıları bulun ve aynı anda açın"
+        "message": "Benzer bağlantıları bulun ve aynı anda açın"
     },
     "MANUAL_TITLE": {
         "message": "Yardım - Hyperocto"
     },
     "MANUAL_ACTION": {
-        "message": "İ?lem"
+        "message": "İşlem"
     },
     "MANUAL_SIMILARITY": {
-        "message": "Ba?lantı benzerli?i"
+        "message": "Bağlantı benzerliği"
     },
     "MANUAL_HOTKEY": {
-        "message": "Kısayol tu?u"
+        "message": "Kısayol tuşu"
     },
     "HINT": {
-        "message": "Sadece ba?lantılar için kullanılabilir"
+        "message": "Sadece bağlantılar için kullanılabilir"
     },
     "HELP": {
         "message": "Yardıma mı ihtiyacınız var?"
     },
     "ACTION_OPEN_NORMAL": {
-        "message": "Benzer ba?lantıları aç"
+        "message": "Benzer bağlantıları aç"
     },
     "ACTION_OPEN_STRICT": {
-        "message": "Benzer ba?lantıları aç (Katı mod)"
+        "message": "Benzer bağlantıları aç (Katı mod)"
     },
     "ACTION_OPEN_FLEXIBLE": {
-        "message": "Benzer ba?lantıları aç (Esnek mod)"
+        "message": "Benzer bağlantıları aç (Esnek mod)"
     },
     "MANUAL_SIMILARITY_LOW": {
-        "message": "Dü?ük"
+        "message": "Düşük"
     },
     "MANUAL_SIMILARITY_HIGH": {
         "message": "Yüksek"
@@ -48,7 +48,7 @@
         "message": "Shift + Alt + orta tıklama"
     },
     "CONFIRM_OPEN": {
-        "message": "$TAB_COUNT$ sekme açmak istedi?inizden emin misiniz?",
+        "message": "$TAB_COUNT$ sekme açmak istediğinizden emin misiniz?",
         "placeholders": {
             "tab_count": {
                 "content": "$1"

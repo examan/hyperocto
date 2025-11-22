@@ -1,9 +1,9 @@
 {
     "FONT_FAMILY": {
-        "message": ""
+        "message": "\"Roboto\", \"Helvetica Neue\", \"Arial\""
     },
     "MANIFEST_DESCRIPTION": {
-        "message": "?hnliche Links finden und gleichzeitig öffnen"
+        "message": "Ähnliche Links finden und gleichzeitig öffnen"
     },
     "MANUAL_TITLE": {
         "message": "Hilfe - Hyperocto"
@@ -12,25 +12,25 @@
         "message": "Aktion"
     },
     "MANUAL_SIMILARITY": {
-        "message": "Link-?hnlichkeit"
+        "message": "Link-Ähnlichkeit"
     },
     "MANUAL_HOTKEY": {
         "message": "Tastenkürzel"
     },
     "HINT": {
-        "message": "Nur auf Links verfügbar"
+        "message": "Nur für Links verfügbar"
     },
     "HELP": {
-        "message": "Benötigen Sie Hilfe?"
+        "message": "Brauchen Sie Hilfe?"
     },
     "ACTION_OPEN_NORMAL": {
-        "message": "?hnliche Links öffnen"
+        "message": "Ähnliche Links öffnen"
     },
     "ACTION_OPEN_STRICT": {
-        "message": "?hnliche Links öffnen (Strenger Modus)"
+        "message": "Ähnliche Links öffnen (Strenger Modus)"
     },
     "ACTION_OPEN_FLEXIBLE": {
-        "message": "?hnliche Links öffnen (Lockerer Modus)"
+        "message": "Ähnliche Links öffnen (Flexibler Modus)"
     },
     "MANUAL_SIMILARITY_LOW": {
         "message": "Niedrig"
@@ -48,7 +48,7 @@
         "message": "Umschalt + Alt + Mittelklick"
     },
     "CONFIRM_OPEN": {
-        "message": "Möchten Sie wirklich $TAB_COUNT$ Tabs öffnen?",
+        "message": "Sind Sie sicher, dass Sie $TAB_COUNT$ Tabs öffnen möchten?",
         "placeholders": {
             "tab_count": {
                 "content": "$1"

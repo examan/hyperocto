@@ -1,6 +1,6 @@
 {
     "FONT_FAMILY": {
-        "message": ""
+        "message": "\"Roboto\", \"Helvetica Neue\", \"Arial\""
     },
     "MANIFEST_DESCRIPTION": {
         "message": "Finn lignende lenker og åpne dem samtidig"
@@ -15,7 +15,7 @@
         "message": "Lenkelikhet"
     },
     "MANUAL_HOTKEY": {
-        "message": "Hurtigtast"
+        "message": "Snarvei"
     },
     "HINT": {
         "message": "Kun tilgjengelig for lenker"
@@ -24,13 +24,13 @@
         "message": "Trenger du hjelp?"
     },
     "ACTION_OPEN_NORMAL": {
-        "message": "?pne lignende lenker"
+        "message": "Åpne lignende lenker"
     },
     "ACTION_OPEN_STRICT": {
-        "message": "?pne lignende lenker (Streng modus)"
+        "message": "Åpne lignende lenker (Streng modus)"
     },
     "ACTION_OPEN_FLEXIBLE": {
-        "message": "?pne lignende lenker (Fleksibel modus)"
+        "message": "Åpne lignende lenker (Fleksibel modus)"
     },
     "MANUAL_SIMILARITY_LOW": {
         "message": "Lav"

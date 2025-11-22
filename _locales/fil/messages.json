@@ -1,9 +1,9 @@
 {
     "FONT_FAMILY": {
-        "message": ""
+        "message": "\"Roboto\", \"Helvetica Neue\", \"Arial\""
     },
     "MANIFEST_DESCRIPTION": {
-        "message": "Maghanap ng magkakatulad na mga link at buksan nang sabay-sabay"
+        "message": "Maghanap ng mga katulad na link at buksan ang mga ito nang sabay-sabay"
     },
     "MANUAL_TITLE": {
         "message": "Tulong - Hyperocto"
@@ -12,10 +12,10 @@
         "message": "Aksyon"
     },
     "MANUAL_SIMILARITY": {
-        "message": "Pagkakatulad ng mga link"
+        "message": "Pagkakatulad ng link"
     },
     "MANUAL_HOTKEY": {
-        "message": "Mabilis na key"
+        "message": "Shortcut"
     },
     "HINT": {
         "message": "Magagamit lamang para sa mga link"
@@ -24,13 +24,13 @@
         "message": "Kailangan ng tulong?"
     },
     "ACTION_OPEN_NORMAL": {
-        "message": "Buksan ang magkakatulad na mga link"
+        "message": "Buksan ang mga katulad na link"
     },
     "ACTION_OPEN_STRICT": {
-        "message": "Buksan ang magkakatulad na mga link (Mahigpit na Mode)"
+        "message": "Buksan ang mga katulad na link (Mahigpit na Mode)"
     },
     "ACTION_OPEN_FLEXIBLE": {
-        "message": "Buksan ang magkakatulad na mga link (Maaliwalas na Mode)"
+        "message": "Buksan ang mga katulad na link (Flexible na Mode)"
     },
     "MANUAL_SIMILARITY_LOW": {
         "message": "Mababa"
@@ -39,16 +39,16 @@
         "message": "Mataas"
     },
     "HOTKEY_OPEN_NORMAL": {
-        "message": "Alt + gitnang-click"
+        "message": "Alt + middle-click"
     },
     "HOTKEY_OPEN_STRICT": {
-        "message": "Ctrl + Alt + gitnang-click"
+        "message": "Ctrl + Alt + middle-click"
     },
     "HOTKEY_OPEN_FLEXIBLE": {
-        "message": "Shift + Alt + gitnang-click"
+        "message": "Shift + Alt + middle-click"
     },
     "CONFIRM_OPEN": {
-        "message": "Sigurado ka bang gusto mong buksan ang $TAB_COUNT$ tabs?",
+        "message": "Sigurado ka bang gusto mong buksan ang $TAB_COUNT$ na mga tab?",
         "placeholders": {
             "tab_count": {
                 "content": "$1"

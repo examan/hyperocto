@@ -1,54 +1,54 @@
 {
     "FONT_FAMILY": {
-        "message": ""
+        "message": "\"Yu Gothic\", \"Meiryo\", \"Hiragino Kaku Gothic Pro\", \"Arial\""
     },
     "MANIFEST_DESCRIPTION": {
-        "message": "類似?��??�ン?��?見つ?�て一?�で?��??��??��??�ー??
+        "message": "類似したリンクを見つけて一度に開く"
     },
     "MANUAL_TITLE": {
-        "message": "?�ル??- Hyperocto"
+        "message": "ヘルプ - Hyperocto"
     },
     "MANUAL_ACTION": {
-        "message": "?��?"
+        "message": "操作"
     },
     "MANUAL_SIMILARITY": {
-        "message": "?�ン?�の類似�?
+        "message": "リンクの類似性"
     },
     "MANUAL_HOTKEY": {
-        "message": "?�ョ?��??��??�キ??
+        "message": "ショートカット"
     },
     "HINT": {
-        "message": "?�ン?��??�の?��?作で?�ま??
+        "message": "リンクのみ利用可能"
     },
     "HELP": {
-        "message": "?�ル?��?必�??��??��?"
+        "message": "ヘルプが必要ですか？"
     },
     "ACTION_OPEN_NORMAL": {
-        "message": "類似?�ン?��??��?"
+        "message": "類似リンクを開く"
     },
     "ACTION_OPEN_STRICT": {
-        "message": "類似?�ン?��??��?（厳?�モ?��?�?
+        "message": "類似リンクを開く（厳格モード）"
     },
     "ACTION_OPEN_FLEXIBLE": {
-        "message": "類似?�ン?��??��?（緩?�モ?��?�?
+        "message": "類似リンクを開く（柔軟モード）"
     },
     "MANUAL_SIMILARITY_LOW": {
-        "message": "�?
+        "message": "低"
     },
     "MANUAL_SIMILARITY_HIGH": {
-        "message": "�?
+        "message": "高"
     },
     "HOTKEY_OPEN_NORMAL": {
-        "message": "Alt + 中ク?��???
+        "message": "Alt + 中クリック"
     },
     "HOTKEY_OPEN_STRICT": {
-        "message": "Ctrl + Alt + 中ク?��???
+        "message": "Ctrl + Alt + 中クリック"
     },
     "HOTKEY_OPEN_FLEXIBLE": {
-        "message": "Shift + Alt + 中ク?��???
+        "message": "Shift + Alt + 中クリック"
     },
     "CONFIRM_OPEN": {
-        "message": "$TAB_COUNT$ ?�の?��??��??�ま?��?�?,
+        "message": "$TAB_COUNT$ 個のタブを開いてもよろしいですか？",
         "placeholders": {
             "tab_count": {
                 "content": "$1"

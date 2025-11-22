@@ -1,18 +1,18 @@
 {
     "FONT_FAMILY": {
-        "message": ""
+        "message": "\"Roboto\", \"Helvetica Neue\", \"Arial\""
     },
     "MANIFEST_DESCRIPTION": {
         "message": "Vind vergelijkbare links en open ze tegelijkertijd"
     },
     "MANUAL_TITLE": {
-        "message": "Help - Hyperocto"
+        "message": "Hulp - Hyperocto"
     },
     "MANUAL_ACTION": {
         "message": "Actie"
     },
     "MANUAL_SIMILARITY": {
-        "message": "Gelijkenis van links"
+        "message": "Link gelijkenis"
     },
     "MANUAL_HOTKEY": {
         "message": "Sneltoets"
@@ -24,13 +24,13 @@
         "message": "Hulp nodig?"
     },
     "ACTION_OPEN_NORMAL": {
-        "message": "Vergelijkbare links openen"
+        "message": "Open vergelijkbare links"
     },
     "ACTION_OPEN_STRICT": {
-        "message": "Vergelijkbare links openen (Strikte modus)"
+        "message": "Open vergelijkbare links (Strikte modus)"
     },
     "ACTION_OPEN_FLEXIBLE": {
-        "message": "Vergelijkbare links openen (Soepele modus)"
+        "message": "Open vergelijkbare links (Flexibele modus)"
     },
     "MANUAL_SIMILARITY_LOW": {
         "message": "Laag"
@@ -39,13 +39,13 @@
         "message": "Hoog"
     },
     "HOTKEY_OPEN_NORMAL": {
-        "message": "Alt + middelklik"
+        "message": "Alt + middelste klik"
     },
     "HOTKEY_OPEN_STRICT": {
-        "message": "Ctrl + Alt + middelklik"
+        "message": "Ctrl + Alt + middelste klik"
     },
     "HOTKEY_OPEN_FLEXIBLE": {
-        "message": "Shift + Alt + middelklik"
+        "message": "Shift + Alt + middelste klik"
     },
     "CONFIRM_OPEN": {
         "message": "Weet je zeker dat je $TAB_COUNT$ tabbladen wilt openen?",

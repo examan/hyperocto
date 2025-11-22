@@ -1,42 +1,42 @@
 {
     "FONT_FAMILY": {
-        "message": ""
+        "message": "\"Roboto\", \"Helvetica Neue\", \"Arial\""
     },
     "MANIFEST_DESCRIPTION": {
-        "message": "G?si?i linkuri similare ?i deschide?i-le simultan"
+        "message": "Găsiți linkuri similare și deschideți-le simultan"
     },
     "MANUAL_TITLE": {
         "message": "Ajutor - Hyperocto"
     },
     "MANUAL_ACTION": {
-        "message": "Ac?iune"
+        "message": "Acțiune"
     },
     "MANUAL_SIMILARITY": {
-        "message": "Similaritatea linkurilor"
+        "message": "Similaritate linkuri"
     },
     "MANUAL_HOTKEY": {
-        "message": "Comand? rapid?"
+        "message": "Comandă rapidă"
     },
     "HINT": {
         "message": "Disponibil doar pentru linkuri"
     },
     "HELP": {
-        "message": "Ave?i nevoie de ajutor?"
+        "message": "Aveți nevoie de ajutor?"
     },
     "ACTION_OPEN_NORMAL": {
-        "message": "Deschide linkuri similare"
+        "message": "Deschideți linkuri similare"
     },
     "ACTION_OPEN_STRICT": {
-        "message": "Deschide linkuri similare (Mod strict)"
+        "message": "Deschideți linkuri similare (Mod Strict)"
     },
     "ACTION_OPEN_FLEXIBLE": {
-        "message": "Deschide linkuri similare (Mod flexibil)"
+        "message": "Deschideți linkuri similare (Mod Flexibil)"
     },
     "MANUAL_SIMILARITY_LOW": {
-        "message": "Sc?zut"
+        "message": "Scăzută"
     },
     "MANUAL_SIMILARITY_HIGH": {
-        "message": "Ridicat"
+        "message": "Ridicată"
     },
     "HOTKEY_OPEN_NORMAL": {
         "message": "Alt + clic mijloc"
@@ -48,7 +48,7 @@
         "message": "Shift + Alt + clic mijloc"
     },
     "CONFIRM_OPEN": {
-        "message": "Sigur dori?i s? deschide?i $TAB_COUNT$ file?",
+        "message": "Sigur doriți să deschideți $TAB_COUNT$ file?",
         "placeholders": {
             "tab_count": {
                 "content": "$1"

@@ -1,9 +1,9 @@
 {
     "FONT_FAMILY": {
-        "message": ""
+        "message": "\"Roboto\", \"Helvetica Neue\", \"Arial\""
     },
     "MANIFEST_DESCRIPTION": {
-        "message": "Tafuta viungo vinavyofanana na uvifungue kwa pamoja"
+        "message": "Pata viungo vinavyofanana na ufungue kwa wakati mmoja"
     },
     "MANUAL_TITLE": {
         "message": "Msaada - Hyperocto"
@@ -12,25 +12,25 @@
         "message": "Kitendo"
     },
     "MANUAL_SIMILARITY": {
-        "message": "Kufanana kwa viungo"
+        "message": "Ufanano wa viungo"
     },
     "MANUAL_HOTKEY": {
-        "message": "Ufunguo wa mkato"
+        "message": "Njia ya mkato"
     },
     "HINT": {
         "message": "Inapatikana kwa viungo tu"
     },
     "HELP": {
-        "message": "Je, unahitaji msaada?"
+        "message": "Unahitaji msaada?"
     },
     "ACTION_OPEN_NORMAL": {
         "message": "Fungua viungo vinavyofanana"
     },
     "ACTION_OPEN_STRICT": {
-        "message": "Fungua viungo vinavyofanana (Hali kali)"
+        "message": "Fungua viungo vinavyofanana (Hali Kali)"
     },
     "ACTION_OPEN_FLEXIBLE": {
-        "message": "Fungua viungo vinavyofanana (Hali laini)"
+        "message": "Fungua viungo vinavyofanana (Hali Rahisi)"
     },
     "MANUAL_SIMILARITY_LOW": {
         "message": "Chini"
@@ -48,7 +48,7 @@
         "message": "Shift + Alt + bonyeza katikati"
     },
     "CONFIRM_OPEN": {
-        "message": "Je, una uhakika unataka kufungua vichupo $TAB_COUNT$?",
+        "message": "Una uhakika unataka kufungua vichupo $TAB_COUNT$?",
         "placeholders": {
             "tab_count": {
                 "content": "$1"

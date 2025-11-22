@@ -1,6 +1,6 @@
 {
     "FONT_FAMILY": {
-        "message": ""
+        "message": "\"Roboto\", \"Helvetica Neue\", \"Arial\""
     },
     "MANIFEST_DESCRIPTION": {
         "message": "Cari pautan serupa dan buka serentak"
@@ -12,10 +12,10 @@
         "message": "Tindakan"
     },
     "MANUAL_SIMILARITY": {
-        "message": "Persamaan pautan"
+        "message": "Kesamaan pautan"
     },
     "MANUAL_HOTKEY": {
-        "message": "Pintasan papan kekunci"
+        "message": "Pintasan"
     },
     "HINT": {
         "message": "Hanya tersedia untuk pautan"
@@ -27,10 +27,10 @@
         "message": "Buka pautan serupa"
     },
     "ACTION_OPEN_STRICT": {
-        "message": "Buka pautan serupa (Mod ketat)"
+        "message": "Buka pautan serupa (Mod Ketat)"
     },
     "ACTION_OPEN_FLEXIBLE": {
-        "message": "Buka pautan serupa (Mod longgar)"
+        "message": "Buka pautan serupa (Mod Fleksibel)"
     },
     "MANUAL_SIMILARITY_LOW": {
         "message": "Rendah"
@@ -48,7 +48,7 @@
         "message": "Shift + Alt + klik tengah"
     },
     "CONFIRM_OPEN": {
-        "message": "Adakah anda pasti untuk membuka $TAB_COUNT$ tab?",
+        "message": "Adakah anda pasti mahu membuka $TAB_COUNT$ tab?",
         "placeholders": {
             "tab_count": {
                 "content": "$1"

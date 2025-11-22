@@ -1,6 +1,6 @@
 {
     "FONT_FAMILY": {
-        "message": ""
+        "message": "\"Roboto\", \"Helvetica Neue\", \"Arial\""
     },
     "MANIFEST_DESCRIPTION": {
         "message": "Trova link simili e aprili contemporaneamente"
@@ -12,7 +12,7 @@
         "message": "Azione"
     },
     "MANUAL_SIMILARITY": {
-        "message": "Somiglianza dei link"
+        "message": "Somiglianza link"
     },
     "MANUAL_HOTKEY": {
         "message": "Scorciatoia"
@@ -21,16 +21,16 @@
         "message": "Disponibile solo per i link"
     },
     "HELP": {
-        "message": "Hai bisogno di aiuto?"
+        "message": "Serve aiuto?"
     },
     "ACTION_OPEN_NORMAL": {
         "message": "Apri link simili"
     },
     "ACTION_OPEN_STRICT": {
-        "message": "Apri link simili (Modalit? rigorosa)"
+        "message": "Apri link simili (Modalità Rigida)"
     },
     "ACTION_OPEN_FLEXIBLE": {
-        "message": "Apri link simili (Modalit? flessibile)"
+        "message": "Apri link simili (Modalità Flessibile)"
     },
     "MANUAL_SIMILARITY_LOW": {
         "message": "Bassa"

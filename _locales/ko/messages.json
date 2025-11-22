@@ -1,54 +1,54 @@
 {
     "FONT_FAMILY": {
-        "message": ""
+        "message": "\"Malgun Gothic\", \"Apple SD Gothic Neo\", \"Arial\""
     },
     "MANIFEST_DESCRIPTION": {
-        "message": "?�사??링크�?찾�? ?�꺼번�? ?��? ?��????�구"
+        "message": "유사한 링크를 찾아 동시에 엽니다"
     },
     "MANUAL_TITLE": {
-        "message": "?��?�?- Hyperocto"
+        "message": "도움말 - Hyperocto"
     },
     "MANUAL_ACTION": {
-        "message": "?��?"
+        "message": "동작"
     },
     "MANUAL_SIMILARITY": {
-        "message": "링크 ?�사??
+        "message": "링크 유사성"
     },
     "MANUAL_HOTKEY": {
-        "message": "?��???
+        "message": "단축키"
     },
     "HINT": {
-        "message": "링크?��?�??��??????�습?�다"
+        "message": "링크에만 사용 가능"
     },
     "HELP": {
-        "message": "?��????��??��?가??"
+        "message": "도움이 필요하신가요?"
     },
     "ACTION_OPEN_NORMAL": {
-        "message": "?�사??링크 ?�기"
+        "message": "유사한 링크 열기"
     },
     "ACTION_OPEN_STRICT": {
-        "message": "?�사??링크 ?�기 (?�격 모�?)"
+        "message": "유사한 링크 열기 (엄격 모드)"
     },
     "ACTION_OPEN_FLEXIBLE": {
-        "message": "?�사??링크 ?�기 (?�슨??모�?)"
+        "message": "유사한 링크 열기 (유연 모드)"
     },
     "MANUAL_SIMILARITY_LOW": {
-        "message": "?��?"
+        "message": "낮음"
     },
     "MANUAL_SIMILARITY_HIGH": {
-        "message": "?��?"
+        "message": "높음"
     },
     "HOTKEY_OPEN_NORMAL": {
-        "message": "Alt + 가?�데 ?�릭"
+        "message": "Alt + 가운데 클릭"
     },
     "HOTKEY_OPEN_STRICT": {
-        "message": "Ctrl + Alt + 가?�데 ?�릭"
+        "message": "Ctrl + Alt + 가운데 클릭"
     },
     "HOTKEY_OPEN_FLEXIBLE": {
-        "message": "Shift + Alt + 가?�데 ?�릭"
+        "message": "Shift + Alt + 가운데 클릭"
     },
     "CONFIRM_OPEN": {
-        "message": "$TAB_COUNT$개�? ?��? ?��?겠습?��??",
+        "message": "$TAB_COUNT$개의 탭을 여시겠습니까?",
         "placeholders": {
             "tab_count": {
                 "content": "$1"
